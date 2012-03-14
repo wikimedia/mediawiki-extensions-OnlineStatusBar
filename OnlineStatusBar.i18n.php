@@ -120,7 +120,6 @@ $messages['de-formal'] = array(
 	'onlinestatusbar-used' => 'Ihren Online-Status auf Ihrer Benutzerseite anzeigen',
 	'onlinestatusbar-status' => 'Welchen Status möchten Sie standardmäßig nutzen:',
 	'onlinestatusbar-purge' => 'Den Cache der Benutzerseite jedes Mal leeren, wenn Sie sich an- oder abmelden',
-	'onlinestatusbar-hide' => "Möchten Sie die Statusleiste ausblenden, um stattdessen lediglich das ''magische Wort'' zu nutzen? (Für Fortgeschrittene)",
 );
 
 /** Lower Sorbian (Dolnoserbski)
