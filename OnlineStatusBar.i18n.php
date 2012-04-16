@@ -122,6 +122,13 @@ $messages['de-formal'] = array(
 	'onlinestatusbar-purge' => 'Den Cache der Benutzerseite jedes Mal leeren, wenn Sie sich an- oder abmelden',
 );
 
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'onlinestatusbar-status-offline' => 'Çerxteber',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
