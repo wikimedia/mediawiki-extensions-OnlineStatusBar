@@ -61,7 +61,6 @@ $messages['qqq'] = array(
 	'onlinestatusbar-status-busy' => 'Status for users who mark themselves as busy',
 	'onlinestatusbar-status-away' => 'Status for users who mark themselves as away',
 	'onlinestatusbar-status-offline' => 'Status for users who are offline',
-	'onlinestatusbar-status-unknown' => 'When error occur for instance you retrieve status of user who changed options to hide it',
 	'onlinestatusbar-status-hidden' => 'Status for users who mark themselves as hidden (used on preferences only)',
 );
 
@@ -301,8 +300,10 @@ $messages['lb'] = array(
 	'onlinestatusbar-used' => 'Ären online-Status op Ärer Benotzer-Säit weisen',
 	'onlinestatusbar-away-time' => "Minutte bis Dir als 'net do' markéiert gitt:",
 	'onlinestatusbar-purge' => "De'Benotzersäit all kéier wann Dir Iech eran oder erausloggt eidel maachen",
+	'onlinestatusbar-status-online' => 'Online',
 	'onlinestatusbar-status-busy' => 'Beschäftegt',
 	'onlinestatusbar-status-away' => 'Net do',
+	'onlinestatusbar-status-offline' => 'Offline',
 	'onlinestatusbar-status-uknown' => 'Status onbekannt',
 	'onlinestatusbar-status-hidden' => 'Verstoppt',
 );
@@ -345,6 +346,7 @@ $messages['ms'] = array(
 	'onlinestatusbar-status-busy' => 'Sibuk',
 	'onlinestatusbar-status-away' => 'Tiada',
 	'onlinestatusbar-status-offline' => 'Luar talian',
+	'onlinestatusbar-status-uknown' => 'status tidak diketahui',
 	'onlinestatusbar-status-hidden' => 'Tersorok',
 );
 
@@ -398,5 +400,12 @@ $messages['pl'] = array(
 $messages['te'] = array(
 	'onlinestatusbar-line' => '$1 ippudu $2 $3',
 	'onlinestatusbar-used' => 'మీరు ఆన్‌లైనులో ఉన్నట్టు ఇతరులుకు చూపించాలా?',
+);
+
+/** Turkish (Türkçe)
+ * @author Suelnur
+ */
+$messages['tr'] = array(
+	'onlinestatusbar-status-offline' => 'Çevrimdışı',
 );
 
