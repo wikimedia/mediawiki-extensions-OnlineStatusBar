@@ -32,12 +32,12 @@ $messages['en'] = array(
 	'prefs-onlinestatus' => 'Online status',
 	// Message in config
 	'onlinestatusbar-hide' => 'Hide the status bar on user pages in order to use just the magic word (For advanced users)',
-	'onlinestatusbar-status-online' => 'On-line',
-	'onlinestatusbar-status-busy' => 'Busy',
-	'onlinestatusbar-status-away' => 'Away',
-	'onlinestatusbar-status-offline' => 'Offline',
+	'onlinestatusbar-status-online' => 'on-line',
+	'onlinestatusbar-status-busy' => 'busy',
+	'onlinestatusbar-status-away' => 'away',
+	'onlinestatusbar-status-offline' => 'offline',
 	'onlinestatusbar-status-uknown' => 'status is unknown',
-	'onlinestatusbar-status-hidden' => 'Hidden',
+	'onlinestatusbar-status-hidden' => 'hidden',
 );
 
 /** Message documentation (Message documentation)
