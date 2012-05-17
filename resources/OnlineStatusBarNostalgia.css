@@ -4,7 +4,7 @@ where topicon isn't defined
 */
 div.onlinestatusbartop {
 	position: absolute;
-	top: 0px;
+	top: 18px;
 	margin-right: 261px;
 	display: block !important;
 }

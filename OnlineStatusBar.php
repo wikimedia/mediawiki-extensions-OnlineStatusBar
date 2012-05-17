@@ -36,7 +36,7 @@ $wgResourceModules['ext.OnlineStatusBar'] = array (
 		'standard' => array ( 'resources/OnlineStatusBarStandard.css' ),
 		'monobook' => array ( 'resources/OnlineStatusBarMonobook.css' ),
 		'simple' => array ( 'resources/OnlineStatusBarSimple.css' ),
-		'cologne' => array ( 'resources/OnlineStatusBarCologneBlue.css' ),
+		'cologneblue' => array ( 'resources/OnlineStatusBarCologneBlue.css' ),
 		'nostalgia' => array ( 'resources/OnlineStatusBarNostalgia.css' ),
 	),
 	'scripts' => 'resources/ext.onlinestatusbar.js',
