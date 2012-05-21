@@ -292,6 +292,27 @@ $messages['ia'] = array(
 	'onlinestatusbar-status-hidden' => 'Celate',
 );
 
+/** Japanese (日本語)
+ * @author Shirayuki
+ */
+$messages['ja'] = array(
+	'onlinestatusbar-desc' => '個人設定と利用者ページに基づいて、利用者がオンラインかどうか表示するステータスバー',
+	'onlinestatusbar-line' => '$1 は現在 $2 $3です',
+	'onlinestatusbar-used' => 'あなたのオンライン状態を利用者ページに表示',
+	'onlinestatusbar-away-time' => '退席中と見なすまでの時間（分）：',
+	'onlinestatusbar-status' => '既定として使用する状態：',
+	'onlinestatusbar-away' => '定義された時間の経過後に自動的に退席中と見なす',
+	'onlinestatusbar-purge' => 'ログイン/ログアウトのたびに利用者ページのキャッシュを破棄',
+	'prefs-onlinestatus' => 'オンライン状態',
+	'onlinestatusbar-hide' => 'マジックワードを使用するために、利用者ページのステータスバーを隠す（上級者向け）',
+	'onlinestatusbar-status-online' => 'オンライン',
+	'onlinestatusbar-status-busy' => '多忙',
+	'onlinestatusbar-status-away' => '退席中',
+	'onlinestatusbar-status-offline' => 'オフライン',
+	'onlinestatusbar-status-uknown' => '状態不明',
+	'onlinestatusbar-status-hidden' => '非表示',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
