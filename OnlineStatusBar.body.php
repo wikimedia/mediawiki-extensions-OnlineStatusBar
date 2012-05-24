@@ -159,7 +159,10 @@ HTML;
 					if ( $user === false ) {
 						$time = $wgOnlineStatusBar_AwayTime;
 					} else {
-						$time = $user->getOption( 'OnlineStatusBar_awaytime', $wgOnlineStatusBar_AwayTime );
+						$time = $user->getOption(
+								'OnlineStatusBar_awaytime',
+								$wgOnlineStatusBar_AwayTime
+								);
 					}	
 					return wfTimestamp( TS_UNIX ) - ( $time * 60 );
 			}

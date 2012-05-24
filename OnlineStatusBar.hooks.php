@@ -16,7 +16,12 @@ class OnlineStatusBarHooks {
 	 */
 	public static function ckSchema( $updater = null ) {
 		if ( $updater !== null ) {
-			$updater->addExtensionUpdate( array( 'addtable', 'online_status', dirname( __FILE__ ) . '/OnlineStatusBar.sql', true ) );
+			$updater->addExtensionUpdate( array( 'addtable',
+							'online_status',
+							dirname( __FILE__ ) .
+							'/OnlineStatusBar.sql',
+							true )
+						);
 		} else {
 			global $wgExtNewTables;
 			$wgExtNewTables[] = array(
@@ -103,20 +108,40 @@ class OnlineStatusBarHooks {
 	 * @return bool
 	 */
 	public static function preferencesHook( User $user, array &$preferences ) {
-		global $wgOnlineStatusBarDefaultOnline, $wgOnlineStatusBarDefaultEnabled, $wgOnlineStatusBar_AwayTime, $wgOnlineStatusBar_LogoutTime, $wgOnlineStatusBarModes;
-		$preferences['OnlineStatusBar_active'] = array( 'type' => 'toggle', 'label-message' => 'onlinestatusbar-used', 'section' => 'misc/onlinestatus' );
-		$preferences['OnlineStatusBar_hide'] = array( 'type' => 'toggle', 'label-message' => 'onlinestatusbar-hide', 'section' => 'misc/onlinestatus' );
-		$preferences['OnlineStatusBar_away'] = array( 'type' => 'toggle', 'label-message' => 'onlinestatusbar-away', 'section' => 'misc/onlinestatus' );
-		$preferences['OnlineStatusBar_autoupdate'] = array( 'type' => 'toggle', 'label-message' => 'onlinestatusbar-purge', 'section' => 'misc/onlinestatus' );
-		$preferences['OnlineStatusBar_status'] = array( 'type' => 'radio', 'label-message' => 'onlinestatusbar-status', 'section' => 'misc/onlinestatus',
-			'options' => array(
+		global $wgOnlineStatusBarDefaultOnline, $wgOnlineStatusBarDefaultEnabled, $wgOnlineStatusBar_AwayTime,
+			$wgOnlineStatusBar_LogoutTime, $wgOnlineStatusBarModes;
+		$preferences['OnlineStatusBar_active'] = array( 'type' => 'toggle',
+							'label-message' => 'onlinestatusbar-used',
+							'section' => 'misc/onlinestatus'
+							);
+		$preferences['OnlineStatusBar_hide'] = array( 'type' => 'toggle',
+							'label-message' => 'onlinestatusbar-hide',
+							'section' => 'misc/onlinestatus'
+							);
+		$preferences['OnlineStatusBar_away'] = array( 'type' => 'toggle',
+							'label-message' => 'onlinestatusbar-away',
+							'section' => 'misc/onlinestatus'
+							);
+		$preferences['OnlineStatusBar_autoupdate'] = array( 'type' => 'toggle',
+								'label-message' => 'onlinestatusbar-purge',
+								'section' => 'misc/onlinestatus'
+							);
+		$preferences['OnlineStatusBar_status'] = array( 'type' => 'radio',
+								'label-message' => 'onlinestatusbar-status',
+								'section' => 'misc/onlinestatus',
+				'options' => array(
 				wfMessage( 'onlinestatusbar-status-online' )->escaped() => 'online',
 				wfMessage( 'onlinestatusbar-status-busy' )->escaped() => 'busy',
 				wfMessage( 'onlinestatusbar-status-away' )->escaped() => 'away',
 				wfMessage( 'onlinestatusbar-status-hidden' )->escaped() => 'hidden'
 			),
 		);
-		$preferences['OnlineStatusBar_awaytime'] = array( 'min' => 2, 'max' => $wgOnlineStatusBar_LogoutTime, 'type' => 'int', 'label-message' => 'onlinestatusbar-away-time', 'section' => 'misc/onlinestatus' );
+		$preferences['OnlineStatusBar_awaytime'] = array( 'min' => 2,
+								'max' => $wgOnlineStatusBar_LogoutTime,
+								'type' => 'int',
+								'label-message' => 'onlinestatusbar-away-time',
+								'section' => 'misc/onlinestatus'
+							);
 		return true;
 	}
 

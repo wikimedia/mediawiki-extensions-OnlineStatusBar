@@ -74,9 +74,14 @@ class OnlineStatusBar_StatusCheck {
 			if ( $result == '' ) {
 				$t_time = OnlineStatusBar::getTimeoutDate();
 				$dbr = wfGetDB( DB_SLAVE );
-				$result = $dbr->selectField( 'online_status', 'timestamp', array( 'username' => $user->getName(),
-					'timestamp > ' . $dbr->addQuotes( $dbr->timestamp( $t_time ) ) ),
-					__METHOD__, array( 'LIMIT 1', 'ORDER BY timestamp DESC' ) );
+				$result = $dbr->selectField(
+						'online_status',
+						'timestamp',
+						array( 'username' => $user->getName(),
+						'timestamp > ' .
+						$dbr->addQuotes( $dbr->timestamp( $t_time ) ) ),
+						__METHOD__, array( 'LIMIT 1', 'ORDER BY timestamp DESC' )
+					);
 				// cache it
 				self::setCache( $user->getName(), $result, ONLINESTATUSBAR_NORMAL_CACHE );
 			}
@@ -86,8 +91,11 @@ class OnlineStatusBar_StatusCheck {
 			$w_time = OnlineStatusBar::getTimeoutDate( ONLINESTATUSBAR_CK_DELAYED );
 			if ( $result == '' ) {
 				$dbr = wfGetDB( DB_SLAVE );
-				$result = $dbr->selectField( 'online_status', 'timestamp', array( 'username' => $user->getName() ),
-					__METHOD__, array( 'LIMIT 1', 'ORDER BY timestamp DESC' ) );
+				$result = $dbr->selectField( 'online_status',
+						'timestamp',
+						array( 'username' => $user->getName() ),
+						__METHOD__, array( 'LIMIT 1', 'ORDER BY timestamp DESC' )
+					);
 				// cache it
 				if ( $result !== false && $result > wfTimestamp( TS_MW, $w_time ) ) {
 					self::setCache( $user->getName(), $result, ONLINESTATUSBAR_DELAYED_CACHE );
@@ -107,7 +115,10 @@ class OnlineStatusBar_StatusCheck {
 						$status = 'write';
 					}
 				} else if ( $user->getOption( 'OnlineStatusBar_away', true ) == true ) {
-					if ( $result < wfTimestamp( TS_MW, OnlineStatusBar::getTimeoutDate( ONLINESTATUSBAR_CK_AWAY, $user ) ) ) {
+					if ( $result < wfTimestamp( TS_MW,
+							OnlineStatusBar::getTimeoutDate( ONLINESTATUSBAR_CK_AWAY,
+							$user )
+						) ) {
 						$status = 'away';
 					}
 				}
@@ -211,8 +222,12 @@ class OnlineStatusBar_StatusCheck {
 		// Check if we actually need to delete something before we write to master
 		$dbr = wfGetDB( DB_SLAVE );
 		$time = OnlineStatusBar::getTimeoutDate();
-		$result = $dbr->selectField( 'online_status', 'timestamp', array( 'timestamp < ' . $dbr->addQuotes( $dbr->timestamp( $time ) ) ),
-			__METHOD__, array( 'LIMIT 1' ) );
+		$result = $dbr->selectField( 'online_status',
+				'timestamp',
+				array( 'timestamp < ' .
+				$dbr->addQuotes( $dbr->timestamp( $time ) ) ),
+				__METHOD__, array( 'LIMIT 1' )
+			);
 		if ( $result === false ) {
 			// no need for delete
 			return 0;
@@ -220,8 +235,12 @@ class OnlineStatusBar_StatusCheck {
 
 		// calculate time and convert it back to mediawiki format
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->delete( 'online_status', array( 'timestamp < ' . $dbw->addQuotes( $dbw->timestamp( $time ) ) ), __METHOD__ );
-		self::setCache( 'null', 'true', 'delete', 3600 ); // remember we deleted it for 1 hour so that we avoid calling this too many times
+		$dbw->delete( 'online_status',
+			array( 'timestamp < ' . $dbw->addQuotes( $dbw->timestamp( $time ) ) ),
+			__METHOD__
+		);
+		// remember we deleted it for 1 hour so that we avoid calling this too many times
+		self::setCache( 'null', 'true', 'delete', 3600 );
 		return 0;
 	}
 }
