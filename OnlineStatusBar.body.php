@@ -29,19 +29,6 @@ HTML;
 	}
 
 	/**
-	 * Returns image element
-	 *
-	 * @param $mode String
-	 * @param $mode_text String
-	 * @return string
-	 */
-	public static function GetImageHtml( $mode, $mode_text ) {
-		global $wgExtensionAssetsPath, $wgOnlineStatusBarIcon;
-		$icon = "$wgExtensionAssetsPath/OnlineStatusBar/{$wgOnlineStatusBarIcon[$mode]}";
-		return Html::element( 'img', array( 'src' => $icon, 'alt' => $mode_text ) );
-	}
-
-	/**
 	 * @param Title $title
 	 */
 	public static function getAnonFromTitle( Title $title ) {
