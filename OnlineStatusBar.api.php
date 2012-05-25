@@ -54,8 +54,8 @@ class ApiOnlineStatus extends ApiQueryBase {
 
 	public function getPossibleErrors() {
 		return array_merge( parent::getPossibleErrors(), array(
-		array( 'code' => 'unknown', 'info' => "User doesn't allow to display user status"),
-		));
+		array( 'code' => 'unknown', 'info' => "User doesn't allow to display user status" ),
+		) );
 	}
 
 	public function getExamples() {

@@ -52,7 +52,7 @@ class OnlineStatusBarHooks {
 	 */
 	public static function updateStatus() {
 		global $wgUser;
-		if (OnlineStatusBar::isValid( $wgUser )) {
+		if ( OnlineStatusBar::isValid( $wgUser ) ) {
 			// Update status
 			OnlineStatusBar_StatusCheck::updateStatus();
 			// Purge user page (optional)
@@ -150,7 +150,7 @@ class OnlineStatusBarHooks {
 	 * @return bool
 	 */
 	public static function setDefaultOptions( &$defaultOptions ) {
-		global $wgOnlineStatusBar_AwayTime, $wgOnlineStatusBarDefaultOnline ,$wgOnlineStatusBarDefaultEnabled;
+		global $wgOnlineStatusBar_AwayTime, $wgOnlineStatusBarDefaultOnline , $wgOnlineStatusBarDefaultEnabled;
 		// set defaults
 		$defaultOptions['OnlineStatusBar_autoupdate'] = false;
 		$defaultOptions['OnlineStatusBar_status'] = $wgOnlineStatusBarDefaultOnline;
@@ -200,7 +200,7 @@ class OnlineStatusBarHooks {
 		if ( User::isIP( $parser->getTitle()->getBaseText() ) && $result === false ) {
 			$result = OnlineStatusBar::getAnonFromString( $parser->getTitle()->getBaseText() );
 		}
-		
+
 		if ( $result === false ) {
 			$ret = 'unknown';
 			return true;
@@ -208,7 +208,7 @@ class OnlineStatusBarHooks {
 
 		// if user is tracked we need to remove parser cache so that page update when status change
 		if ( $result !== false  ) {
-			$parser->getOutput()->updateCacheExpiry($wgOnlineStatusBarCacheTime[$result[0]] * 60);
+			$parser->getOutput()->updateCacheExpiry( $wgOnlineStatusBarCacheTime[$result[0]] * 60 );
 		}
 
 		$ret = $result[0];

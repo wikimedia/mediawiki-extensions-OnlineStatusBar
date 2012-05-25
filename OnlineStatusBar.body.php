@@ -38,11 +38,11 @@ HTML;
 		}
 		$user = User::newFromId( 0 );
 		$user->setName( $title->getBaseText() );
-	
-		if (!($user instanceof User)) {
+
+		if ( !( $user instanceof User ) ) {
 			return false;
 		}
-	
+
 		return $user;
 	}
 
@@ -64,7 +64,7 @@ HTML;
 		$user->setName( $username );
 
 		// Check if something wrong didn't happen
-		if ( !($user instanceof User) ) {
+		if ( !( $user instanceof User ) ) {
 			return false;
 		}
 
@@ -80,10 +80,10 @@ HTML;
 	public static function getUserInfoFromTitle( Title $title ) {
 		$user = User::newFromName( $title->getBaseText() );
 		// check
-		if (!($user instanceof User)) {
+		if ( !( $user instanceof User ) ) {
 			return false;
 		}
-		if ( !self::isValid($user)) {
+		if ( !self::isValid( $user ) ) {
 			return false;
 		}
 
@@ -100,7 +100,7 @@ HTML;
 		// We create an user object using name of user parsed from title
 		$user = User::newFromName( $username );
 		// Invalid user
-		if ( !($user instanceof User) ) {
+		if ( !( $user instanceof User ) ) {
 			return false;
 		}
 		if ( !self::isValid( $user ) ) {
@@ -122,7 +122,7 @@ HTML;
 		// if so let's create new object
 		if (  $user_type instanceof User  ) {
 			$user = $user_type;
-		} elseif ( is_string( $user_type ) ){
+		} elseif ( is_string( $user_type ) ) {
 			$user = User::newFromName( $user_type );
 		} else {
 			return false;
@@ -131,8 +131,8 @@ HTML;
 		// check if something weird didn't happen
 		if ( $user instanceof User ) {
 			// purge both pages now
-			if ( $user->getOption('OnlineStatusBar_active', false) ) {
-				if ( $user->getOption('OnlineStatusBar_autoupdate', false) == true ) {
+			if ( $user->getOption( 'OnlineStatusBar_active', false ) ) {
+				if ( $user->getOption( 'OnlineStatusBar_autoupdate', false ) == true ) {
 					WikiPage::factory( $user->getUserPage() )->doPurge();
 					WikiPage::factory( $user->getTalkPage() )->doPurge();
 				}
@@ -151,8 +151,8 @@ HTML;
 	public static function getTimeoutDate( $checkType = false, $user = false ) {
 		global $wgOnlineStatusBar_AwayTime, $wgOnlineStatusBar_WriteTime, $wgOnlineStatusBar_LogoutTime;
 
-		if ($checkType != false) {
-			switch($checkType) {
+		if ( $checkType != false ) {
+			switch( $checkType ) {
 				case ONLINESTATUSBAR_CK_DELAYED:
 					return wfTimestamp( TS_UNIX ) - $wgOnlineStatusBar_WriteTime;
 				case ONLINESTATUSBAR_CK_AWAY:
@@ -163,7 +163,7 @@ HTML;
 								'OnlineStatusBar_awaytime',
 								$wgOnlineStatusBar_AwayTime
 								);
-					}	
+					}
 					return wfTimestamp( TS_UNIX ) - ( $time * 60 );
 			}
 		}

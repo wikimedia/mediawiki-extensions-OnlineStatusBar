@@ -56,7 +56,7 @@ class OnlineStatusBar_StatusCheck {
 		// get a value
 		return $wgMemc->get( $cache_key );
 	}
-	
+
 
 	/**
 	 * Status check
@@ -70,7 +70,7 @@ class OnlineStatusBar_StatusCheck {
 		if ( !$delayed_check ) {
 			// first try to use cache
 			$result = self::getCache( $user->getName(), ONLINESTATUSBAR_NORMAL_CACHE );
-			
+
 			if ( $result == '' ) {
 				$t_time = OnlineStatusBar::getTimeoutDate();
 				$dbr = wfGetDB( DB_SLAVE );
@@ -132,7 +132,7 @@ class OnlineStatusBar_StatusCheck {
 			}
 		}
 
-		if ( $status == 'hidden' && !($delayed_check) ) {
+		if ( $status == 'hidden' && !( $delayed_check ) ) {
 			$status = $wgOnlineStatusBarDefaultOffline;
 		}
 
@@ -182,7 +182,7 @@ class OnlineStatusBar_StatusCheck {
 	public static function updateStatus() {
 		global $wgUser, $wgOnlineStatusBarDefaultOffline;
 		// if anon users are not tracked and user is anon leave it
-		if (!OnlineStatusBar::isValid( $wgUser )) {
+		if ( !OnlineStatusBar::isValid( $wgUser ) ) {
 			return false;
 		}
 		$user_status = self::getStatus( $wgUser, true );

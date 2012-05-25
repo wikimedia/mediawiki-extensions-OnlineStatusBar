@@ -14,7 +14,7 @@ $messages = array();
  * @author John Du Hart
  */
 $messages['en'] = array(
-	// Description 
+	// Description
 	'onlinestatusbar-desc' => 'Status bar which shows whether a user is online, based on preferences, on their user page',
 	// Status bar text line (User is now Offline) etc.
 	'onlinestatusbar-line' => '$1 is now $2 $3',
