@@ -46,7 +46,7 @@ class OnlineStatusBar {
 	 *
 	 * @param string $username a user
 	 * @return array|bool Array containing the status and User object
-         */
+	 */
 	public static function getAnonFromString( $username ) {
 		global $wgOnlineStatusBarTrackIpUsers;
 
@@ -120,7 +120,7 @@ class OnlineStatusBar {
 	public static function purge( $user_type ) {
 		// First of all we need to know if we already have user object or just a name
 		// if so let's create new object
-		if (  $user_type instanceof User  ) {
+		if ( $user_type instanceof User ) {
 			$user = $user_type;
 		} elseif ( is_string( $user_type ) ) {
 			$user = User::newFromName( $user_type );

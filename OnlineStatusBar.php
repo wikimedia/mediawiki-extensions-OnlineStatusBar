@@ -27,23 +27,23 @@ $dir = dirname( __FILE__ );
 $wgExtensionMessagesFiles['OnlineStatusBar'] = "$dir/OnlineStatusBar.i18n.php";
 $wgExtensionMessagesFiles['OnlineStatusBarMagic'] = "$dir/OnlineStatusBar.i18n.magic.php";
 
-$wgResourceModules['ext.OnlineStatusBar'] = array (
-	'skinStyles' => array (
-		'default' => array ( 'resources/OnlineStatusBarDefault.css' ),
-		'chick' => array ( 'resources/OnlineStatusBarChick.css' ),
-		'vector' => array ( 'resources/OnlineStatusBarVector.css' ),
-		'modern' => array ( 'resources/OnlineStatusBarModern.css' ),
-		'standard' => array ( 'resources/OnlineStatusBarStandard.css' ),
-		'monobook' => array ( 'resources/OnlineStatusBarMonobook.css' ),
-		'simple' => array ( 'resources/OnlineStatusBarSimple.css' ),
-		'cologneblue' => array ( 'resources/OnlineStatusBarCologneBlue.css' ),
-		'nostalgia' => array ( 'resources/OnlineStatusBarNostalgia.css' ),
+$wgResourceModules['ext.OnlineStatusBar'] = array(
+	'skinStyles' => array(
+		'default' => array( 'resources/OnlineStatusBarDefault.css' ),
+		'chick' => array( 'resources/OnlineStatusBarChick.css' ),
+		'vector' => array( 'resources/OnlineStatusBarVector.css' ),
+		'modern' => array( 'resources/OnlineStatusBarModern.css' ),
+		'standard' => array( 'resources/OnlineStatusBarStandard.css' ),
+		'monobook' => array( 'resources/OnlineStatusBarMonobook.css' ),
+		'simple' => array( 'resources/OnlineStatusBarSimple.css' ),
+		'cologneblue' => array( 'resources/OnlineStatusBarCologneBlue.css' ),
+		'nostalgia' => array( 'resources/OnlineStatusBarNostalgia.css' ),
 	),
 	'styles' => 'resources/OnlineStatusBar.css',
 	'scripts' => 'resources/ext.onlinestatusbar.js',
 	'localBasePath' => dirname ( __FILE__ ),
 	'remoteExtPath' => 'OnlineStatusBar',
-	'messages' => array (
+	'messages' => array(
 		'onlinestatusbar-status-offline',
 		'onlinestatusbar-status-online',
 		'onlinestatusbar-status-unknown',

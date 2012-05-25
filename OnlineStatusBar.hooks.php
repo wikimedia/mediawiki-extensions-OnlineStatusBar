@@ -210,7 +210,7 @@ class OnlineStatusBarHooks {
 		}
 
 		// if user is tracked we need to remove parser cache so that page update when status change
-		if ( $result !== false  ) {
+		if ( $result !== false ) {
 			$parser->getOutput()->updateCacheExpiry( $wgOnlineStatusBarCacheTime[$result[0]] * 60 );
 		}
 

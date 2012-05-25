@@ -166,11 +166,11 @@ class OnlineStatusBar_StatusCheck {
 		return false;
 	}
 
-	 /**
-	  * Delete user who logged out
-	  * @param $userName string
-	  * @return bool
-	  */
+	/**
+	 * Delete user who logged out
+	 * @param $userName string
+	 * @return bool
+	 */
 	static function deleteStatus( $userName ) {
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->delete( 'online_status', array( 'username' => $userName ), __METHOD__ ); // delete user
@@ -182,10 +182,10 @@ class OnlineStatusBar_StatusCheck {
 		return true;
 	}
 
-	 /**
-	  * Update status of user
-	  * @return bool
-	  */
+	/**
+	 * Update status of user
+	 * @return bool
+	 */
 	public static function updateStatus() {
 		global $wgUser, $wgOnlineStatusBarDefaultOffline;
 
