@@ -29,7 +29,7 @@ $wgExtensionMessagesFiles['OnlineStatusBarMagic'] = "$dir/OnlineStatusBar.i18n.m
 
 $wgResourceModules['ext.OnlineStatusBar'] = array (
 	'skinStyles' => array (
-		'default' => array ( 'resources/OnlineStatusBar.css' ),
+		'default' => array ( 'resources/OnlineStatusBarDefault.css' ),
 		'chick' => array ( 'resources/OnlineStatusBarChick.css' ),
 		'vector' => array ( 'resources/OnlineStatusBarVector.css'),
 		'modern' => array ( 'resources/OnlineStatusBarModern.css' ),
@@ -39,6 +39,7 @@ $wgResourceModules['ext.OnlineStatusBar'] = array (
 		'cologneblue' => array ( 'resources/OnlineStatusBarCologneBlue.css' ),
 		'nostalgia' => array ( 'resources/OnlineStatusBarNostalgia.css' ),
 	),
+	'styles' => 'resources/OnlineStatusBar.css',
 	'scripts' => 'resources/ext.onlinestatusbar.js',
 	'localBasePath' => dirname ( __FILE__ ),
 	'remoteExtPath' => 'OnlineStatusBar',

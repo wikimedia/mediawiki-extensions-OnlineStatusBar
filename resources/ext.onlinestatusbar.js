@@ -1,43 +1,59 @@
-// script of Online Status Bar extension
-// created by Brion Vibber and Petr Bena
+/**
+ * OnlineStatusBar front-end.
+ *
+ * @file
+ * @author Brion Vibber
+ * @author Petr Bena
+ * @author Trevor Parscal
+ */
 
-$(function() {
+jQuery( function() {
 
-var $statusbar = $('#status-top'),
-	$iconbar = $('.onlinestatusbaricon');
+var $statusbar = $( '#status-top' ),
+	$iconbar = $( '.onlinestatusbaricon' ),
+	imagePath = mw.config.get( 'wgExtensionAssetsPath' ) +
+		'/OnlineStatusBar/resources/images/status',
+	statusImages = {
+		'offline': imagePath + 'red.png',
+		'online': imagePath + 'green.png',
+		'away': imagePath + 'orange.png',
+		'busy': imagePath + 'orange.png'
+	},
+	apiUrl = mw.config.get( 'wgScriptPath' ) + '/api' + mw.config.get( 'wgScriptExtension' ),
+	// WARNING: This way of determining a username is limited to user pages and user talk pages
+	username = mw.config.get( 'wgTitle' );
 
-// Only do the rest if we have the statusbar!
-if ($statusbar.length > 0) {
-	function updateOnlineStatusBar() {
-		// ... code to fetch and update
-		$.ajax({
-			url: mw.config.get('wgScriptPath') + '/api' + mw.config.get('wgScriptExtension'),
-			data: {
-				action: "query",
-				prop: "onlinestatus",
-				onlinestatususer: mw.config.get('wgTitle'),
-				format: 'json'
-			},
-			success: function( data ) {
-				// code to update the statusbar based on the returned message
-				var statusMap = {
-					offline:'red',
-					online:'green',
-					away:'orange',
-					busy:'orange'
-				};
-				var imgName = statusMap[data.onlinestatus.result] + '.png';
-				var $icon = mw.html.element('img', {
-					src: mw.config.values.wgExtensionAssetsPath + "/OnlineStatusBar/resources/images/status" + imgName
-				});
-				$statusbar.html(mw.msg('onlinestatusbar-line', mw.config.get('wgTitle'),$icon,mw.msg('onlinestatusbar-status-' + data.onlinestatus.result)));
-			}
-		});
-	}
+/**
+ * Fetch the status of the user that owns this page or talk page and update the status bar.
+ *
+ * @function
+ */
+function updateOnlineStatusBar() {
+	$.ajax( {
+		'url': apiUrl,
+		'data': {
+			'action': 'query',
+			'prop': 'onlinestatus',
+			'onlinestatususer': username,
+			'format': 'json'
+		},
+		'success': function( data ) {
+			// Update the statusbar
+			var status = data.onlinestatus.result,
+				image = mw.html.element( 'img', { 'src': statusImages[status] } ),
+				text = mw.msg( 'onlinestatusbar-status-' + status );
+			$statusbar.html( mw.msg( 'onlinestatusbar-line', username, image, text ) );
+		}
+	} );
+}
 
+// Only intialize the status bar if we are on the right page - this is controlled on the server side
+// so the presence of an element with #status-top is sufficient proof we are on the right page
+if ( $statusbar.length > 0 ) {
 	// Update the status every couple minutes if we leave the page open
-	window.setInterval(updateOnlineStatusBar, 120 * 1000);
+	setInterval( updateOnlineStatusBar, 120 * 1000 );
+	// Update immediately as well
 	updateOnlineStatusBar();
 }
 
-});
+} );

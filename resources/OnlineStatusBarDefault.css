@@ -1,11 +1,11 @@
-/* OnlineStatusBar Styles for Vector */
+/* OnlineStatusBar Styles for other skins */
 
 .onlinestatusbartop {
-	top: -2em;
+	top: 2em;
 	margin-right: 0;
 }
 
 .onlinestatusbarbody {
 	right: 0;
-	margin-top: -10px;
+	margin-top: 0;
 }
