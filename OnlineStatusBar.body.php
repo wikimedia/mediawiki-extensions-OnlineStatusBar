@@ -1,9 +1,4 @@
 <?php
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo "This is a part of mediawiki and can't be started separately";
-	die();
-}
-
 /**
  * Main file of Online status bar extension.
  *
@@ -21,11 +16,9 @@ class OnlineStatusBar {
 	 * return HTML
 	 **/
 	public static function getStatusBarHtml() {
-		return <<<HTML
-<div class="onlinestatusbarbody metadata onlinestatusbartop" id="status-top">
+		return '<div class="onlinestatusbarbody metadata onlinestatusbartop" id="status-top">
 <div class="onlinestatusbaricon">
-</div></div>
-HTML;
+</div></div>';
 	}
 
 	/**
@@ -33,9 +26,11 @@ HTML;
 	 */
 	public static function getAnonFromTitle( Title $title ) {
 		global $wgOnlineStatusBarTrackIpUsers;
+
 		if ( $wgOnlineStatusBarTrackIpUsers == false ) {
 			return false;
 		}
+
 		$user = User::newFromId( 0 );
 		$user->setName( $title->getBaseText() );
 
@@ -54,6 +49,7 @@ HTML;
          */
 	public static function getAnonFromString( $username ) {
 		global $wgOnlineStatusBarTrackIpUsers;
+
 		// if user is anon and we don't track them stop
 		if ( $wgOnlineStatusBarTrackIpUsers == false ) {
 			return false;
@@ -79,10 +75,12 @@ HTML;
 	 */
 	public static function getUserInfoFromTitle( Title $title ) {
 		$user = User::newFromName( $title->getBaseText() );
+
 		// check
 		if ( !( $user instanceof User ) ) {
 			return false;
 		}
+
 		if ( !self::isValid( $user ) ) {
 			return false;
 		}
@@ -99,10 +97,12 @@ HTML;
 	public static function getUserInfoFromString( $username ) {
 		// We create an user object using name of user parsed from title
 		$user = User::newFromName( $username );
+
 		// Invalid user
 		if ( !( $user instanceof User ) ) {
 			return false;
 		}
+
 		if ( !self::isValid( $user ) ) {
 			return false;
 		}
@@ -141,7 +141,6 @@ HTML;
 		return true;
 	}
 
-
 	/**
 	 * @param $delayed
 	 * @param $away
@@ -160,9 +159,9 @@ HTML;
 						$time = $wgOnlineStatusBar_AwayTime;
 					} else {
 						$time = $user->getOption(
-								'OnlineStatusBar_awaytime',
-								$wgOnlineStatusBar_AwayTime
-								);
+							'OnlineStatusBar_awaytime',
+							$wgOnlineStatusBar_AwayTime
+						);
 					}
 					return wfTimestamp( TS_UNIX ) - ( $time * 60 );
 			}

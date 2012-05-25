@@ -3,4 +3,3 @@ CREATE TABLE /*$wgDBprefix*/online_status (
 	`timestamp` binary(14) NOT NULL default '19700101000000',
 	PRIMARY KEY USING HASH (`username`)
 ) ENGINE=MEMORY;
-

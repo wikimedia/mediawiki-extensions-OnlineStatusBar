@@ -1,9 +1,4 @@
 <?php
-if ( !defined( 'MEDIAWIKI' ) ) {
-	echo "This is a part of mediawiki and can't be started separately";
-	die();
-}
-
 /**
  * Hooks for OnlineStatusBar api's
  *
@@ -18,10 +13,12 @@ class ApiOnlineStatus extends ApiQueryBase {
 	public function execute() {
 		$params = $this->extractRequestParams();
 		$result = OnlineStatusBar::getUserInfoFromString( $params['user'] );
+
 		// if user is IP and we track them
 		if ( User::isIP( $params['user'] ) && $result === false ) {
 			$result = OnlineStatusBar::getAnonFromString( $params['user'] );
 		}
+
 		if ( $result === false ) {
 			$ret = 'unknown';
 		} else {
@@ -29,7 +26,8 @@ class ApiOnlineStatus extends ApiQueryBase {
 		}
 
 		$this->getResult()->addValue(
-			null, $this->getModuleName(), array( 'result' => $ret ) );
+			null, $this->getModuleName(), array( 'result' => $ret )
+		);
 	}
 
 	public function getAllowedParams() {
@@ -54,13 +52,13 @@ class ApiOnlineStatus extends ApiQueryBase {
 
 	public function getPossibleErrors() {
 		return array_merge( parent::getPossibleErrors(), array(
-		array( 'code' => 'unknown', 'info' => "User doesn't allow to display user status" ),
+			array( 'code' => 'unknown', 'info' => "User doesn't allow to display user status" ),
 		) );
 	}
 
 	public function getExamples() {
 		return array(
-		'api.php?action=query&prop=onlinestatus&onlinestatususer=Petrb',
+			'api.php?action=query&prop=onlinestatus&onlinestatususer=Petrb',
 		);
 	}
 
