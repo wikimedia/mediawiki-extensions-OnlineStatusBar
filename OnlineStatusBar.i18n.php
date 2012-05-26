@@ -32,11 +32,11 @@ $messages['en'] = array(
 	'prefs-onlinestatus' => 'Online status',
 	// Message in config
 	'onlinestatusbar-hide' => 'Hide the status bar on user pages in order to use just the magic word (For advanced users)',
-	'onlinestatusbar-status-online' => 'on-line',
+	'onlinestatusbar-status-online' => 'online',
 	'onlinestatusbar-status-busy' => 'busy',
 	'onlinestatusbar-status-away' => 'away',
 	'onlinestatusbar-status-offline' => 'offline',
-	'onlinestatusbar-status-uknown' => 'status is unknown',
+	'onlinestatusbar-status-unknown' => 'status is unknown',
 	'onlinestatusbar-status-hidden' => 'hidden',
 );
 
@@ -64,7 +64,7 @@ $messages['qqq'] = array(
 	'onlinestatusbar-status-hidden' => 'Status for users who mark themselves as hidden (used on preferences only)',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
@@ -112,7 +112,7 @@ $messages['de'] = array(
 	'onlinestatusbar-status-hidden' => 'Versteckt',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form))
  * @author Kghbln
  */
 $messages['de-formal'] = array(

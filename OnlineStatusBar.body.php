@@ -16,9 +16,7 @@ class OnlineStatusBar {
 	 * return HTML
 	 **/
 	public static function getStatusBarHtml() {
-		return '<div class="onlinestatusbarbody metadata onlinestatusbartop" id="status-top">
-<div class="onlinestatusbaricon">
-</div></div>';
+		return '<div class="onlinestatusbar-pagetop onlinestatusbar-field metadata"></div>';
 	}
 
 	/**

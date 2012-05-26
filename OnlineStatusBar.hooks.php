@@ -93,6 +93,7 @@ class OnlineStatusBarHooks {
 		}
 		$context = $article->getContext();
 		$context->getOutput()->addHtml( OnlineStatusBar::getStatusBarHtml() );
+		$context->getOutput()->addModules( 'ext.OnlineStatusBar' );
 
 		return true;
 	}
@@ -162,16 +163,6 @@ class OnlineStatusBarHooks {
 		$defaultOptions['OnlineStatusBar_hide'] = false;
 		$defaultOptions['OnlineStatusBar_awaytime'] = $wgOnlineStatusBar_AwayTime;
 		// quit
-		return true;
-	}
-
-	/**
-	 * @param $out OutputPage
-	 * @param $skin Skin
-	 * @return bool
-	 */
-	public static function stylePage( &$out, &$skin ) {
-		$out->addModules( 'ext.OnlineStatusBar' );
 		return true;
 	}
 

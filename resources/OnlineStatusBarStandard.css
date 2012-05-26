@@ -1,11 +1,8 @@
 /* OnlineStatusBar Styles for Standard */
 
-.onlinestatusbartop {
+.onlinestatusbar-pagetop {
 	top: 4em;
-	margin-right: 4px;
-}
-
-.onlinestatusbarbody {
 	right: 0;
-	margin-top: 6px;
+	margin-top: 0.5em;
+	margin-right: 1em;
 }

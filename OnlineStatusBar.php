@@ -16,7 +16,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
-	'name' => 'Online status bar',
+	'name' => 'Online Status Bar',
 	'version' => '1.1.0',
 	'author' => array( 'Petr Bena' ),
 	'descriptionmsg' => 'onlinestatusbar-desc',
@@ -28,6 +28,7 @@ $wgExtensionMessagesFiles['OnlineStatusBar'] = "$dir/OnlineStatusBar.i18n.php";
 $wgExtensionMessagesFiles['OnlineStatusBarMagic'] = "$dir/OnlineStatusBar.i18n.magic.php";
 
 $wgResourceModules['ext.OnlineStatusBar'] = array(
+	'styles' => 'resources/OnlineStatusBar.css',
 	'skinStyles' => array(
 		'default' => array( 'resources/OnlineStatusBarDefault.css' ),
 		'chick' => array( 'resources/OnlineStatusBarChick.css' ),
@@ -39,18 +40,20 @@ $wgResourceModules['ext.OnlineStatusBar'] = array(
 		'cologneblue' => array( 'resources/OnlineStatusBarCologneBlue.css' ),
 		'nostalgia' => array( 'resources/OnlineStatusBarNostalgia.css' ),
 	),
-	'styles' => 'resources/OnlineStatusBar.css',
 	'scripts' => 'resources/ext.onlinestatusbar.js',
-	'localBasePath' => dirname ( __FILE__ ),
-	'remoteExtPath' => 'OnlineStatusBar',
+	'dependencies' => array(
+		'mediawiki.util',
+	),
 	'messages' => array(
 		'onlinestatusbar-status-offline',
 		'onlinestatusbar-status-online',
 		'onlinestatusbar-status-unknown',
 		'onlinestatusbar-status-busy',
 		'onlinestatusbar-status-away',
-		'onlinestatusbar-line'
+		'onlinestatusbar-line',
 	),
+	'localBasePath' => dirname( __FILE__ ),
+	'remoteExtPath' => 'OnlineStatusBar',
 );
 
 // Load other files of extension
@@ -93,14 +96,6 @@ $wgOnlineStatusBarCacheTime = array(
 	'away' => 10,
 	'offline' => 60,
 );
-// Icons
-$wgOnlineStatusBarIcon = array(
-	'online' => 'statusgreen.png',
-	'busy' => 'statusorange.png',
-	'away' => 'statusorange.png',
-	'hidden' => 'statusred.png',
-	'offline' => 'statusred.png',
-);
 
 $wgHooks['LoadExtensionSchemaUpdates'][] = 'OnlineStatusBarHooks::ckSchema';
 $wgHooks['UserLogout'][] = 'OnlineStatusBarHooks::logout';
@@ -108,6 +103,5 @@ $wgHooks['ArticleViewHeader'][] = 'OnlineStatusBarHooks::renderBar';
 $wgHooks['UserLoginComplete'][] = 'OnlineStatusBarHooks::updateStatus';
 $wgHooks['GetPreferences'][] = 'OnlineStatusBarHooks::preferencesHook';
 $wgHooks['UserGetDefaultOptions'][] = 'OnlineStatusBarHooks::setDefaultOptions';
-$wgHooks['BeforePageDisplay'][] = 'OnlineStatusBarHooks::stylePage';
 $wgHooks['MagicWordwgVariableIDs'][] = 'OnlineStatusBarHooks::magicWordSet';
 $wgHooks['ParserGetVariableValueSwitch'][] = 'OnlineStatusBarHooks::parserGetVariable';

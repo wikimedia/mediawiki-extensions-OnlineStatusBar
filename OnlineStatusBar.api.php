@@ -31,7 +31,7 @@ class ApiOnlineStatus extends ApiQueryBase {
 	}
 
 	public function getAllowedParams() {
-	// params
+		// params
 		return array(
 			'user' => array (
 					ApiBase::PARAM_TYPE => 'string',

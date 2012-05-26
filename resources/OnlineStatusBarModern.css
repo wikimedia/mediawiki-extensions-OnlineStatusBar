@@ -1,12 +1,9 @@
 /* OnlineStatusBar Styles for Modern */
 
-.onlinestatusbartop {
+.onlinestatusbar-pagetop {
 	top: 6px;
-	margin-right: 2px;
-	color: white;
-}
-
-.onlinestatusbarbody {
 	right: 0;
 	margin-top: -3px;
+	margin-right: 2px;
+	color: white;
 }

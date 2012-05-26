@@ -1,11 +1,8 @@
 /* OnlineStatusBar Styles for Chick */
 
-.onlinestatusbartop {
+.onlinestatusbar-pagetop {
 	top: 32px;
-	margin-right: 4px;
-}
-
-.onlinestatusbarbody {
 	right: 0;
 	margin-top: 0;
+	margin-right: 4px;
 }

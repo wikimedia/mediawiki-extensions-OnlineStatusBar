@@ -1,15 +1,6 @@
 /* OnlineStatusBar Styles for all skins */
 
-.onlinestatusbartop {
+.onlinestatusbar-pagetop {
 	position: absolute;
 	display: block;
-}
-
-.onlinestatusbaricon {
-	border: 0 solid black;
-	background: transparent;
-	float: right;
-	position: relative;
-	top: 0;
-	padding: 5px;
 }

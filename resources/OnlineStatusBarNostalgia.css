@@ -1,11 +1,8 @@
 /* OnlineStatusBar Styles for Nostalgia */
 
-.onlinestatusbartop {
+.onlinestatusbar-pagetop {
 	top: 18px;
-	margin-right: 261px;
-}
-
-.onlinestatusbarbody {
 	right: 0;
 	margin-top: 0;
+	margin-right: 261px;
 }

@@ -1,11 +1,7 @@
 /* OnlineStatusBar Styles for Vector */
 
-.onlinestatusbartop {
+.onlinestatusbar-pagetop {
 	top: -2em;
-	margin-right: 0;
-}
-
-.onlinestatusbarbody {
 	right: 0;
-	margin-top: -10px;
+	margin-right: 0;
 }

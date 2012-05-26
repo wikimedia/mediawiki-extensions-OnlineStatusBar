@@ -6,54 +6,70 @@
  * @author Petr Bena
  * @author Trevor Parscal
  */
+( function ( mw, $ ) {
 
-jQuery( function() {
+	$( document ).ready( function () {
+		var $statusbarFields = $( '.onlinestatusbar-field' ),
+			imagePath = mw.config.get( 'wgExtensionAssetsPath' ) +
+				'/OnlineStatusBar/resources/images',
+			statusImages = {
+				'offline': 'statusred.png',
+				'online': 'statusgreen.png',
+				'away': 'statusorange.png',
+				'busy': 'statusorange.png',
+				'unknown': 'statusgrey.png'
+			},
+			apiPath = mw.util.wikiScript( 'api' ),
+			// WARNING: This way of determining a username is limited to user pages and user talk pages
+			username = mw.config.get( 'wgTitle' );
 
-var $statusbar = $( '#status-top' ),
-	$iconbar = $( '.onlinestatusbaricon' ),
-	imagePath = mw.config.get( 'wgExtensionAssetsPath' ) +
-		'/OnlineStatusBar/resources/images/status',
-	statusImages = {
-		'offline': imagePath + 'red.png',
-		'online': imagePath + 'green.png',
-		'away': imagePath + 'orange.png',
-		'busy': imagePath + 'orange.png'
-	},
-	apiUrl = mw.config.get( 'wgScriptPath' ) + '/api' + mw.config.get( 'wgScriptExtension' ),
-	// WARNING: This way of determining a username is limited to user pages and user talk pages
-	username = mw.config.get( 'wgTitle' );
+		/**
+		 * Fetch the status of the user that owns this page or talk page and
+		 * update the status bar.
+		 * @return jqXHR
+		 */
+		function updateOnlineStatusBar() {
+			return $.ajax({
+				url: apiPath,
+				data: {
+					format: 'json',
+					action: 'query',
+					prop: 'onlinestatus',
+					onlinestatususer: username
+				}
+			}).done( function ( data ) {
+				var image, text,
+					status = data.onlinestatus.result;
 
-/**
- * Fetch the status of the user that owns this page or talk page and update the status bar.
- *
- * @function
- */
-function updateOnlineStatusBar() {
-	$.ajax( {
-		'url': apiUrl,
-		'data': {
-			'action': 'query',
-			'prop': 'onlinestatus',
-			'onlinestatususer': username,
-			'format': 'json'
-		},
-		'success': function( data ) {
-			// Update the statusbar
-			var status = data.onlinestatus.result,
-				image = mw.html.element( 'img', { 'src': statusImages[status] } ),
+				// Future proof: If new statuses are introduced,
+				// gracefully degrade by showing nothing in a cached js state.
+				// (otherwise it would try to insert a 404 error to ./images/undefined)
+				if ( statusImages[status] === undefined ) {
+					return;
+				}
+
+				image = mw.html.element( 'img', { src: imagePath + '/' + statusImages[status] } );
 				text = mw.msg( 'onlinestatusbar-status-' + status );
-			$statusbar.html( mw.msg( 'onlinestatusbar-line', username, image, text ) );
+
+				// Update the statusbar
+				$statusbarFields.html( mw.msg(
+					'onlinestatusbar-line',
+					mw.html.escape( username ), image, mw.html.escape( text )
+				) );
+			}).always( function () {
+				// Whether ajax succeeded or failed, once done, schedule the
+				// update (for if the user leaves the page open)
+				setTimeout( updateOnlineStatusBar, 2 * 60 * 1000 );
+			});
 		}
-	} );
-}
 
-// Only intialize the status bar if we are on the right page - this is controlled on the server side
-// so the presence of an element with #status-top is sufficient proof we are on the right page
-if ( $statusbar.length > 0 ) {
-	// Update the status every couple minutes if we leave the page open
-	setInterval( updateOnlineStatusBar, 120 * 1000 );
-	// Update immediately as well
-	updateOnlineStatusBar();
-}
+		// Only intialize the status bar if we are on the right page.
+		// This is controlled on the server side.
+		// Initialize if there is one or more of these body placeholders.
+		if ( $statusbarFields.length > 0 ) {
+			// Update now
+			updateOnlineStatusBar();
+		}
+	});
 
-} );
+}( mediaWiki, jQuery ) );
