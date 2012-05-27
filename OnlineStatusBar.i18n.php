@@ -309,7 +309,6 @@ $messages['ja'] = array(
 	'onlinestatusbar-status-busy' => '多忙',
 	'onlinestatusbar-status-away' => '退席中',
 	'onlinestatusbar-status-offline' => 'オフライン',
-	'onlinestatusbar-status-uknown' => '状態不明',
 	'onlinestatusbar-status-hidden' => '非表示',
 );
 
