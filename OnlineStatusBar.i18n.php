@@ -108,7 +108,7 @@ $messages['de'] = array(
 	'onlinestatusbar-status-busy' => 'Beschäftigt',
 	'onlinestatusbar-status-away' => 'Abwesend',
 	'onlinestatusbar-status-offline' => 'Offline',
-	'onlinestatusbar-status-uknown' => 'Status ist unbekannt',
+	'onlinestatusbar-status-unknown' => 'Status ist unbekannt',
 	'onlinestatusbar-status-hidden' => 'Versteckt',
 );
 
@@ -145,7 +145,7 @@ $messages['dsb'] = array(
 	'onlinestatusbar-status-busy' => 'Zabrany',
 	'onlinestatusbar-status-away' => 'Njepśibytny',
 	'onlinestatusbar-status-offline' => 'Offline',
-	'onlinestatusbar-status-uknown' => 'status jo njeznaty',
+	'onlinestatusbar-status-unknown' => 'status jo njeznaty',
 	'onlinestatusbar-status-hidden' => 'Schowany',
 );
 
@@ -191,7 +191,7 @@ $messages['fr'] = array(
 	'onlinestatusbar-status-busy' => 'Occupé',
 	'onlinestatusbar-status-away' => 'Parti',
 	'onlinestatusbar-status-offline' => 'Absent',
-	'onlinestatusbar-status-uknown' => 'statut inconnu',
+	'onlinestatusbar-status-unknown' => "l'état est inconnu",
 	'onlinestatusbar-status-hidden' => 'Masqué',
 );
 
@@ -225,7 +225,7 @@ $messages['gl'] = array(
 	'onlinestatusbar-status-busy' => 'Ocupado',
 	'onlinestatusbar-status-away' => 'Non dispoñible',
 	'onlinestatusbar-status-offline' => 'Desconectado',
-	'onlinestatusbar-status-uknown' => 'descoñécese o estado',
+	'onlinestatusbar-status-unknown' => 'descoñécese o estado',
 	'onlinestatusbar-status-hidden' => 'Agochado',
 );
 
@@ -267,7 +267,7 @@ $messages['hsb'] = array(
 	'onlinestatusbar-status-busy' => 'Ma dźěło',
 	'onlinestatusbar-status-away' => 'Preč',
 	'onlinestatusbar-status-offline' => 'Offline',
-	'onlinestatusbar-status-uknown' => 'status je njeznaty',
+	'onlinestatusbar-status-unknown' => 'status je njeznaty',
 	'onlinestatusbar-status-hidden' => 'Schowany',
 );
 
@@ -345,7 +345,7 @@ $messages['mk'] = array(
 	'onlinestatusbar-status-busy' => 'Зафатен',
 	'onlinestatusbar-status-away' => 'Отсутен',
 	'onlinestatusbar-status-offline' => 'Исклучен',
-	'onlinestatusbar-status-uknown' => 'статусот е непознат',
+	'onlinestatusbar-status-unknown' => 'статусот е непознат',
 	'onlinestatusbar-status-hidden' => 'Скриен',
 );
 
@@ -388,7 +388,7 @@ $messages['nl'] = array(
 	'onlinestatusbar-status-busy' => 'Druk',
 	'onlinestatusbar-status-away' => 'Weg',
 	'onlinestatusbar-status-offline' => 'Offline',
-	'onlinestatusbar-status-uknown' => 'status is onbekend',
+	'onlinestatusbar-status-unknown' => 'status is onbekend',
 	'onlinestatusbar-status-hidden' => 'Verborgen',
 );
 
