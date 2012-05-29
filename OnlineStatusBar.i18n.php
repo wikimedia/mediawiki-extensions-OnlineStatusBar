@@ -246,7 +246,7 @@ $messages['he'] = array(
 	'onlinestatusbar-status-busy' => 'עסוק',
 	'onlinestatusbar-status-away' => 'לא ליד מחשב',
 	'onlinestatusbar-status-offline' => 'לא באתר',
-	'onlinestatusbar-status-uknown' => 'המצב אינו ידוע',
+	'onlinestatusbar-status-unknown' => 'המצב אינו ידוע',
 	'onlinestatusbar-status-hidden' => 'מוסתר',
 );
 
