@@ -88,6 +88,7 @@ $messages['br'] = array(
 	'onlinestatusbar-status-busy' => 'Soulgarget',
 	'onlinestatusbar-status-away' => 'Er-maez',
 	'onlinestatusbar-status-offline' => 'Ezvezant',
+	'onlinestatusbar-status-unknown' => 'Statud dianav',
 	'onlinestatusbar-status-hidden' => 'Kuzhet',
 );
 
