@@ -78,7 +78,7 @@ $messages['be-tarask'] = array(
 	'prefs-onlinestatus' => 'Анлайн-статус',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  */
 $messages['br'] = array(
@@ -150,7 +150,7 @@ $messages['dsb'] = array(
 	'onlinestatusbar-status-hidden' => 'Schowany',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  */
 $messages['es'] = array(
@@ -167,11 +167,11 @@ $messages['es'] = array(
 	'onlinestatusbar-status-busy' => 'Ocupado',
 	'onlinestatusbar-status-away' => 'No disponible',
 	'onlinestatusbar-status-offline' => 'Desconectado',
-	'onlinestatusbar-status-uknown' => 'el estado es desconocido',
+	'onlinestatusbar-status-unknown' => 'el estado es desconocido',
 	'onlinestatusbar-status-hidden' => 'Oculto',
 );
 
-/** French (Français)
+/** French (français)
  * @author Crochet.david
  * @author DavidL
  * @author Gomoko
@@ -329,7 +329,7 @@ $messages['lb'] = array(
 	'onlinestatusbar-status-hidden' => 'Verstoppt',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
