@@ -272,7 +272,7 @@ $messages['hsb'] = array(
 	'onlinestatusbar-status-hidden' => 'Schowany',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -289,7 +289,7 @@ $messages['ia'] = array(
 	'onlinestatusbar-status-busy' => 'Occupate',
 	'onlinestatusbar-status-away' => 'Absente',
 	'onlinestatusbar-status-offline' => 'Foras de linea',
-	'onlinestatusbar-status-uknown' => 'stato es incognite',
+	'onlinestatusbar-status-unknown' => 'stato es incognite',
 	'onlinestatusbar-status-hidden' => 'Celate',
 );
 
@@ -367,7 +367,7 @@ $messages['ms'] = array(
 	'onlinestatusbar-status-busy' => 'Sibuk',
 	'onlinestatusbar-status-away' => 'Tiada',
 	'onlinestatusbar-status-offline' => 'Luar talian',
-	'onlinestatusbar-status-uknown' => 'status tidak diketahui',
+	'onlinestatusbar-status-unknown' => 'status tidak diketahui',
 	'onlinestatusbar-status-hidden' => 'Tersorok',
 );
 
