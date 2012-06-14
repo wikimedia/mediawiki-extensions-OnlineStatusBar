@@ -64,7 +64,7 @@ $messages['qqq'] = array(
 	'onlinestatusbar-status-hidden' => 'Status for users who mark themselves as hidden (used on preferences only)',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
@@ -113,7 +113,7 @@ $messages['de'] = array(
 	'onlinestatusbar-status-hidden' => 'Versteckt',
 );
 
-/** German (formal address) (Deutsch (Sie-Form))
+/** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author Kghbln
  */
 $messages['de-formal'] = array(
@@ -196,7 +196,7 @@ $messages['fr'] = array(
 	'onlinestatusbar-status-hidden' => 'Masqué',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -325,7 +325,6 @@ $messages['lb'] = array(
 	'onlinestatusbar-status-busy' => 'Beschäftegt',
 	'onlinestatusbar-status-away' => 'Net do',
 	'onlinestatusbar-status-offline' => 'Offline',
-	'onlinestatusbar-status-uknown' => 'Status onbekannt',
 	'onlinestatusbar-status-hidden' => 'Verstoppt',
 );
 
@@ -393,7 +392,7 @@ $messages['nl'] = array(
 	'onlinestatusbar-status-hidden' => 'Verborgen',
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  */
 $messages['pl'] = array(
@@ -410,7 +409,6 @@ $messages['pl'] = array(
 	'onlinestatusbar-status-busy' => 'Zajęty',
 	'onlinestatusbar-status-away' => 'Nieobecny',
 	'onlinestatusbar-status-offline' => 'Niedostępny',
-	'onlinestatusbar-status-uknown' => 'stan nieznany',
 	'onlinestatusbar-status-hidden' => 'Ukryty',
 );
 
