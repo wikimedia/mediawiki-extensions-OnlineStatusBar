@@ -409,6 +409,7 @@ $messages['pl'] = array(
 	'onlinestatusbar-status-busy' => 'Zajęty',
 	'onlinestatusbar-status-away' => 'Nieobecny',
 	'onlinestatusbar-status-offline' => 'Niedostępny',
+	'onlinestatusbar-status-unknown' => 'stan nieznany',
 	'onlinestatusbar-status-hidden' => 'Ukryty',
 );
 
