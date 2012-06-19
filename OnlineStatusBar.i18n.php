@@ -293,6 +293,24 @@ $messages['ia'] = array(
 	'onlinestatusbar-status-hidden' => 'Celate',
 );
 
+/** Italian (italiano)
+ * @author Beta16
+ */
+$messages['it'] = array(
+	'onlinestatusbar-line' => '$1 è ora $2 $3',
+	'onlinestatusbar-used' => 'Mostra il tuo stato online nella tua pagina utente',
+	'onlinestatusbar-away-time' => 'Quanti minuti prima di essere considerato lontano:',
+	'onlinestatusbar-status' => "Qual'è lo stato predefinito che vuoi usare:",
+	'onlinestatusbar-purge' => 'Aggiorna la pagina utente ogni volta che accedi o esci',
+	'prefs-onlinestatus' => 'Stato online',
+	'onlinestatusbar-status-online' => 'connesso',
+	'onlinestatusbar-status-busy' => 'occupato',
+	'onlinestatusbar-status-away' => 'lontano',
+	'onlinestatusbar-status-offline' => 'non connesso',
+	'onlinestatusbar-status-unknown' => 'stato sconosciuto',
+	'onlinestatusbar-status-hidden' => 'nascosto',
+);
+
 /** Japanese (日本語)
  * @author Shirayuki
  */
