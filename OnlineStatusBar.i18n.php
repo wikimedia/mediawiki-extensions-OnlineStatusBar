@@ -297,12 +297,15 @@ $messages['ia'] = array(
  * @author Beta16
  */
 $messages['it'] = array(
+	'onlinestatusbar-desc' => 'Barra di stato che mostra se un utente è online, in base delle preferenze, sulla loro pagina utente',
 	'onlinestatusbar-line' => '$1 è ora $2 $3',
 	'onlinestatusbar-used' => 'Mostra il tuo stato online nella tua pagina utente',
 	'onlinestatusbar-away-time' => 'Quanti minuti prima di essere considerato lontano:',
 	'onlinestatusbar-status' => "Qual'è lo stato predefinito che vuoi usare:",
+	'onlinestatusbar-away' => "Considera automaticamente come lontano dopo l'intervallo di tempo definito",
 	'onlinestatusbar-purge' => 'Aggiorna la pagina utente ogni volta che accedi o esci',
 	'prefs-onlinestatus' => 'Stato online',
+	'onlinestatusbar-hide' => 'Nascondi la barra di stato sulle pagine degli utenti, per poter utilizzare solo la magic word (per utenti esperti)',
 	'onlinestatusbar-status-online' => 'connesso',
 	'onlinestatusbar-status-busy' => 'occupato',
 	'onlinestatusbar-status-away' => 'lontano',
