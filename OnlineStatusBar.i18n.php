@@ -129,7 +129,7 @@ $messages['diq'] = array(
 	'onlinestatusbar-status-offline' => 'Çerxteber',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -209,7 +209,7 @@ $messages['frp'] = array(
 	'onlinestatusbar-status-hidden' => 'Cachiê',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -251,7 +251,7 @@ $messages['he'] = array(
 	'onlinestatusbar-status-hidden' => 'מוסתר',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
