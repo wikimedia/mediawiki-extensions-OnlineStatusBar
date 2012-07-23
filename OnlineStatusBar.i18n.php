@@ -341,11 +341,15 @@ $messages['lb'] = array(
 	'onlinestatusbar-line' => '$1 ass elo $2 $3',
 	'onlinestatusbar-used' => 'Ären online-Status op Ärer Benotzer-Säit weisen',
 	'onlinestatusbar-away-time' => "Minutte bis Dir als 'net do' markéiert gitt:",
+	'onlinestatusbar-status' => 'Wéi ass de Standard-Status deen Dir benotze wëllt:',
+	'onlinestatusbar-away' => 'Automatesch als net-do weisen no enger definéierter Zäit',
 	'onlinestatusbar-purge' => "De'Benotzersäit all kéier wann Dir Iech eran oder erausloggt eidel maachen",
+	'prefs-onlinestatus' => 'Online-Status',
 	'onlinestatusbar-status-online' => 'Online',
 	'onlinestatusbar-status-busy' => 'Beschäftegt',
 	'onlinestatusbar-status-away' => 'Net do',
 	'onlinestatusbar-status-offline' => 'Offline',
+	'onlinestatusbar-status-unknown' => 'Status ass onbekannt',
 	'onlinestatusbar-status-hidden' => 'Verstoppt',
 );
 
@@ -441,6 +445,27 @@ $messages['pl'] = array(
 $messages['te'] = array(
 	'onlinestatusbar-line' => '$1 ippudu $2 $3',
 	'onlinestatusbar-used' => 'మీరు ఆన్‌లైనులో ఉన్నట్టు ఇతరులుకు చూపించాలా?',
+);
+
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'onlinestatusbar-desc' => 'Bareta ng katayuan na nagpapakita kung ang isang tagagamit ay naka-Internet, na nakabatay sa mga kanaisan, na nasa ibabaw ng kanilang pahina ng tagagamit',
+	'onlinestatusbar-line' => 'Ang $1 ay kasalukuyang $2 $3 na',
+	'onlinestatusbar-used' => 'Ipakita ang iyong katayuang nasa Internet na nasa mga pahina mo ng tagagamit',
+	'onlinestatusbar-away-time' => 'Ilang mga minuto hanggang sa markahan ka bilang wala rito at malayo:',
+	'onlinestatusbar-status' => 'Ano ang nais mong gamitin na likas na nakatakdang katayuan:',
+	'onlinestatusbar-away' => 'Kusang ituring bilang wala rito at malayo pagkaraan ng tinukoy na agwat',
+	'onlinestatusbar-purge' => 'Purgahin ang pahina ng tagagamit tuwing lalagda ka o aalis mula sa pagkakalagda',
+	'prefs-onlinestatus' => 'Katayuan sa Internet',
+	'onlinestatusbar-hide' => 'Itago ang bareta ng katayuan na nasa mga pahina ng tagagamit upang gamitin lamang ang salitang masalamangka (Para sa mas masusulong na mga tagagamit)',
+	'onlinestatusbar-status-online' => 'nakaugnay sa Internet',
+	'onlinestatusbar-status-busy' => 'abala',
+	'onlinestatusbar-status-away' => 'wala at malayo',
+	'onlinestatusbar-status-offline' => 'hindi nakaugnay sa Internet',
+	'onlinestatusbar-status-unknown' => 'hindi alam ang katayuan',
+	'onlinestatusbar-status-hidden' => 'nakatago',
 );
 
 /** Turkish (Türkçe)
