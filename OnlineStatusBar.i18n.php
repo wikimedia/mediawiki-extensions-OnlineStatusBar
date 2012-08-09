@@ -171,6 +171,18 @@ $messages['es'] = array(
 	'onlinestatusbar-status-hidden' => 'Oculto',
 );
 
+/** Persian (فارسی)
+ * @author Mjbmr
+ */
+$messages['fa'] = array(
+	'onlinestatusbar-status-online' => 'برخط',
+	'onlinestatusbar-status-busy' => 'گرفتار',
+	'onlinestatusbar-status-away' => 'خارج از دسترس',
+	'onlinestatusbar-status-offline' => 'برون‌خط',
+	'onlinestatusbar-status-unknown' => 'وضعیت ناشناخته است',
+	'onlinestatusbar-status-hidden' => 'پنهان',
+);
+
 /** French (français)
  * @author Crochet.david
  * @author DavidL
@@ -473,5 +485,12 @@ $messages['tl'] = array(
  */
 $messages['tr'] = array(
 	'onlinestatusbar-status-offline' => 'Çevrimdışı',
+);
+
+/** Traditional Chinese (‪中文（繁體）‬)
+ * @author Simon Shek
+ */
+$messages['zh-hant'] = array(
+	'onlinestatusbar-status-hidden' => '隱藏',
 );
 
