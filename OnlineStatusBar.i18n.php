@@ -346,6 +346,15 @@ $messages['ja'] = array(
 	'onlinestatusbar-status-hidden' => '非表示',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'onlinestatusbar-status-busy' => 'დაკავებული',
+	'onlinestatusbar-status-unknown' => 'სტატუსი უცნობია',
+	'onlinestatusbar-status-hidden' => 'დამალული',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
@@ -448,6 +457,18 @@ $messages['pl'] = array(
 	'onlinestatusbar-status-offline' => 'Niedostępny',
 	'onlinestatusbar-status-unknown' => 'stan nieznany',
 	'onlinestatusbar-status-hidden' => 'Ukryty',
+);
+
+/** Romanian (română)
+ * @author Stelistcristi
+ */
+$messages['ro'] = array(
+	'onlinestatusbar-status-online' => 'conectat',
+	'onlinestatusbar-status-busy' => 'ocupat',
+	'onlinestatusbar-status-away' => 'plecat',
+	'onlinestatusbar-status-offline' => 'deconectat',
+	'onlinestatusbar-status-unknown' => 'starea este necunoscută',
+	'onlinestatusbar-status-hidden' => 'ascuns',
 );
 
 /** Telugu (తెలుగు)
