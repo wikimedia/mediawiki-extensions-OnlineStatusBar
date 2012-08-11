@@ -466,6 +466,19 @@ $messages['pl'] = array(
 	'onlinestatusbar-status-hidden' => 'Ukryty',
 );
 
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'prefs-onlinestatus' => 'پرليکه دريځ',
+	'onlinestatusbar-status-online' => 'پر ليکه',
+	'onlinestatusbar-status-busy' => 'بوخت',
+	'onlinestatusbar-status-away' => 'ليرې',
+	'onlinestatusbar-status-offline' => 'پرې ليکه',
+	'onlinestatusbar-status-unknown' => 'دريځ ناڅرګنده دی',
+	'onlinestatusbar-status-hidden' => 'پټ',
+);
+
 /** Romanian (română)
  * @author Stelistcristi
  */
@@ -476,6 +489,18 @@ $messages['ro'] = array(
 	'onlinestatusbar-status-offline' => 'deconectat',
 	'onlinestatusbar-status-unknown' => 'starea este necunoscută',
 	'onlinestatusbar-status-hidden' => 'ascuns',
+);
+
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'prefs-onlinestatus' => 'මාර්ගගත තත්වය',
+	'onlinestatusbar-status-online' => 'මාර්ගගතයි',
+	'onlinestatusbar-status-busy' => 'කාර්යබහුලයි',
+	'onlinestatusbar-status-offline' => 'මාර්ගඅපගතයි',
+	'onlinestatusbar-status-unknown' => 'තත්වය නොදනියි',
+	'onlinestatusbar-status-hidden' => 'සඟවනලද',
 );
 
 /** Telugu (తెలుగు)
