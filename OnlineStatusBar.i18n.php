@@ -355,6 +355,13 @@ $messages['ka'] = array(
 	'onlinestatusbar-status-hidden' => 'დამალული',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'onlinestatusbar-desc' => 'Määt ene Zohschtandsaanzeijer op Metmaacher-Sigge müjjelesch, woh aanjezeisch weed, ov dä onllain es, afhängesch vun däm Metmaacher singe Enschtällonge.',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
