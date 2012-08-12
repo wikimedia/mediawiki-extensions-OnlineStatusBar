@@ -64,6 +64,18 @@ $messages['qqq'] = array(
 	'onlinestatusbar-status-hidden' => 'Status for users who mark themselves as hidden (used on preferences only)',
 );
 
+/** Afrikaans (Afrikaans)
+ * @author Naudefj
+ */
+$messages['af'] = array(
+	'onlinestatusbar-status-online' => 'aanlyn',
+	'onlinestatusbar-status-busy' => 'besig',
+	'onlinestatusbar-status-away' => 'weg',
+	'onlinestatusbar-status-offline' => 'aflyn',
+	'onlinestatusbar-status-unknown' => 'status is onbekend',
+	'onlinestatusbar-status-hidden' => 'versteek',
+);
+
 /** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author Wizardist
  */
@@ -350,7 +362,12 @@ $messages['ja'] = array(
  * @author David1010
  */
 $messages['ka'] = array(
+	'onlinestatusbar-line' => '$1 ახლა არის $2 $3',
+	'prefs-onlinestatus' => 'ონლაინ სტატუსი',
+	'onlinestatusbar-status-online' => 'ქსელში',
 	'onlinestatusbar-status-busy' => 'დაკავებული',
+	'onlinestatusbar-status-away' => 'გასული',
+	'onlinestatusbar-status-offline' => 'არ არის ქსელში',
 	'onlinestatusbar-status-unknown' => 'სტატუსი უცნობია',
 	'onlinestatusbar-status-hidden' => 'დამალული',
 );
@@ -501,6 +518,17 @@ $messages['si'] = array(
 	'onlinestatusbar-status-offline' => 'මාර්ගඅපගතයි',
 	'onlinestatusbar-status-unknown' => 'තත්වය නොදනියි',
 	'onlinestatusbar-status-hidden' => 'සඟවනලද',
+);
+
+/** Tamil (தமிழ்)
+ * @author Karthi.dr
+ * @author Shanmugamp7
+ */
+$messages['ta'] = array(
+	'onlinestatusbar-used' => 'உங்கள் இணைப்பிலுள்ள நிலையை உங்கள் பயனர் பக்கத்தில் தெரிவிக்கவும்',
+	'onlinestatusbar-status' => 'நீங்கள் பயன்படுத்த விரும்பும் இயல்புநிலை நிலை என்ன:',
+	'onlinestatusbar-status-online' => 'இணைப்பில்',
+	'onlinestatusbar-status-offline' => 'இணைப்பிலில்லை',
 );
 
 /** Telugu (తెలుగు)
