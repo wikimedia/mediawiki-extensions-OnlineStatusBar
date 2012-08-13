@@ -183,6 +183,18 @@ $messages['es'] = array(
 	'onlinestatusbar-status-hidden' => 'Oculto',
 );
 
+/** Estonian (eesti)
+ * @author Avjoska
+ */
+$messages['et'] = array(
+	'onlinestatusbar-status-online' => 'arvuti juures',
+	'onlinestatusbar-status-busy' => 'hõivatud',
+	'onlinestatusbar-status-away' => 'eemal',
+	'onlinestatusbar-status-offline' => 'ühenduseta',
+	'onlinestatusbar-status-unknown' => 'olek on teadmata',
+	'onlinestatusbar-status-hidden' => 'peidetud',
+);
+
 /** Persian (فارسی)
  * @author Mjbmr
  */
@@ -363,6 +375,8 @@ $messages['ja'] = array(
  */
 $messages['ka'] = array(
 	'onlinestatusbar-line' => '$1 ახლა არის $2 $3',
+	'onlinestatusbar-used' => 'თქვენი მიმდინარე სტატუსის გამოსახვა, თქვენი მომხმარებლის გვერდზე',
+	'onlinestatusbar-status' => 'რომელია სტანდარტული სტატუსი რომლის გამოყენებაც გსურთ:',
 	'prefs-onlinestatus' => 'ონლაინ სტატუსი',
 	'onlinestatusbar-status-online' => 'ქსელში',
 	'onlinestatusbar-status-busy' => 'დაკავებული',
@@ -518,6 +532,19 @@ $messages['si'] = array(
 	'onlinestatusbar-status-offline' => 'මාර්ගඅපගතයි',
 	'onlinestatusbar-status-unknown' => 'තත්වය නොදනියි',
 	'onlinestatusbar-status-hidden' => 'සඟවනලද',
+);
+
+/** Swedish (svenska)
+ * @author WikiPhoenix
+ */
+$messages['sv'] = array(
+	'prefs-onlinestatus' => 'Onlinestatus',
+	'onlinestatusbar-status-online' => 'ansluten',
+	'onlinestatusbar-status-busy' => 'upptagen',
+	'onlinestatusbar-status-away' => 'borta',
+	'onlinestatusbar-status-offline' => 'inte ansluten',
+	'onlinestatusbar-status-unknown' => 'status är okänd',
+	'onlinestatusbar-status-hidden' => 'dold',
 );
 
 /** Tamil (தமிழ்)
