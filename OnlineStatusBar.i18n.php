@@ -242,6 +242,7 @@ $messages['frp'] = array(
 	'onlinestatusbar-status-busy' => 'Ocupo',
 	'onlinestatusbar-status-away' => 'Viâ',
 	'onlinestatusbar-status-offline' => 'Absent',
+	'onlinestatusbar-status-unknown' => 'l’ètat est encognu',
 	'onlinestatusbar-status-hidden' => 'Cachiê',
 );
 
