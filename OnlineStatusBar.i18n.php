@@ -207,6 +207,17 @@ $messages['fa'] = array(
 	'onlinestatusbar-status-hidden' => 'پنهان',
 );
 
+/** Finnish (suomi)
+ * @author Beluga
+ */
+$messages['fi'] = array(
+	'onlinestatusbar-status-online' => 'kirjautuneena',
+	'onlinestatusbar-status-away' => 'poissa',
+	'onlinestatusbar-status-offline' => 'ei kirjautuneena',
+	'onlinestatusbar-status-unknown' => 'tila tuntematon',
+	'onlinestatusbar-status-hidden' => 'piilotettu',
+);
+
 /** French (français)
  * @author Crochet.david
  * @author DavidL
@@ -594,6 +605,19 @@ $messages['tl'] = array(
  */
 $messages['tr'] = array(
 	'onlinestatusbar-status-offline' => 'Çevrimdışı',
+);
+
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'prefs-onlinestatus' => 'آن لائن کی حیثیت',
+	'onlinestatusbar-status-online' => 'ڈاؤن لوڈ ، اتارنا',
+	'onlinestatusbar-status-busy' => 'مصروف',
+	'onlinestatusbar-status-away' => 'دور',
+	'onlinestatusbar-status-offline' => 'آف لائن',
+	'onlinestatusbar-status-unknown' => 'کی کیفیت نامعلوم ہے',
+	'onlinestatusbar-status-hidden' => 'پوشیدہ',
 );
 
 /** Traditional Chinese (‪中文（繁體）‬)
