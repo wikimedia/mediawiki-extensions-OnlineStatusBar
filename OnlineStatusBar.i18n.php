@@ -490,6 +490,7 @@ $messages['nl'] = array(
 
 /** Polish (polski)
  * @author BeginaFelicysym
+ * @author Matma Rex
  */
 $messages['pl'] = array(
 	'onlinestatusbar-desc' => 'Pasek stanu, który wskazuje, czy użytkownik jest w trybie online, w oparciu o preferencje ze strony użytkownika',
@@ -501,12 +502,12 @@ $messages['pl'] = array(
 	'onlinestatusbar-purge' => 'Wyczyść stronę użytkownika za każdym razem, gdy użytkownik loguje się lub wylogowuje',
 	'prefs-onlinestatus' => 'Stan online',
 	'onlinestatusbar-hide' => 'Ukryj pasek stanu na stronach użytkownika po wykorzystaniu magicznego słowa (dla użytkowników zaawansowanych)',
-	'onlinestatusbar-status-online' => 'Dostępny',
-	'onlinestatusbar-status-busy' => 'Zajęty',
-	'onlinestatusbar-status-away' => 'Nieobecny',
-	'onlinestatusbar-status-offline' => 'Niedostępny',
+	'onlinestatusbar-status-online' => 'dostępny',
+	'onlinestatusbar-status-busy' => 'zajęty',
+	'onlinestatusbar-status-away' => 'nieobecny',
+	'onlinestatusbar-status-offline' => 'niedostępny',
 	'onlinestatusbar-status-unknown' => 'stan nieznany',
-	'onlinestatusbar-status-hidden' => 'Ukryty',
+	'onlinestatusbar-status-hidden' => 'ukryty',
 );
 
 /** Pashto (پښتو)
