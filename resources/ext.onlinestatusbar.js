@@ -60,13 +60,16 @@
 					return;
 				}
 
-				$statusbarFields
-					.empty()
-					.text( mw.msg( 'onlinestatusbar-title-' + status ) )
-					.removeClass( 'onlinestatusbar-status-' + $statusbarFields.data( 'onlinestatusbar.status' ) )
-					.addClass( 'onlinestatusbar-status-' + status )
-					.data( 'onlinestatusbar.status', status )
-					.attr( 'title', mw.msg( 'onlinestatusbar-tooltip-' + status ) );
+				// No need to re-create the field if the status is still the same
+				if ( $statusbarFields.data( 'onlinestatusbar.status' ) !== status ) {
+					$statusbarFields
+						.empty()
+						.text( mw.msg( 'onlinestatusbar-title-' + status ) )
+						.removeClass( 'onlinestatusbar-status-' + $statusbarFields.data( 'onlinestatusbar.status' ) )
+						.addClass( 'onlinestatusbar-status-' + status )
+						.data( 'onlinestatusbar.status', status )
+						.attr( 'title', mw.msg( 'onlinestatusbar-tooltip-' + status ) );
+				}
 
 			}).always( function () {
 				// Whether ajax succeeded or failed, once done, schedule an update

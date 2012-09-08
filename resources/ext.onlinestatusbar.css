@@ -13,21 +13,21 @@
 
 .onlinestatusbar-status-online {
 	/* @embed */
-	background-image: url(images/statusgreen.png);
+	background-image: url(images/status-on.png);
 }
 
 .onlinestatusbar-status-busy,
 .onlinestatusbar-status-away {
 	/* @embed */
-	background-image: url(images/statusorange.png);
+	background-image: url(images/status-clock.png);
 }
 
 .onlinestatusbar-status-offline {
 	/* @embed */
-	background-image: url(images/statusred.png);
+	background-image: url(images/status-cross.png);
 }
 
 .onlinestatusbar-status-unknown {
 	/* @embed */
-	background-image: url(images/statusgrey.png);
+	background-image: url(images/status-off.png);
 }
