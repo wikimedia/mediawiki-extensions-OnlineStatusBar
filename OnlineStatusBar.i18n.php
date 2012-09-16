@@ -88,6 +88,13 @@ $messages['be-tarask'] = array(
 	'onlinestatusbar-away' => 'Аўтаматычна пераводзіць у стан «адыйшоў» пасьля вызначанага інтэрвалу',
 	'onlinestatusbar-purge' => 'Ачышчаць кэш старонкі ўдзельніка па кожным уваходзе або выхадзе',
 	'prefs-onlinestatus' => 'Анлайн-статус',
+	'onlinestatusbar-hide' => 'Хаваць панэль стану на старонках удзельнікаў для выкарыстаньня магічнага слова (для дасьведчаных удзельнікаў)',
+	'onlinestatusbar-status-online' => 'на сайце',
+	'onlinestatusbar-status-busy' => 'заняты',
+	'onlinestatusbar-status-away' => 'адыйшоў',
+	'onlinestatusbar-status-offline' => 'недаступны',
+	'onlinestatusbar-status-unknown' => 'стан невядомы',
+	'onlinestatusbar-status-hidden' => 'схаваны',
 );
 
 /** Breton (brezhoneg)
