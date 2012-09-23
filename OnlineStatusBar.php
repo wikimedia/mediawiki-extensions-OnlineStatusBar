@@ -28,29 +28,22 @@ $wgExtensionMessagesFiles['OnlineStatusBar'] = "$dir/OnlineStatusBar.i18n.php";
 $wgExtensionMessagesFiles['OnlineStatusBarMagic'] = "$dir/OnlineStatusBar.i18n.magic.php";
 
 $wgResourceModules['ext.OnlineStatusBar'] = array(
-	'styles' => 'resources/OnlineStatusBar.css',
-	'skinStyles' => array(
-		'default' => array( 'resources/OnlineStatusBarDefault.css' ),
-		'chick' => array( 'resources/OnlineStatusBarChick.css' ),
-		'vector' => array( 'resources/OnlineStatusBarVector.css' ),
-		'modern' => array( 'resources/OnlineStatusBarModern.css' ),
-		'standard' => array( 'resources/OnlineStatusBarStandard.css' ),
-		'monobook' => array( 'resources/OnlineStatusBarMonobook.css' ),
-		'simple' => array( 'resources/OnlineStatusBarSimple.css' ),
-		'cologneblue' => array( 'resources/OnlineStatusBarCologneBlue.css' ),
-		'nostalgia' => array( 'resources/OnlineStatusBarNostalgia.css' ),
-	),
+	'styles' => 'resources/ext.onlinestatusbar.css',
 	'scripts' => 'resources/ext.onlinestatusbar.js',
 	'dependencies' => array(
 		'mediawiki.util',
 	),
 	'messages' => array(
-		'onlinestatusbar-status-offline',
-		'onlinestatusbar-status-online',
-		'onlinestatusbar-status-unknown',
-		'onlinestatusbar-status-busy',
-		'onlinestatusbar-status-away',
-		'onlinestatusbar-line',
+		'onlinestatusbar-title-online',
+		'onlinestatusbar-title-busy',
+		'onlinestatusbar-title-away',
+		'onlinestatusbar-title-offline',
+		'onlinestatusbar-title-unknown',
+		'onlinestatusbar-tooltip-online',
+		'onlinestatusbar-tooltip-busy',
+		'onlinestatusbar-tooltip-away',
+		'onlinestatusbar-tooltip-offline',
+		'onlinestatusbar-tooltip-unknown',
 	),
 	'localBasePath' => dirname( __FILE__ ),
 	'remoteExtPath' => 'OnlineStatusBar',
@@ -89,7 +82,6 @@ $wgOnlineStatusBar_LogoutTime = 3600;
 // time to wait until we consider user away
 $wgOnlineStatusBar_AwayTime = 15;
 // Cache
-// default 10 minutes for online
 $wgOnlineStatusBarCacheTime = array(
 	'online' => 10,
 	'busy' => 10,

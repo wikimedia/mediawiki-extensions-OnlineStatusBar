@@ -92,7 +92,6 @@ class OnlineStatusBarHooks {
 			return true;
 		}
 		$context = $article->getContext();
-		$context->getOutput()->addHtml( OnlineStatusBar::getStatusBarHtml() );
 		$context->getOutput()->addModules( 'ext.OnlineStatusBar' );
 
 		return true;
@@ -133,10 +132,10 @@ class OnlineStatusBarHooks {
 			'label-message' => 'onlinestatusbar-status',
 			'section' => 'misc/onlinestatus',
 			'options' => array(
-				wfMessage( 'onlinestatusbar-status-online' )->escaped() => 'online',
-				wfMessage( 'onlinestatusbar-status-busy' )->escaped() => 'busy',
-				wfMessage( 'onlinestatusbar-status-away' )->escaped() => 'away',
-				wfMessage( 'onlinestatusbar-status-hidden' )->escaped() => 'hidden'
+				wfMessage( 'onlinestatusbar-title-online' )->escaped() => 'online',
+				wfMessage( 'onlinestatusbar-title-busy' )->escaped() => 'busy',
+				wfMessage( 'onlinestatusbar-title-away' )->escaped() => 'away',
+				wfMessage( 'onlinestatusbar-title-hidden' )->escaped() => 'hidden'
 			),
 		);
 		$preferences['OnlineStatusBar_awaytime'] = array(

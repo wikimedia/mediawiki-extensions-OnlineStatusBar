@@ -12,14 +12,6 @@
 
 class OnlineStatusBar {
 	/**
-	 * Create a html bar
-	 * return HTML
-	 **/
-	public static function getStatusBarHtml() {
-		return '<div class="onlinestatusbar-pagetop onlinestatusbar-field metadata"></div>';
-	}
-
-	/**
 	 * @param Title $title
 	 */
 	public static function getAnonFromTitle( Title $title ) {

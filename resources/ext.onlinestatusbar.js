@@ -5,23 +5,35 @@
  * @author Brion Vibber
  * @author Petr Bena
  * @author Trevor Parscal
+ * @author Timo Tijhof
+ * @author Bartosz Dziewoński
  */
 ( function ( mw, $ ) {
+	// Due to the way we determine the target user (wgTitle)
+	// this code must never run outside the User/User talk namespace.
+	if ( $.inArray( mw.config.get( 'wgCanonicalNamespace' ), ['User', 'User_talk'] ) === -1 ) {
+		return;
+	}
 
 	$( document ).ready( function () {
-		var $statusbarFields = $( '.onlinestatusbar-field' ),
+		var
+			$statusbarFields = $( '<span>' ).addClass( 'onlinestatusbar-pagetop onlinestatusbar-field metadata' ),
 			imagePath = mw.config.get( 'wgExtensionAssetsPath' ) +
 				'/OnlineStatusBar/resources/images',
-			statusImages = {
-				'offline': 'statusred.png',
-				'online': 'statusgreen.png',
-				'away': 'statusorange.png',
-				'busy': 'statusorange.png',
-				'unknown': 'statusgrey.png'
-			},
+			knownStatuses = [
+				'online',
+				'busy',
+				'away',
+				// 'hidden' is omitted, never exposed in the API (displayed as "offline")
+				'offline',
+				'unknown'
+			],
 			apiPath = mw.util.wikiScript( 'api' ),
 			// WARNING: This way of determining a username is limited to user pages and user talk pages
-			username = mw.config.get( 'wgTitle' );
+			username = mw.config.get( 'wgTitle' ).split( '/' )[0];
+
+		// Add status bar wrapper
+		$( 'h1' ).first().prepend( $statusbarFields );
 
 		/**
 		 * Fetch the status of the user that owns this page or talk page and
@@ -38,27 +50,27 @@
 					onlinestatususer: username
 				}
 			}).done( function ( data ) {
-				var image, text,
-					status = data.onlinestatus.result;
+				var status = data && data.onlinestatus && data.onlinestatus.result;
 
-				// Future proof: If new statuses are introduced,
-				// gracefully degrade by showing nothing in a cached js state.
-				// (otherwise it would try to insert a 404 error to ./images/undefined)
-				if ( statusImages[status] === undefined ) {
+				// Make sure the is a status (data.onlinestatus can be undefined in case
+				// of a server problem).
+				// Also future proof: If new statuses are introduced in the API,
+				// gracefully degrade by showing nothing when serving cached js/css.
+				if ( !status || $.inArray( status, knownStatuses ) === -1 ) {
 					return;
 				}
 
-				image = mw.html.element( 'img', { src: imagePath + '/' + statusImages[status] } );
-				text = mw.msg( 'onlinestatusbar-status-' + status );
+				$statusbarFields
+					.empty()
+					.text( mw.msg( 'onlinestatusbar-title-' + status ) )
+					.removeClass( 'onlinestatusbar-status-' + $statusbarFields.data( 'onlinestatusbar.status' ) )
+					.addClass( 'onlinestatusbar-status-' + status )
+					.data( 'onlinestatusbar.status', status )
+					.attr( 'title', mw.msg( 'onlinestatusbar-tooltip-' + status ) );
 
-				// Update the statusbar
-				$statusbarFields.html( mw.msg(
-					'onlinestatusbar-line',
-					mw.html.escape( username ), image, mw.html.escape( text )
-				) );
 			}).always( function () {
-				// Whether ajax succeeded or failed, once done, schedule the
-				// update (for if the user leaves the page open)
+				// Whether ajax succeeded or failed, once done, schedule an update
+				// (for when the user leaves the page open) 2 minutes from now.
 				setTimeout( updateOnlineStatusBar, 2 * 60 * 1000 );
 			});
 		}
