@@ -14,30 +14,33 @@ $messages = array();
  * @author John Du Hart
  */
 $messages['en'] = array(
-	// Description
+	# Special:Version
 	'onlinestatusbar-desc' => 'Status bar which shows whether a user is online, based on preferences, on their user page',
-	// Status bar text line (User is now Offline) etc.
-	'onlinestatusbar-line' => '$1 is now $2 $3',
-	// Message in config asking user if they want to enable it
-	'onlinestatusbar-used' => 'Display your online status on your user pages',
-	// Message in config for amount of time after which user is away
-	'onlinestatusbar-away-time' => 'How many minutes until you are marked as away:',
-	// Message in config asking what status they want to use
-	'onlinestatusbar-status' => 'What is the default status you wish to use:',
-	// Message in config about away time
-	'onlinestatusbar-away' => 'Treat as away automatically after defined interval',
-	// Message in config asking if user wants to purge the user page
-	'onlinestatusbar-purge' => 'Purge user page everytime when you login or logout',
-	// Section for config
+
+	# User preferences
 	'prefs-onlinestatus' => 'Online status',
-	// Message in config
+	'onlinestatusbar-used' => 'Display your online status on your user pages',
 	'onlinestatusbar-hide' => 'Hide the status bar on user pages in order to use just the magic word (For advanced users)',
-	'onlinestatusbar-status-online' => 'online',
-	'onlinestatusbar-status-busy' => 'busy',
-	'onlinestatusbar-status-away' => 'away',
-	'onlinestatusbar-status-offline' => 'offline',
-	'onlinestatusbar-status-unknown' => 'status is unknown',
-	'onlinestatusbar-status-hidden' => 'hidden',
+	'onlinestatusbar-away' => 'Treat as away automatically after defined interval',
+	'onlinestatusbar-purge' => 'Purge user page everytime when you login or logout',
+	'onlinestatusbar-status' => 'What is the default status you wish to use?',
+	'onlinestatusbar-away-time' => 'How many minutes until you are marked as away?',
+
+	# Status titles
+	'onlinestatusbar-title-online' => 'Online',
+	'onlinestatusbar-title-busy' => 'Busy',
+	'onlinestatusbar-title-away' => 'Away',
+	'onlinestatusbar-title-hidden' => 'Hidden', # Only used on Special:Preferences, API gives "Offline"
+	'onlinestatusbar-title-offline' => 'Offline',
+	'onlinestatusbar-title-unknown' => 'Unknown',
+
+	# Status descriptions
+	'onlinestatusbar-tooltip-online' => 'This user is now online',
+	'onlinestatusbar-tooltip-busy' => 'This user is busy and may be unavailable',
+	'onlinestatusbar-tooltip-away' => 'This user is idle and may be unavailable',
+	#'onlinestatusbar-tooltip-hidden' to tooltip for hidden, in front-end this is part of "Offline"
+	'onlinestatusbar-tooltip-offline' => 'This user is offline',
+	'onlinestatusbar-tooltip-unknown' => 'Status of this user is unknown',
 );
 
 /** Message documentation (Message documentation)
@@ -46,10 +49,6 @@ $messages['en'] = array(
  */
 $messages['qqq'] = array(
 	'onlinestatusbar-desc' => '{{desc}}',
-	'onlinestatusbar-line' => 'Status bar text line (User is now Offline), parameters:
-* $1 is user
-* $2 is a picture of status (small icon in color of status)
-* $3 a status, it will appear in title bar of their user space pages',
 	'onlinestatusbar-used' => 'Message in config asking user if they want to enable it, checkbox',
 	'onlinestatusbar-away-time' => 'Question in preferences asking user how many minutes to wait until he would be flagged as away',
 	'onlinestatusbar-status' => 'Message in config asking what status they want to use, option box',
@@ -57,11 +56,16 @@ $messages['qqq'] = array(
 	'onlinestatusbar-purge' => 'Option to purge user page everytime they login so that magic word is updated',
 	'prefs-onlinestatus' => 'Section for config, located in preferences - misc',
 	'onlinestatusbar-hide' => 'Ask user if they want to hide status bar this is useful when they are using custom template but need to check if they are online',
-	'onlinestatusbar-status-online' => 'Status for users who mark themselves as active',
-	'onlinestatusbar-status-busy' => 'Status for users who mark themselves as busy',
-	'onlinestatusbar-status-away' => 'Status for users who mark themselves as away',
-	'onlinestatusbar-status-offline' => 'Status for users who are offline',
-	'onlinestatusbar-status-hidden' => 'Status for users who mark themselves as hidden (used on preferences only)',
+	'onlinestatusbar-title-online' => 'Status for users who mark themselves as active',
+	'onlinestatusbar-title-busy' => 'Status for users who mark themselves as busy',
+	'onlinestatusbar-title-away' => 'Status for users who mark themselves as away',
+	'onlinestatusbar-title-hidden' => 'Status for users who mark themselves as hidden',
+	'onlinestatusbar-title-offline' => 'Status for users who are offline',
+	'onlinestatusbar-tooltip-online' => 'Tooltip for {{mw-msg|onlinestatusbar-title-online}}',
+	'onlinestatusbar-tooltip-busy' => 'Tooltip for {{mw-msg|onlinestatusbar-title-busy}}',
+	'onlinestatusbar-tooltip-away' => 'Tooltip for {{mw-msg|onlinestatusbar-title-away}}',
+	'onlinestatusbar-tooltip-offline' => 'Tooltip for {{mw-msg|onlinestatusbar-title-offline}}',
+	'onlinestatusbar-tooltip-unknown' => 'Tooltip for {{mw-msg|onlinestatusbar-title-unknown}}',
 );
 
 /** Afrikaans (Afrikaans)
