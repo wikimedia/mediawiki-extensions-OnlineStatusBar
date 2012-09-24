@@ -283,14 +283,19 @@ $messages['gl'] = array(
 	'onlinestatusbar-hide' => 'Agochar a barra de estado nas páxinas de usuario para usar unicamente a palabra máxica (para usuarios avanzados)',
 	'onlinestatusbar-away' => 'Considerar automaticamente que marchou despois do intervalo definido',
 	'onlinestatusbar-purge' => 'Purgar a páxina de usuario cada vez que se identifique ou saia do sistema',
-	'onlinestatusbar-status' => 'O estado por defecto que quere usar?',
-	'onlinestatusbar-away-time' => 'Os minutos que deben pasar ata considerar que marchou:',
+	'onlinestatusbar-status' => 'Cal é o estado por defecto que quere usar?',
+	'onlinestatusbar-away-time' => 'Cantos minutos deben pasar ata considerar que marchou?',
 	'onlinestatusbar-title-online' => 'Conectado',
 	'onlinestatusbar-title-busy' => 'Ocupado',
-	'onlinestatusbar-title-away' => 'Non dispoñible',
+	'onlinestatusbar-title-away' => 'Ausente',
 	'onlinestatusbar-title-hidden' => 'Agochado',
 	'onlinestatusbar-title-offline' => 'Desconectado',
-	'onlinestatusbar-title-unknown' => 'descoñécese o estado',
+	'onlinestatusbar-title-unknown' => 'Descoñecido',
+	'onlinestatusbar-tooltip-online' => 'O usuario está conectado',
+	'onlinestatusbar-tooltip-busy' => 'O usuario está ocupado e pode non estar dispoñible',
+	'onlinestatusbar-tooltip-away' => 'O usuario está inactivo e pode non estar dispoñible',
+	'onlinestatusbar-tooltip-offline' => 'O usuario está desconectado',
+	'onlinestatusbar-tooltip-unknown' => 'Descoñécese o estado do usuario',
 );
 
 /** Hebrew (עברית)
@@ -360,6 +365,7 @@ $messages['ia'] = array(
 
 /** Italian (italiano)
  * @author Beta16
+ * @author Darth Kule
  */
 $messages['it'] = array(
 	'onlinestatusbar-desc' => 'Barra di stato che mostra se un utente è online, in base delle preferenze, sulla loro pagina utente',
@@ -368,7 +374,7 @@ $messages['it'] = array(
 	'onlinestatusbar-hide' => 'Nascondi la barra di stato sulle pagine degli utenti, per poter utilizzare solo la magic word (per utenti esperti)',
 	'onlinestatusbar-away' => "Considera automaticamente come lontano dopo l'intervallo di tempo definito",
 	'onlinestatusbar-purge' => 'Aggiorna la pagina utente ogni volta che accedi o esci',
-	'onlinestatusbar-status' => "Qual'è lo stato predefinito che vuoi usare?",
+	'onlinestatusbar-status' => 'Qual è lo stato predefinito che vuoi usare?',
 	'onlinestatusbar-away-time' => 'Quanti minuti prima di essere considerato lontano:',
 	'onlinestatusbar-title-online' => 'connesso',
 	'onlinestatusbar-title-busy' => 'occupato',
@@ -388,7 +394,7 @@ $messages['ja'] = array(
 	'onlinestatusbar-hide' => 'マジックワードを使用するために、利用者ページのステータスバーを隠す（上級者向け）',
 	'onlinestatusbar-away' => '定義された時間の経過後に自動的に退席中と見なす',
 	'onlinestatusbar-purge' => 'ログイン/ログアウトのたびに利用者ページのキャッシュを破棄',
-	'onlinestatusbar-status' => '既定として使用する状態?',
+	'onlinestatusbar-status' => '既定として使用する状態は?',
 	'onlinestatusbar-away-time' => '退席中と見なすまでの時間（分）：',
 	'onlinestatusbar-title-online' => 'オンライン',
 	'onlinestatusbar-title-busy' => '多忙',
@@ -434,7 +440,11 @@ $messages['lb'] = array(
 	'onlinestatusbar-title-away' => 'Net do',
 	'onlinestatusbar-title-hidden' => 'Verstoppt',
 	'onlinestatusbar-title-offline' => 'Offline',
-	'onlinestatusbar-title-unknown' => 'Status ass onbekannt',
+	'onlinestatusbar-title-unknown' => 'Onbekannt',
+	'onlinestatusbar-tooltip-online' => 'Dëse Benotzer ass elo online',
+	'onlinestatusbar-tooltip-busy' => 'Dëse Benotzer ass beschäftegt a méiglecherweis net disponibel',
+	'onlinestatusbar-tooltip-away' => 'Dëse Benotzer ass net aktiv a méiglecherweis net disponibel',
+	'onlinestatusbar-tooltip-offline' => 'Dëse Benotzer ass elo offline',
 );
 
 /** Macedonian (македонски)
@@ -454,7 +464,12 @@ $messages['mk'] = array(
 	'onlinestatusbar-title-away' => 'Отсутен',
 	'onlinestatusbar-title-hidden' => 'Скриен',
 	'onlinestatusbar-title-offline' => 'Исклучен',
-	'onlinestatusbar-title-unknown' => 'статусот е непознат',
+	'onlinestatusbar-title-unknown' => 'Непознат',
+	'onlinestatusbar-tooltip-online' => 'Корисникот сега е вклучен',
+	'onlinestatusbar-tooltip-busy' => 'Корисникот е зафатен и може да е недостапен',
+	'onlinestatusbar-tooltip-away' => 'Корисникот е неактивен и може да е недостапен',
+	'onlinestatusbar-tooltip-offline' => 'Корисникот е исклучен',
+	'onlinestatusbar-tooltip-unknown' => 'Статусот на корисникот е непознат',
 );
 
 /** Malay (Bahasa Melayu)
@@ -533,15 +548,29 @@ $messages['ps'] = array(
 );
 
 /** Romanian (română)
+ * @author Minisarm
  * @author Stelistcristi
  */
 $messages['ro'] = array(
-	'onlinestatusbar-title-online' => 'conectat',
-	'onlinestatusbar-title-busy' => 'ocupat',
-	'onlinestatusbar-title-away' => 'plecat',
-	'onlinestatusbar-title-hidden' => 'ascuns',
-	'onlinestatusbar-title-offline' => 'deconectat',
-	'onlinestatusbar-title-unknown' => 'starea este necunoscută',
+	'onlinestatusbar-desc' => 'Bară de stare care arată dacă un utilizator este conectat, în funcție de preferințe, pe pagina sa de utilizator',
+	'prefs-onlinestatus' => 'Stare în on-line',
+	'onlinestatusbar-used' => 'Afișează starea dumneavoastră din on-line pe paginile de utilizator',
+	'onlinestatusbar-hide' => 'Ascunde bara de stare din paginile de utilizator pentru a utiliza doar cuvântul magic (pentru utilizatori avansați)',
+	'onlinestatusbar-away' => 'Consideră automat ca „plecat” după un interval definit',
+	'onlinestatusbar-purge' => 'Curățați pagina de utilizator ori de câte ori vă autentificați sau deconectați',
+	'onlinestatusbar-status' => 'Care este starea implicită pe care doriți să o utilizați?',
+	'onlinestatusbar-away-time' => 'Câte minute până când starea va fi schimbată în „plecat”?',
+	'onlinestatusbar-title-online' => 'Conectat',
+	'onlinestatusbar-title-busy' => 'Ocupat',
+	'onlinestatusbar-title-away' => 'Plecat',
+	'onlinestatusbar-title-hidden' => 'Ascuns',
+	'onlinestatusbar-title-offline' => 'Deconectat',
+	'onlinestatusbar-title-unknown' => 'Necunoscut',
+	'onlinestatusbar-tooltip-online' => 'Acest utilizator este acum conectat',
+	'onlinestatusbar-tooltip-busy' => 'Acest utilizator este ocupat și ar putea fi indisponibil',
+	'onlinestatusbar-tooltip-away' => 'Acest utilizator este inactiv și ar putea fi indisponibil',
+	'onlinestatusbar-tooltip-offline' => 'Acest utilizator este deconectat',
+	'onlinestatusbar-tooltip-unknown' => 'Starea acestui utilizator este necunoscută',
 );
 
 /** Sinhala (සිංහල)
