@@ -47,6 +47,7 @@ $messages['en'] = array(
  * @author John Du Hart
  * @author Petr Bena
  * @author Raymond
+ * @author Shirayuki
  */
 $messages['qqq'] = array(
 	'onlinestatusbar-desc' => '{{desc}}',
@@ -62,11 +63,11 @@ $messages['qqq'] = array(
 	'onlinestatusbar-title-away' => 'Status for users who mark themselves as away',
 	'onlinestatusbar-title-hidden' => 'Status for users who mark themselves as hidden',
 	'onlinestatusbar-title-offline' => 'Status for users who are offline',
-	'onlinestatusbar-tooltip-online' => 'Tooltip for {{mw-msg|onlinestatusbar-title-online}}',
-	'onlinestatusbar-tooltip-busy' => 'Tooltip for {{mw-msg|onlinestatusbar-title-busy}}',
-	'onlinestatusbar-tooltip-away' => 'Tooltip for {{mw-msg|onlinestatusbar-title-away}}',
-	'onlinestatusbar-tooltip-offline' => 'Tooltip for {{mw-msg|onlinestatusbar-title-offline}}',
-	'onlinestatusbar-tooltip-unknown' => 'Tooltip for {{mw-msg|onlinestatusbar-title-unknown}}',
+	'onlinestatusbar-tooltip-online' => 'Tooltip for {{msg-mw|onlinestatusbar-title-online}}',
+	'onlinestatusbar-tooltip-busy' => 'Tooltip for {{msg-mw|onlinestatusbar-title-busy}}',
+	'onlinestatusbar-tooltip-away' => 'Tooltip for {{msg-mw|onlinestatusbar-title-away}}',
+	'onlinestatusbar-tooltip-offline' => 'Tooltip for {{msg-mw|onlinestatusbar-title-offline}}',
+	'onlinestatusbar-tooltip-unknown' => 'Tooltip for {{msg-mw|onlinestatusbar-title-unknown}}',
 );
 
 /** Afrikaans (Afrikaans)
@@ -81,7 +82,7 @@ $messages['af'] = array(
 	'onlinestatusbar-title-unknown' => 'status is onbekend',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
@@ -140,7 +141,7 @@ $messages['de'] = array(
 	'onlinestatusbar-tooltip-unknown' => 'Der Status dieses Benutzers ist unbekannt',
 );
 
-/** German (formal address) (‪Deutsch (Sie-Form)‬)
+/** German (formal address) (Deutsch (Sie-Form)‎)
  * @author Kghbln
  */
 $messages['de-formal'] = array(
@@ -198,7 +199,12 @@ $messages['es'] = array(
 	'onlinestatusbar-title-away' => 'No disponible',
 	'onlinestatusbar-title-hidden' => 'Oculto',
 	'onlinestatusbar-title-offline' => 'Desconectado',
-	'onlinestatusbar-title-unknown' => 'el estado es desconocido',
+	'onlinestatusbar-title-unknown' => 'Desconocido',
+	'onlinestatusbar-tooltip-online' => 'Este usuario está en línea',
+	'onlinestatusbar-tooltip-busy' => 'Este usuario está ocupado y puede no estar disponible',
+	'onlinestatusbar-tooltip-away' => 'Este usuario está inactivo y puede no estar disponible',
+	'onlinestatusbar-tooltip-offline' => 'Este usuario está desconectado',
+	'onlinestatusbar-tooltip-unknown' => 'Se desconoce el estado de este usuario',
 );
 
 /** Estonian (eesti)
@@ -388,19 +394,25 @@ $messages['it'] = array(
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'onlinestatusbar-desc' => '個人設定と利用者ページに基づいて、利用者がオンラインかどうか表示するステータスバー',
+	'onlinestatusbar-desc' => '個人設定と利用者ページに基づいて、その利用者がオンラインかどうか表示するステータス バー',
 	'prefs-onlinestatus' => 'オンライン状態',
 	'onlinestatusbar-used' => 'あなたのオンライン状態を利用者ページに表示',
 	'onlinestatusbar-hide' => 'マジックワードを使用するために、利用者ページのステータスバーを隠す（上級者向け）',
 	'onlinestatusbar-away' => '定義された時間の経過後に自動的に退席中と見なす',
 	'onlinestatusbar-purge' => 'ログイン/ログアウトのたびに利用者ページのキャッシュを破棄',
 	'onlinestatusbar-status' => '既定として使用する状態は?',
-	'onlinestatusbar-away-time' => '退席中と見なすまでの時間（分）：',
+	'onlinestatusbar-away-time' => '退席中と見なすまでの時間は? (分単位)',
 	'onlinestatusbar-title-online' => 'オンライン',
 	'onlinestatusbar-title-busy' => '多忙',
 	'onlinestatusbar-title-away' => '退席中',
 	'onlinestatusbar-title-hidden' => '非表示',
 	'onlinestatusbar-title-offline' => 'オフライン',
+	'onlinestatusbar-title-unknown' => '不明',
+	'onlinestatusbar-tooltip-online' => 'この利用者は現在オンラインです',
+	'onlinestatusbar-tooltip-busy' => 'この利用者は多忙のため、応答できない可能性があります',
+	'onlinestatusbar-tooltip-away' => 'この利用者は退席中のため、応答できない可能性があります',
+	'onlinestatusbar-tooltip-offline' => 'この利用者はオフラインです',
+	'onlinestatusbar-tooltip-unknown' => 'この利用者の状態は不明です',
 );
 
 /** Georgian (ქართული)
@@ -531,7 +543,12 @@ $messages['pl'] = array(
 	'onlinestatusbar-title-away' => 'nieobecny',
 	'onlinestatusbar-title-hidden' => 'ukryty',
 	'onlinestatusbar-title-offline' => 'niedostępny',
-	'onlinestatusbar-title-unknown' => 'stan nieznany',
+	'onlinestatusbar-title-unknown' => 'Nieznany',
+	'onlinestatusbar-tooltip-online' => 'Ten użytkownik jest teraz online',
+	'onlinestatusbar-tooltip-busy' => 'Ten użytkownik jest zajęty i może być niedostępny',
+	'onlinestatusbar-tooltip-away' => 'Ten użytkownik nic nie robi i może być niedostępny',
+	'onlinestatusbar-tooltip-offline' => 'Ten użytkownik jest offline',
+	'onlinestatusbar-tooltip-unknown' => 'Stan tego użytkownika jest nieznany',
 );
 
 /** Pashto (پښتو)
