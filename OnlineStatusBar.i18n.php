@@ -233,13 +233,14 @@ $messages['fa'] = array(
 
 /** Finnish (suomi)
  * @author Beluga
+ * @author Crt
  */
 $messages['fi'] = array(
 	'onlinestatusbar-title-online' => 'kirjautuneena',
 	'onlinestatusbar-title-away' => 'poissa',
 	'onlinestatusbar-title-hidden' => 'piilotettu',
 	'onlinestatusbar-title-offline' => 'ei kirjautuneena',
-	'onlinestatusbar-title-unknown' => 'tila tuntematon',
+	'onlinestatusbar-title-unknown' => 'Tuntematon',
 );
 
 /** French (français)
@@ -387,7 +388,12 @@ $messages['it'] = array(
 	'onlinestatusbar-title-away' => 'lontano',
 	'onlinestatusbar-title-hidden' => 'nascosto',
 	'onlinestatusbar-title-offline' => 'non connesso',
-	'onlinestatusbar-title-unknown' => 'stato sconosciuto',
+	'onlinestatusbar-title-unknown' => 'sconosciuto',
+	'onlinestatusbar-tooltip-online' => 'Questo utente è attualmente connesso',
+	'onlinestatusbar-tooltip-busy' => 'Questo utente è attualmente occupato e potrebbe non essere disponibile',
+	'onlinestatusbar-tooltip-away' => 'Questo utente è attualmente lontano e potrebbe non essere disponibile',
+	'onlinestatusbar-tooltip-offline' => 'Questo utente è attualmente non connesso',
+	'onlinestatusbar-tooltip-unknown' => 'Lo stato di questo utente è sconosciuto',
 );
 
 /** Japanese (日本語)
@@ -673,6 +679,11 @@ $messages['ur'] = array(
 	'onlinestatusbar-title-hidden' => 'پوشیدہ',
 	'onlinestatusbar-title-offline' => 'آف لائن',
 	'onlinestatusbar-title-unknown' => 'کی کیفیت نامعلوم ہے',
+);
+
+/** Simplified Chinese (中文（简体）‎) */
+$messages['zh-hans'] = array(
+	'onlinestatusbar-title-hidden' => '隐藏',
 );
 
 /** Traditional Chinese (‪中文（繁體）‬)
