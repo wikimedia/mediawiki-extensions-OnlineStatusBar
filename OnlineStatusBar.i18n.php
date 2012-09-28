@@ -536,25 +536,25 @@ $messages['nl'] = array(
  * @author Matma Rex
  */
 $messages['pl'] = array(
-	'onlinestatusbar-desc' => 'Pasek stanu, który wskazuje, czy użytkownik jest w trybie online, w oparciu o preferencje ze strony użytkownika',
-	'prefs-onlinestatus' => 'Stan online',
-	'onlinestatusbar-used' => 'Wyświetlić twój status online na twoich stronach użytkownika',
-	'onlinestatusbar-hide' => 'Ukryj pasek stanu na stronach użytkownika po wykorzystaniu magicznego słowa (dla użytkowników zaawansowanych)',
-	'onlinestatusbar-away' => 'Traktuj jako "nieobecny" automatycznie po określonym interwale',
-	'onlinestatusbar-purge' => 'Wyczyść stronę użytkownika za każdym razem, gdy użytkownik loguje się lub wylogowuje',
-	'onlinestatusbar-status' => 'Jaki jest stan domyślny, którego chcesz użyć?',
-	'onlinestatusbar-away-time' => 'Ile minut do oznaczenia jako "nieobecny":',
+	'onlinestatusbar-desc' => 'Pasek statusu, który informuje na stronie użytkownika, czy ten jest dostępny, w oparciu o preferencje',
+	'prefs-onlinestatus' => 'Status dostępności',
+	'onlinestatusbar-used' => 'Wyświetlaj mój status na moich stronach użytkownika',
+	'onlinestatusbar-hide' => 'Ukryj pasek statusu na stronach użytkownika, aby wykorzystać tylko magiczne słowo (dla użytkowników zaawansowanych)',
+	'onlinestatusbar-away' => 'Traktuj jako "nieobecny" automatycznie po określonym czasie',
+	'onlinestatusbar-purge' => 'Odśwież stronę użytkownika za każdym razem, gdy loguję się lub wylogowuję',
+	'onlinestatusbar-status' => 'Jaki jest domyślny status, którego chcesz użyć?',
+	'onlinestatusbar-away-time' => 'Ile minut do oznaczenia jako "nieobecny"?',
 	'onlinestatusbar-title-online' => 'dostępny',
 	'onlinestatusbar-title-busy' => 'zajęty',
 	'onlinestatusbar-title-away' => 'nieobecny',
 	'onlinestatusbar-title-hidden' => 'ukryty',
 	'onlinestatusbar-title-offline' => 'niedostępny',
-	'onlinestatusbar-title-unknown' => 'Nieznany',
-	'onlinestatusbar-tooltip-online' => 'Ten użytkownik jest teraz online',
+	'onlinestatusbar-title-unknown' => 'nieznany',
+	'onlinestatusbar-tooltip-online' => 'Ten użytkownik jest teraz dostępny',
 	'onlinestatusbar-tooltip-busy' => 'Ten użytkownik jest zajęty i może być niedostępny',
-	'onlinestatusbar-tooltip-away' => 'Ten użytkownik nic nie robi i może być niedostępny',
-	'onlinestatusbar-tooltip-offline' => 'Ten użytkownik jest offline',
-	'onlinestatusbar-tooltip-unknown' => 'Stan tego użytkownika jest nieznany',
+	'onlinestatusbar-tooltip-away' => 'Ten użytkownik jest bezczynny i może być niedostępny',
+	'onlinestatusbar-tooltip-offline' => 'Ten użytkownik jest niedostępny',
+	'onlinestatusbar-tooltip-unknown' => 'Status tego użytkownika jest nieznany',
 );
 
 /** Pashto (پښتو)
