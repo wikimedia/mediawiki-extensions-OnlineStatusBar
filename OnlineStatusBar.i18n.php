@@ -528,7 +528,9 @@ $messages['nl'] = array(
 	'onlinestatusbar-title-away' => 'Weg',
 	'onlinestatusbar-title-hidden' => 'Verborgen',
 	'onlinestatusbar-title-offline' => 'Offline',
-	'onlinestatusbar-title-unknown' => 'status is onbekend',
+	'onlinestatusbar-title-unknown' => 'Onbekend',
+	'onlinestatusbar-tooltip-online' => 'Deze gebruiker is nu online',
+	'onlinestatusbar-tooltip-offline' => 'Deze gebruiker is offline',
 );
 
 /** Polish (polski)
