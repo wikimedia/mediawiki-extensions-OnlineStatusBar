@@ -507,7 +507,12 @@ $messages['ms'] = array(
 	'onlinestatusbar-title-away' => 'Tiada',
 	'onlinestatusbar-title-hidden' => 'Tersorok',
 	'onlinestatusbar-title-offline' => 'Luar talian',
-	'onlinestatusbar-title-unknown' => 'status tidak diketahui',
+	'onlinestatusbar-title-unknown' => 'Tidak diketahui',
+	'onlinestatusbar-tooltip-online' => 'Pengguna ini kini di dalam talian',
+	'onlinestatusbar-tooltip-busy' => 'Pengguna ini sibuk dan mungkin tidak boleh dihubungi',
+	'onlinestatusbar-tooltip-away' => 'Pengguna ini melahu dan mungkin tidak boleh dihubungi',
+	'onlinestatusbar-tooltip-offline' => 'Pengguna ini di luar talian',
+	'onlinestatusbar-tooltip-unknown' => 'Status pengguna ini tidak diketahui',
 );
 
 /** Dutch (Nederlands)
