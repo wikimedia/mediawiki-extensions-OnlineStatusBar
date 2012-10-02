@@ -154,7 +154,7 @@ $messages['de-formal'] = array(
  * @author Erdemaslancan
  */
 $messages['diq'] = array(
-	'onlinestatusbar-status-offline' => 'Çerxteber',
+	'onlinestatusbar-title-offline' => 'Çerxteber',
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -247,6 +247,7 @@ $messages['fi'] = array(
  * @author Crochet.david
  * @author DavidL
  * @author Gomoko
+ * @author Tititou36
  * @author Verdy p
  * @author Zebulon84
  */
@@ -264,7 +265,12 @@ $messages['fr'] = array(
 	'onlinestatusbar-title-away' => 'Parti',
 	'onlinestatusbar-title-hidden' => 'Masqué',
 	'onlinestatusbar-title-offline' => 'Absent',
-	'onlinestatusbar-title-unknown' => "l'état est inconnu",
+	'onlinestatusbar-title-unknown' => 'Inconnu',
+	'onlinestatusbar-tooltip-online' => 'Cet utilisateur est maintenant connecté',
+	'onlinestatusbar-tooltip-busy' => 'Cet utilisateur est occupé et peut ne pas être disponible',
+	'onlinestatusbar-tooltip-away' => 'Cet utilisateur est inactif et peut ne pas être disponible',
+	'onlinestatusbar-tooltip-offline' => 'Cet utilisateur est non connecté',
+	'onlinestatusbar-tooltip-unknown' => 'Le statut de cet utilisateur est inconnu',
 );
 
 /** Franco-Provençal (arpetan)
@@ -644,7 +650,6 @@ $messages['ta'] = array(
  * @author Vvk.pentapati
  */
 $messages['te'] = array(
-	'onlinestatusbar-line' => '$1 ippudu $2 $3',
 	'onlinestatusbar-used' => 'మీరు ఆన్‌లైనులో ఉన్నట్టు ఇతరులుకు చూపించాలా?',
 );
 
@@ -672,7 +677,7 @@ $messages['tl'] = array(
  * @author Suelnur
  */
 $messages['tr'] = array(
-	'onlinestatusbar-status-offline' => 'Çevrimdışı',
+	'onlinestatusbar-title-offline' => 'Çevrimdışı',
 );
 
 /** Urdu (اردو)
@@ -693,10 +698,10 @@ $messages['zh-hans'] = array(
 	'onlinestatusbar-title-hidden' => '隐藏',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
-	'onlinestatusbar-status-hidden' => '隱藏',
+	'onlinestatusbar-title-hidden' => '隱藏',
 );
 
