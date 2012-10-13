@@ -524,6 +524,7 @@ $messages['ms'] = array(
 /** Dutch (Nederlands)
  * @author SPQRobin
  * @author Siebrand
+ * @author Wiki13
  */
 $messages['nl'] = array(
 	'onlinestatusbar-desc' => 'Statusbalk die weergeeft of een gebruiker online is, op basis van voorkeuren, op zijn/haar gebruikerspagina',
@@ -541,7 +542,10 @@ $messages['nl'] = array(
 	'onlinestatusbar-title-offline' => 'Offline',
 	'onlinestatusbar-title-unknown' => 'Onbekend',
 	'onlinestatusbar-tooltip-online' => 'Deze gebruiker is nu online',
+	'onlinestatusbar-tooltip-busy' => 'Deze gebruiker is druk en mogelijk niet beschikbaar',
+	'onlinestatusbar-tooltip-away' => 'Deze gebruiker is inactief en mogelijk niet beschikbaar',
 	'onlinestatusbar-tooltip-offline' => 'Deze gebruiker is offline',
+	'onlinestatusbar-tooltip-unknown' => 'Status van deze gebruiker is onbekend',
 );
 
 /** Polish (polski)
