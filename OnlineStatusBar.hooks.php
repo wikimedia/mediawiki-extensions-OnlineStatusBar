@@ -132,10 +132,10 @@ class OnlineStatusBarHooks {
 			'label-message' => 'onlinestatusbar-status',
 			'section' => 'misc/onlinestatus',
 			'options' => array(
-				wfMessage( 'onlinestatusbar-title-online' )->escaped() => 'online',
-				wfMessage( 'onlinestatusbar-title-busy' )->escaped() => 'busy',
-				wfMessage( 'onlinestatusbar-title-away' )->escaped() => 'away',
-				wfMessage( 'onlinestatusbar-title-hidden' )->escaped() => 'hidden'
+				wfMessage( 'onlinestatusbar-title-online', $user->getName() )->escaped() => 'online',
+				wfMessage( 'onlinestatusbar-title-busy', $user->getName() )->escaped() => 'busy',
+				wfMessage( 'onlinestatusbar-title-away', $user->getName() )->escaped() => 'away',
+				wfMessage( 'onlinestatusbar-title-hidden', $user->getName() )->escaped() => 'hidden'
 			),
 		);
 		$preferences['OnlineStatusBar_awaytime'] = array(

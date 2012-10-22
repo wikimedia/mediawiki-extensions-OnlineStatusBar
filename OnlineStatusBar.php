@@ -31,6 +31,7 @@ $wgResourceModules['ext.OnlineStatusBar'] = array(
 	'styles' => 'resources/ext.onlinestatusbar.css',
 	'scripts' => 'resources/ext.onlinestatusbar.js',
 	'dependencies' => array(
+		'mediawiki.jqueryMsg',
 		'mediawiki.util',
 	),
 	'messages' => array(
