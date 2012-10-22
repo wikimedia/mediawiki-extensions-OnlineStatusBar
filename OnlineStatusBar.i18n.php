@@ -79,7 +79,7 @@ $messages['af'] = array(
 	'onlinestatusbar-title-away' => 'weg',
 	'onlinestatusbar-title-hidden' => 'versteek',
 	'onlinestatusbar-title-offline' => 'aflyn',
-	'onlinestatusbar-title-unknown' => 'status is onbekend',
+	'onlinestatusbar-title-unknown' => 'status is onbekend', # Fuzzy
 );
 
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
@@ -99,7 +99,7 @@ $messages['be-tarask'] = array(
 	'onlinestatusbar-title-away' => 'адыйшоў',
 	'onlinestatusbar-title-hidden' => 'схаваны',
 	'onlinestatusbar-title-offline' => 'недаступны',
-	'onlinestatusbar-title-unknown' => 'стан невядомы',
+	'onlinestatusbar-title-unknown' => 'стан невядомы', # Fuzzy
 );
 
 /** Breton (brezhoneg)
@@ -112,7 +112,7 @@ $messages['br'] = array(
 	'onlinestatusbar-title-away' => 'Er-maez',
 	'onlinestatusbar-title-hidden' => 'Kuzhet',
 	'onlinestatusbar-title-offline' => 'Ezvezant',
-	'onlinestatusbar-title-unknown' => 'Statud dianav',
+	'onlinestatusbar-title-unknown' => 'Statud dianav', # Fuzzy
 );
 
 /** German (Deutsch)
@@ -216,7 +216,7 @@ $messages['et'] = array(
 	'onlinestatusbar-title-away' => 'eemal',
 	'onlinestatusbar-title-hidden' => 'peidetud',
 	'onlinestatusbar-title-offline' => 'ühenduseta',
-	'onlinestatusbar-title-unknown' => 'olek on teadmata',
+	'onlinestatusbar-title-unknown' => 'olek on teadmata', # Fuzzy
 );
 
 /** Persian (فارسی)
@@ -228,7 +228,7 @@ $messages['fa'] = array(
 	'onlinestatusbar-title-away' => 'خارج از دسترس',
 	'onlinestatusbar-title-hidden' => 'پنهان',
 	'onlinestatusbar-title-offline' => 'برون‌خط',
-	'onlinestatusbar-title-unknown' => 'وضعیت ناشناخته است',
+	'onlinestatusbar-title-unknown' => 'وضعیت ناشناخته است', # Fuzzy
 );
 
 /** Finnish (suomi)
@@ -283,7 +283,7 @@ $messages['frp'] = array(
 	'onlinestatusbar-title-away' => 'Viâ',
 	'onlinestatusbar-title-hidden' => 'Cachiê',
 	'onlinestatusbar-title-offline' => 'Absent',
-	'onlinestatusbar-title-unknown' => 'l’ètat est encognu',
+	'onlinestatusbar-title-unknown' => 'l’ètat est encognu', # Fuzzy
 );
 
 /** Galician (galego)
@@ -328,7 +328,7 @@ $messages['he'] = array(
 	'onlinestatusbar-title-away' => 'לא ליד מחשב',
 	'onlinestatusbar-title-hidden' => 'מוסתר',
 	'onlinestatusbar-title-offline' => 'לא באתר',
-	'onlinestatusbar-title-unknown' => 'המצב אינו ידוע',
+	'onlinestatusbar-title-unknown' => 'המצב אינו ידוע', # Fuzzy
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -373,7 +373,7 @@ $messages['ia'] = array(
 	'onlinestatusbar-title-away' => 'Absente',
 	'onlinestatusbar-title-hidden' => 'Celate',
 	'onlinestatusbar-title-offline' => 'Foras de linea',
-	'onlinestatusbar-title-unknown' => 'stato es incognite',
+	'onlinestatusbar-title-unknown' => 'stato es incognite', # Fuzzy
 );
 
 /** Italian (italiano)
@@ -439,7 +439,7 @@ $messages['ka'] = array(
 	'onlinestatusbar-title-away' => 'გასული',
 	'onlinestatusbar-title-hidden' => 'დამალული',
 	'onlinestatusbar-title-offline' => 'არ არის ქსელში',
-	'onlinestatusbar-title-unknown' => 'სტატუსი უცნობია',
+	'onlinestatusbar-title-unknown' => 'სტატუსი უცნობია', # Fuzzy
 );
 
 /** Colognian (Ripoarisch)
@@ -584,7 +584,7 @@ $messages['ps'] = array(
 	'onlinestatusbar-title-away' => 'ليرې',
 	'onlinestatusbar-title-hidden' => 'پټ',
 	'onlinestatusbar-title-offline' => 'پرې ليکه',
-	'onlinestatusbar-title-unknown' => 'دريځ ناڅرګنده دی',
+	'onlinestatusbar-title-unknown' => 'دريځ ناڅرګنده دی', # Fuzzy
 );
 
 /** Romanian (română)
@@ -622,7 +622,7 @@ $messages['si'] = array(
 	'onlinestatusbar-title-busy' => 'කාර්යබහුලයි',
 	'onlinestatusbar-title-hidden' => 'සඟවනලද',
 	'onlinestatusbar-title-offline' => 'මාර්ගඅපගතයි',
-	'onlinestatusbar-title-unknown' => 'තත්වය නොදනියි',
+	'onlinestatusbar-title-unknown' => 'තත්වය නොදනියි', # Fuzzy
 );
 
 /** Swedish (svenska)
@@ -635,7 +635,7 @@ $messages['sv'] = array(
 	'onlinestatusbar-title-away' => 'borta',
 	'onlinestatusbar-title-hidden' => 'dold',
 	'onlinestatusbar-title-offline' => 'inte ansluten',
-	'onlinestatusbar-title-unknown' => 'status är okänd',
+	'onlinestatusbar-title-unknown' => 'status är okänd', # Fuzzy
 );
 
 /** Tamil (தமிழ்)
@@ -654,7 +654,7 @@ $messages['ta'] = array(
  * @author Vvk.pentapati
  */
 $messages['te'] = array(
-	'onlinestatusbar-used' => 'మీరు ఆన్‌లైనులో ఉన్నట్టు ఇతరులుకు చూపించాలా?',
+	'onlinestatusbar-used' => 'మీరు ఆన్‌లైనులో ఉన్నట్టు ఇతరులుకు చూపించాలా?', # Fuzzy
 );
 
 /** Tagalog (Tagalog)
@@ -674,7 +674,7 @@ $messages['tl'] = array(
 	'onlinestatusbar-title-away' => 'wala at malayo',
 	'onlinestatusbar-title-hidden' => 'nakatago',
 	'onlinestatusbar-title-offline' => 'hindi nakaugnay sa Internet',
-	'onlinestatusbar-title-unknown' => 'hindi alam ang katayuan',
+	'onlinestatusbar-title-unknown' => 'hindi alam ang katayuan', # Fuzzy
 );
 
 /** Turkish (Türkçe)
@@ -694,10 +694,11 @@ $messages['ur'] = array(
 	'onlinestatusbar-title-away' => 'دور',
 	'onlinestatusbar-title-hidden' => 'پوشیدہ',
 	'onlinestatusbar-title-offline' => 'آف لائن',
-	'onlinestatusbar-title-unknown' => 'کی کیفیت نامعلوم ہے',
+	'onlinestatusbar-title-unknown' => 'کی کیفیت نامعلوم ہے', # Fuzzy
 );
 
-/** Simplified Chinese (中文（简体）‎) */
+/** Simplified Chinese (中文（简体）‎)
+ */
 $messages['zh-hans'] = array(
 	'onlinestatusbar-title-hidden' => '隐藏',
 );
@@ -708,4 +709,3 @@ $messages['zh-hans'] = array(
 $messages['zh-hant'] = array(
 	'onlinestatusbar-title-hidden' => '隱藏',
 );
-
