@@ -50,7 +50,7 @@ $messages['en'] = array(
  * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'onlinestatusbar-desc' => '{{desc}}',
+	'onlinestatusbar-desc' => '{{desc}}', # Fuzzy
 	'prefs-onlinestatus' => 'Section for config, located in preferences - misc',
 	'onlinestatusbar-used' => 'Message in config asking user if they want to enable it, checkbox',
 	'onlinestatusbar-hide' => 'Ask user if they want to hide status bar this is useful when they are using custom template but need to check if they are online',
@@ -59,25 +59,25 @@ $messages['qqq'] = array(
 	'onlinestatusbar-status' => 'Message in config asking what status they want to use, option box',
 	'onlinestatusbar-away-time' => 'Question in preferences asking user how many minutes to wait until he would be flagged as away',
 	'onlinestatusbar-title-online' => 'Status for users who mark themselves as active. Parameters:
-* $1 is the name of the user for GENDER.',
+* $1 is the name of the user for GENDER.', # Fuzzy
 	'onlinestatusbar-title-busy' => 'Status for users who mark themselves as busy. Parameters:
 * $1 is the name of the user for GENDER.',
 	'onlinestatusbar-title-away' => 'Status for users who mark themselves as away. Parameters:
-* $1 is the name of the user for GENDER.',
+* $1 is the name of the user for GENDER.', # Fuzzy
 	'onlinestatusbar-title-hidden' => 'Status for users who mark themselves as hidden. Parameters:
-* $1 is the name of the user for GENDER.',
+* $1 is the name of the user for GENDER.', # Fuzzy
 	'onlinestatusbar-title-offline' => 'Status for users who are offline. Parameters:
 * $1 is the name of the user for GENDER.',
 	'onlinestatusbar-title-unknown' => 'Displayed for users with an unknown status. Parameters:
 * $1 is the name of the user for GENDER.',
 	'onlinestatusbar-tooltip-online' => 'Tooltip for {{msg-mw|onlinestatusbar-title-online}}. Parameters:
-* $1 is the name of the user for GENDER.',
+* $1 is the name of the user for GENDER.', # Fuzzy
 	'onlinestatusbar-tooltip-busy' => 'Tooltip for {{msg-mw|onlinestatusbar-title-busy}}. Parameters:
-* $1 is the name of the user for GENDER.',
+* $1 is the name of the user for GENDER.', # Fuzzy
 	'onlinestatusbar-tooltip-away' => 'Tooltip for {{msg-mw|onlinestatusbar-title-away}}. Parameters:
-* $1 is the name of the user for GENDER.',
+* $1 is the name of the user for GENDER.', # Fuzzy
 	'onlinestatusbar-tooltip-offline' => 'Tooltip for {{msg-mw|onlinestatusbar-title-offline}}. Parameters:
-* $1 is the name of the user for GENDER.',
+* $1 is the name of the user for GENDER.', # Fuzzy
 	'onlinestatusbar-tooltip-unknown' => 'Tooltip for {{msg-mw|onlinestatusbar-title-unknown}}. Parameters:
 * $1 is the name of the user for GENDER.',
 );
@@ -132,7 +132,7 @@ $messages['br'] = array(
  * @author Metalhead64
  */
 $messages['de'] = array(
-	'onlinestatusbar-desc' => 'Ermöglicht, abhängig von der Benutzereinstellung, die Anzeige des Onlinestatus eines Benutzers auf dessen Benutzerseite',
+	'onlinestatusbar-desc' => 'Ermöglicht die Anzeige des Onlinestatus eines Benutzers auf dessen Benutzerseite',
 	'prefs-onlinestatus' => 'Onlinestatus',
 	'onlinestatusbar-used' => 'Deinen Online-Status auf deiner Benutzerseite anzeigen',
 	'onlinestatusbar-hide' => "Die Statusleiste auf Benutzerseiten ausblenden, um stattdessen lediglich das ''magische Wort'' zu nutzen? (Für fortgeschrittene Benutzer)",
@@ -140,17 +140,17 @@ $messages['de'] = array(
 	'onlinestatusbar-purge' => 'Den Cache der Benutzerseite jedes Mal leeren, wenn du dich an- oder abmeldest',
 	'onlinestatusbar-status' => 'Welchen Status möchtest du standardmäßig nutzen?',
 	'onlinestatusbar-away-time' => 'Minuten, die vergehen sollen, um als „abwesend“ eingestuft zu werden:',
-	'onlinestatusbar-title-online' => 'Online',
-	'onlinestatusbar-title-busy' => 'Beschäftigt',
-	'onlinestatusbar-title-away' => 'Abwesend',
-	'onlinestatusbar-title-hidden' => 'Versteckt',
-	'onlinestatusbar-title-offline' => 'Offline',
-	'onlinestatusbar-title-unknown' => 'Unbekannt',
-	'onlinestatusbar-tooltip-online' => 'Dieser Benutzer ist jetzt online',
-	'onlinestatusbar-tooltip-busy' => 'Dieser Benutzer ist beschäftigt und möglicherweise nicht anwesend',
-	'onlinestatusbar-tooltip-away' => 'Dieser Benutzer ist inaktiv und möglichweise nicht anwesend',
-	'onlinestatusbar-tooltip-offline' => 'Dieser Benutzer ist offline',
-	'onlinestatusbar-tooltip-unknown' => 'Der Status dieses Benutzers ist unbekannt',
+	'onlinestatusbar-title-online' => '{{GENDER:$1|Online}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Beschäftigt}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Abwesend}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Versteckt}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Offline}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Unbekannt}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|Dieser Benutzer|Diese Benutzerin}} ist jetzt online',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|Dieser Benutzer|Diese Benutzerin}} ist beschäftigt und möglicherweise nicht anwesend',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|Dieser Benutzer|Diese Benutzerin}} ist inaktiv und möglichweise nicht anwesend',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|Dieser Benutzer|Diese Benutzerin}} ist offline',
+	'onlinestatusbar-tooltip-unknown' => 'Der Status {{GENDER:$1|dieses Benutzers|dieser Benutzerin}} ist unbekannt',
 );
 
 /** German (formal address) (Deutsch (Sie-Form)‎)
@@ -418,7 +418,7 @@ $messages['it'] = array(
  * @author Shirayuki
  */
 $messages['ja'] = array(
-	'onlinestatusbar-desc' => '個人設定と利用者ページに基づいて、その利用者がオンラインかどうか表示するステータス バー',
+	'onlinestatusbar-desc' => '利用者ページにその利用者がオンラインかどうかを表示するステータス バー',
 	'prefs-onlinestatus' => 'オンライン状態',
 	'onlinestatusbar-used' => 'あなたのオンライン状態を利用者ページに表示',
 	'onlinestatusbar-hide' => 'マジックワードを使用するために、利用者ページのステータスバーを隠す（上級者向け）',
@@ -426,17 +426,17 @@ $messages['ja'] = array(
 	'onlinestatusbar-purge' => 'ログイン/ログアウトのたびに利用者ページのキャッシュを破棄',
 	'onlinestatusbar-status' => '既定として使用する状態は?',
 	'onlinestatusbar-away-time' => '退席中と見なすまでの時間は? (分単位)',
-	'onlinestatusbar-title-online' => 'オンライン',
-	'onlinestatusbar-title-busy' => '多忙',
-	'onlinestatusbar-title-away' => '退席中',
-	'onlinestatusbar-title-hidden' => '非表示',
-	'onlinestatusbar-title-offline' => 'オフライン',
-	'onlinestatusbar-title-unknown' => '不明',
-	'onlinestatusbar-tooltip-online' => 'この利用者は現在オンラインです',
-	'onlinestatusbar-tooltip-busy' => 'この利用者は多忙のため、応答できない可能性があります',
-	'onlinestatusbar-tooltip-away' => 'この利用者は退席中のため、応答できない可能性があります',
-	'onlinestatusbar-tooltip-offline' => 'この利用者はオフラインです',
-	'onlinestatusbar-tooltip-unknown' => 'この利用者の状態は不明です',
+	'onlinestatusbar-title-online' => 'オンライン', # Fuzzy
+	'onlinestatusbar-title-busy' => '多忙', # Fuzzy
+	'onlinestatusbar-title-away' => '退席中', # Fuzzy
+	'onlinestatusbar-title-hidden' => '非表示', # Fuzzy
+	'onlinestatusbar-title-offline' => 'オフライン', # Fuzzy
+	'onlinestatusbar-title-unknown' => '不明', # Fuzzy
+	'onlinestatusbar-tooltip-online' => 'この利用者は現在オンラインです', # Fuzzy
+	'onlinestatusbar-tooltip-busy' => 'この利用者は多忙のため、応答できない可能性があります', # Fuzzy
+	'onlinestatusbar-tooltip-away' => 'この利用者は退席中のため、応答できない可能性があります', # Fuzzy
+	'onlinestatusbar-tooltip-offline' => 'この利用者はオフラインです', # Fuzzy
+	'onlinestatusbar-tooltip-unknown' => 'この利用者の状態は不明です', # Fuzzy
 );
 
 /** Georgian (ქართული)
