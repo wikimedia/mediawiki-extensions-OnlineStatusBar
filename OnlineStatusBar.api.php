@@ -15,18 +15,23 @@ class ApiOnlineStatus extends ApiQueryBase {
 		$result = OnlineStatusBar::getUserInfoFromString( $params['user'] );
 
 		// if user is IP and we track them
-		if ( User::isIP( $params['user'] ) && $result === false ) {
+		if ( $result === false && User::isIP( $params['user'] )  ) {
 			$result = OnlineStatusBar::getAnonFromString( $params['user'] );
 		}
 
 		if ( $result === false ) {
 			$ret = 'unknown';
+			$gender = 'unknown';
 		} else {
 			$ret = $result[0];
+			$gender = GenderCache::singleton()->getGenderOf( $result[1]->getName() );
 		}
 
 		$this->getResult()->addValue(
-			null, $this->getModuleName(), array( 'result' => $ret )
+			null, $this->getModuleName(), array(
+				'status' => $ret,
+				'gender' => $gender
+			)
 		);
 	}
 
@@ -47,7 +52,7 @@ class ApiOnlineStatus extends ApiQueryBase {
 	}
 
 	public function getDescription() {
-		return 'Returns online status of user.';
+		return 'Returns online status and gender of user.';
 	}
 
 	public function getPossibleErrors() {

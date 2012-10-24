@@ -15,7 +15,7 @@ $messages = array();
  */
 $messages['en'] = array(
 	# Special:Version
-	'onlinestatusbar-desc' => 'Status bar which shows whether a user is online, based on preferences, on their user page',
+	'onlinestatusbar-desc' => 'Status bar which shows whether a user is online on their user page',
 
 	# User preferences
 	'prefs-onlinestatus' => 'Online status',
@@ -27,20 +27,20 @@ $messages['en'] = array(
 	'onlinestatusbar-away-time' => 'How many minutes until you are marked as away?',
 
 	# Status titles
-	'onlinestatusbar-title-online' => 'Online',
-	'onlinestatusbar-title-busy' => 'Busy',
-	'onlinestatusbar-title-away' => 'Away',
-	'onlinestatusbar-title-hidden' => 'Hidden', # Only used on Special:Preferences, API gives "Offline"
-	'onlinestatusbar-title-offline' => 'Offline',
-	'onlinestatusbar-title-unknown' => 'Unknown',
+	'onlinestatusbar-title-online' => '{{GENDER:$1|Online}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Busy}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Away}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Hidden}}', # Only used on Special:Preferences, API gives "Offline"
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Offline}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Unknown}}',
 
 	# Status descriptions
-	'onlinestatusbar-tooltip-online' => 'This user is now online',
-	'onlinestatusbar-tooltip-busy' => 'This user is busy and may be unavailable',
-	'onlinestatusbar-tooltip-away' => 'This user is idle and may be unavailable',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|This user}} is now online',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|This user}} is busy and may be unavailable',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|This user}} is idle and may be unavailable',
 	#'onlinestatusbar-tooltip-hidden' to tooltip for hidden, in front-end this is part of "Offline"
-	'onlinestatusbar-tooltip-offline' => 'This user is offline',
-	'onlinestatusbar-tooltip-unknown' => 'Status of this user is unknown',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|This user}} is offline',
+	'onlinestatusbar-tooltip-unknown' => 'Status of {{GENDER:$1|this user}} is unknown',
 );
 
 /** Message documentation (Message documentation)
@@ -58,16 +58,28 @@ $messages['qqq'] = array(
 	'onlinestatusbar-purge' => 'Option to purge user page everytime they login so that magic word is updated',
 	'onlinestatusbar-status' => 'Message in config asking what status they want to use, option box',
 	'onlinestatusbar-away-time' => 'Question in preferences asking user how many minutes to wait until he would be flagged as away',
-	'onlinestatusbar-title-online' => 'Status for users who mark themselves as active',
-	'onlinestatusbar-title-busy' => 'Status for users who mark themselves as busy',
-	'onlinestatusbar-title-away' => 'Status for users who mark themselves as away',
-	'onlinestatusbar-title-hidden' => 'Status for users who mark themselves as hidden',
-	'onlinestatusbar-title-offline' => 'Status for users who are offline',
-	'onlinestatusbar-tooltip-online' => 'Tooltip for {{msg-mw|onlinestatusbar-title-online}}',
-	'onlinestatusbar-tooltip-busy' => 'Tooltip for {{msg-mw|onlinestatusbar-title-busy}}',
-	'onlinestatusbar-tooltip-away' => 'Tooltip for {{msg-mw|onlinestatusbar-title-away}}',
-	'onlinestatusbar-tooltip-offline' => 'Tooltip for {{msg-mw|onlinestatusbar-title-offline}}',
-	'onlinestatusbar-tooltip-unknown' => 'Tooltip for {{msg-mw|onlinestatusbar-title-unknown}}',
+	'onlinestatusbar-title-online' => 'Status for users who mark themselves as active. Parameters:
+* $1 is the name of the user for GENDER.',
+	'onlinestatusbar-title-busy' => 'Status for users who mark themselves as busy. Parameters:
+* $1 is the name of the user for GENDER.',
+	'onlinestatusbar-title-away' => 'Status for users who mark themselves as away. Parameters:
+* $1 is the name of the user for GENDER.',
+	'onlinestatusbar-title-hidden' => 'Status for users who mark themselves as hidden. Parameters:
+* $1 is the name of the user for GENDER.',
+	'onlinestatusbar-title-offline' => 'Status for users who are offline. Parameters:
+* $1 is the name of the user for GENDER.',
+	'onlinestatusbar-title-unknown' => 'Displayed for users with an unknown status. Parameters:
+* $1 is the name of the user for GENDER.',
+	'onlinestatusbar-tooltip-online' => 'Tooltip for {{msg-mw|onlinestatusbar-title-online}}. Parameters:
+* $1 is the name of the user for GENDER.',
+	'onlinestatusbar-tooltip-busy' => 'Tooltip for {{msg-mw|onlinestatusbar-title-busy}}. Parameters:
+* $1 is the name of the user for GENDER.',
+	'onlinestatusbar-tooltip-away' => 'Tooltip for {{msg-mw|onlinestatusbar-title-away}}. Parameters:
+* $1 is the name of the user for GENDER.',
+	'onlinestatusbar-tooltip-offline' => 'Tooltip for {{msg-mw|onlinestatusbar-title-offline}}. Parameters:
+* $1 is the name of the user for GENDER.',
+	'onlinestatusbar-tooltip-unknown' => 'Tooltip for {{msg-mw|onlinestatusbar-title-unknown}}. Parameters:
+* $1 is the name of the user for GENDER.',
 );
 
 /** Afrikaans (Afrikaans)

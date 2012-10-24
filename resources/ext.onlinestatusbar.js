@@ -9,6 +9,8 @@
  * @author Bartosz Dziewoński
  */
 ( function ( mw, $ ) {
+	'use strict';
+
 	// Due to the way we determine the target user (wgTitle)
 	// this code must never run outside the User/User talk namespace.
 	if ( $.inArray( mw.config.get( 'wgCanonicalNamespace' ), ['User', 'User_talk'] ) === -1 ) {
@@ -18,8 +20,6 @@
 	$( document ).ready( function () {
 		var
 			$statusbarFields = $( '<span>' ).addClass( 'onlinestatusbar-pagetop onlinestatusbar-field metadata' ),
-			imagePath = mw.config.get( 'wgExtensionAssetsPath' ) +
-				'/OnlineStatusBar/resources/images',
 			knownStatuses = [
 				'online',
 				'busy',
@@ -38,7 +38,7 @@
 		/**
 		 * Fetch the status of the user that owns this page or talk page and
 		 * update the status bar.
-		 * @return jqXHR
+		 * @return {jqXHR}
 		 */
 		function updateOnlineStatusBar() {
 			return $.ajax({
@@ -50,25 +50,32 @@
 					onlinestatususer: username
 				}
 			}).done( function ( data ) {
-				var status = data && data.onlinestatus && data.onlinestatus.result;
+				var gender, status;
+
+				if ( !data || !data.onlinestatus ) {
+					return;
+				}
 
 				// Make sure the is a status (data.onlinestatus can be undefined in case
 				// of a server problem).
 				// Also future proof: If new statuses are introduced in the API,
 				// gracefully degrade by showing nothing when serving cached js/css.
+				status = data.onlinestatus.status;
 				if ( !status || $.inArray( status, knownStatuses ) === -1 ) {
 					return;
 				}
+
+				gender = data.onlinestatus.gender;
 
 				// No need to re-create the field if the status is still the same
 				if ( $statusbarFields.data( 'onlinestatusbar.status' ) !== status ) {
 					$statusbarFields
 						.empty()
-						.text( mw.msg( 'onlinestatusbar-title-' + status ) )
+						.text( mw.msg( 'onlinestatusbar-title-' + status, gender ) )
 						.removeClass( 'onlinestatusbar-status-' + $statusbarFields.data( 'onlinestatusbar.status' ) )
 						.addClass( 'onlinestatusbar-status-' + status )
 						.data( 'onlinestatusbar.status', status )
-						.attr( 'title', mw.msg( 'onlinestatusbar-tooltip-' + status ) );
+						.attr( 'title', mw.msg( 'onlinestatusbar-tooltip-' + status, gender ) );
 				}
 
 			}).always( function () {
