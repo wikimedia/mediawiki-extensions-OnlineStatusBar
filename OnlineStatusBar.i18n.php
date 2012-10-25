@@ -487,7 +487,7 @@ $messages['lb'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'onlinestatusbar-desc' => 'Статусник што прикажува дали корисникот е на линија, зависно од нагодувањата на корисничката страница',
+	'onlinestatusbar-desc' => 'Статусник што прикажува дали корисникот е на линија (на неговата корисничка страница)',
 	'prefs-onlinestatus' => 'Вклученост',
 	'onlinestatusbar-used' => 'Прикажувај на моите кориснички страници кога сум на линија',
 	'onlinestatusbar-hide' => 'Скриј го статусникот за да го користам само волшебниот збор (за напредни корисници)',
@@ -495,17 +495,17 @@ $messages['mk'] = array(
 	'onlinestatusbar-purge' => 'Пречисти го кешот на корисничката страница секојпат кога ќе се најавам или одјавам',
 	'onlinestatusbar-status' => 'Вашиот статус по основно?',
 	'onlinestatusbar-away-time' => 'По колку минути да се прикаже „отсутен“:',
-	'onlinestatusbar-title-online' => 'Вклучен',
-	'onlinestatusbar-title-busy' => 'Зафатен',
-	'onlinestatusbar-title-away' => 'Отсутен',
-	'onlinestatusbar-title-hidden' => 'Скриен',
-	'onlinestatusbar-title-offline' => 'Исклучен',
-	'onlinestatusbar-title-unknown' => 'Непознат',
-	'onlinestatusbar-tooltip-online' => 'Корисникот сега е вклучен',
-	'onlinestatusbar-tooltip-busy' => 'Корисникот е зафатен и може да е недостапен',
-	'onlinestatusbar-tooltip-away' => 'Корисникот е неактивен и може да е недостапен',
-	'onlinestatusbar-tooltip-offline' => 'Корисникот е исклучен',
-	'onlinestatusbar-tooltip-unknown' => 'Статусот на корисникот е непознат',
+	'onlinestatusbar-title-online' => '{{GENDER:$1|Вклучен|Вклучена}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Зафатен|Зафатена}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Отсутен|Отсутна}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Скриен|Скриена}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Исклучен|Исклучена}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Непознато}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|Корисникот}} сега е вклучен',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|Корисникот}} сега е зафатен и може да е недостапен',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|Корисникот}} е неактивен и може да е недостапен',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|Корисникот}} е исклучен',
+	'onlinestatusbar-tooltip-unknown' => 'Статусот на {{GENDER:$1|корисникот}} е непознат',
 );
 
 /** Malay (Bahasa Melayu)
