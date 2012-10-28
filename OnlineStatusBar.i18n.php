@@ -86,11 +86,11 @@ $messages['qqq'] = array(
  * @author Naudefj
  */
 $messages['af'] = array(
-	'onlinestatusbar-title-online' => 'aanlyn',
-	'onlinestatusbar-title-busy' => 'besig',
-	'onlinestatusbar-title-away' => 'weg',
-	'onlinestatusbar-title-hidden' => 'versteek',
-	'onlinestatusbar-title-offline' => 'aflyn',
+	'onlinestatusbar-title-online' => 'aanlyn', # Fuzzy
+	'onlinestatusbar-title-busy' => 'besig', # Fuzzy
+	'onlinestatusbar-title-away' => 'weg', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'versteek', # Fuzzy
+	'onlinestatusbar-title-offline' => 'aflyn', # Fuzzy
 	'onlinestatusbar-title-unknown' => 'status is onbekend', # Fuzzy
 );
 
@@ -98,7 +98,7 @@ $messages['af'] = array(
  * @author Wizardist
  */
 $messages['be-tarask'] = array(
-	'onlinestatusbar-desc' => 'Панэль стану, якая адлюстроўвае наяўнасьць карыстальніка на сайце, у залежнасьці ад наладаў',
+	'onlinestatusbar-desc' => 'Панэль стану, якая адлюстроўвае наяўнасьць карыстальніка на сайце, у залежнасьці ад наладаў', # Fuzzy
 	'prefs-onlinestatus' => 'Анлайн-статус',
 	'onlinestatusbar-used' => 'Адлюстроўваць ваш анлайн-статус на вашай старонцы ўдзельніка',
 	'onlinestatusbar-hide' => 'Хаваць панэль стану на старонках удзельнікаў для выкарыстаньня магічнага слова (для дасьведчаных удзельнікаў)',
@@ -106,11 +106,11 @@ $messages['be-tarask'] = array(
 	'onlinestatusbar-purge' => 'Ачышчаць кэш старонкі ўдзельніка па кожным уваходзе або выхадзе',
 	'onlinestatusbar-status' => 'Перадвызначаны стан, які мусіць выкарыстоўвацца?',
 	'onlinestatusbar-away-time' => 'Колькі хвілінаў чакаць да пераходу ў стан «адыйшоў»:',
-	'onlinestatusbar-title-online' => 'на сайце',
-	'onlinestatusbar-title-busy' => 'заняты',
-	'onlinestatusbar-title-away' => 'адыйшоў',
-	'onlinestatusbar-title-hidden' => 'схаваны',
-	'onlinestatusbar-title-offline' => 'недаступны',
+	'onlinestatusbar-title-online' => 'на сайце', # Fuzzy
+	'onlinestatusbar-title-busy' => 'заняты', # Fuzzy
+	'onlinestatusbar-title-away' => 'адыйшоў', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'схаваны', # Fuzzy
+	'onlinestatusbar-title-offline' => 'недаступны', # Fuzzy
 	'onlinestatusbar-title-unknown' => 'стан невядомы', # Fuzzy
 );
 
@@ -119,11 +119,11 @@ $messages['be-tarask'] = array(
  */
 $messages['br'] = array(
 	'prefs-onlinestatus' => 'Statud enlinenn',
-	'onlinestatusbar-title-online' => 'Kevreet',
-	'onlinestatusbar-title-busy' => 'Soulgarget',
-	'onlinestatusbar-title-away' => 'Er-maez',
-	'onlinestatusbar-title-hidden' => 'Kuzhet',
-	'onlinestatusbar-title-offline' => 'Ezvezant',
+	'onlinestatusbar-title-online' => 'Kevreet', # Fuzzy
+	'onlinestatusbar-title-busy' => 'Soulgarget', # Fuzzy
+	'onlinestatusbar-title-away' => 'Er-maez', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'Kuzhet', # Fuzzy
+	'onlinestatusbar-title-offline' => 'Ezvezant', # Fuzzy
 	'onlinestatusbar-title-unknown' => 'Statud dianav', # Fuzzy
 );
 
@@ -166,14 +166,14 @@ $messages['de-formal'] = array(
  * @author Erdemaslancan
  */
 $messages['diq'] = array(
-	'onlinestatusbar-title-offline' => 'Çerxteber',
+	'onlinestatusbar-title-offline' => 'Çerxteber', # Fuzzy
 );
 
 /** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
-	'onlinestatusbar-desc' => 'Statusowa kšoma, kótaraž pokazujo na zakłaźe nastajenjow na wužywarskem boku, lěc wužywaŕ jo online',
+	'onlinestatusbar-desc' => 'Statusowa kšoma, kótaraž pokazujo na zakłaźe nastajenjow na wužywarskem boku, lěc wužywaŕ jo online', # Fuzzy
 	'prefs-onlinestatus' => 'Onlinestatus',
 	'onlinestatusbar-used' => 'Twój onlinestatus na twójich wužywarskich bokach pokazaś',
 	'onlinestatusbar-hide' => 'Statusowu kšomu na wužywarskich bokach schowaś, aby se jano magiske słowo wužywało (za pókšacanych wužywarjow)',
@@ -181,17 +181,17 @@ $messages['dsb'] = array(
 	'onlinestatusbar-purge' => 'Cache wužywarskego boka kuždy raz wuprozniś, gaž se pśizjawjaš abo wótzjawjaš',
 	'onlinestatusbar-status' => 'Standardny status, kótaryž coš wužywaś?',
 	'onlinestatusbar-away-time' => 'Licba minutow, nježli až maš se ako "njepśibytny" markěrowaś:',
-	'onlinestatusbar-title-online' => 'Online',
-	'onlinestatusbar-title-busy' => 'Zabrany',
-	'onlinestatusbar-title-away' => 'Njepśibytny',
-	'onlinestatusbar-title-hidden' => 'Schowany',
-	'onlinestatusbar-title-offline' => 'Offline',
-	'onlinestatusbar-title-unknown' => 'Njeznaty',
-	'onlinestatusbar-tooltip-online' => 'Toś ten wužywaŕ jo něnto online',
-	'onlinestatusbar-tooltip-busy' => 'Toś ten wužywaŕ źěła a snaź njejo pśibytny',
-	'onlinestatusbar-tooltip-away' => 'Toś ten wužywaŕ njejo aktiwny a snaź njejo pśibytny',
-	'onlinestatusbar-tooltip-offline' => 'Toś ten wužywaŕ jo offline',
-	'onlinestatusbar-tooltip-unknown' => 'Status toś togo wužywarja jo njeznaty',
+	'onlinestatusbar-title-online' => 'Online', # Fuzzy
+	'onlinestatusbar-title-busy' => 'Zabrany', # Fuzzy
+	'onlinestatusbar-title-away' => 'Njepśibytny', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'Schowany', # Fuzzy
+	'onlinestatusbar-title-offline' => 'Offline', # Fuzzy
+	'onlinestatusbar-title-unknown' => 'Njeznaty', # Fuzzy
+	'onlinestatusbar-tooltip-online' => 'Toś ten wužywaŕ jo něnto online', # Fuzzy
+	'onlinestatusbar-tooltip-busy' => 'Toś ten wužywaŕ źěła a snaź njejo pśibytny', # Fuzzy
+	'onlinestatusbar-tooltip-away' => 'Toś ten wužywaŕ njejo aktiwny a snaź njejo pśibytny', # Fuzzy
+	'onlinestatusbar-tooltip-offline' => 'Toś ten wužywaŕ jo offline', # Fuzzy
+	'onlinestatusbar-tooltip-unknown' => 'Status toś togo wužywarja jo njeznaty', # Fuzzy
 );
 
 /** Spanish (español)
@@ -223,11 +223,11 @@ $messages['es'] = array(
  * @author Avjoska
  */
 $messages['et'] = array(
-	'onlinestatusbar-title-online' => 'arvuti juures',
-	'onlinestatusbar-title-busy' => 'hõivatud',
-	'onlinestatusbar-title-away' => 'eemal',
-	'onlinestatusbar-title-hidden' => 'peidetud',
-	'onlinestatusbar-title-offline' => 'ühenduseta',
+	'onlinestatusbar-title-online' => 'arvuti juures', # Fuzzy
+	'onlinestatusbar-title-busy' => 'hõivatud', # Fuzzy
+	'onlinestatusbar-title-away' => 'eemal', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'peidetud', # Fuzzy
+	'onlinestatusbar-title-offline' => 'ühenduseta', # Fuzzy
 	'onlinestatusbar-title-unknown' => 'olek on teadmata', # Fuzzy
 );
 
@@ -235,11 +235,11 @@ $messages['et'] = array(
  * @author Mjbmr
  */
 $messages['fa'] = array(
-	'onlinestatusbar-title-online' => 'برخط',
-	'onlinestatusbar-title-busy' => 'گرفتار',
-	'onlinestatusbar-title-away' => 'خارج از دسترس',
-	'onlinestatusbar-title-hidden' => 'پنهان',
-	'onlinestatusbar-title-offline' => 'برون‌خط',
+	'onlinestatusbar-title-online' => 'برخط', # Fuzzy
+	'onlinestatusbar-title-busy' => 'گرفتار', # Fuzzy
+	'onlinestatusbar-title-away' => 'خارج از دسترس', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'پنهان', # Fuzzy
+	'onlinestatusbar-title-offline' => 'برون‌خط', # Fuzzy
 	'onlinestatusbar-title-unknown' => 'وضعیت ناشناخته است', # Fuzzy
 );
 
@@ -248,11 +248,11 @@ $messages['fa'] = array(
  * @author Crt
  */
 $messages['fi'] = array(
-	'onlinestatusbar-title-online' => 'kirjautuneena',
-	'onlinestatusbar-title-away' => 'poissa',
-	'onlinestatusbar-title-hidden' => 'piilotettu',
-	'onlinestatusbar-title-offline' => 'ei kirjautuneena',
-	'onlinestatusbar-title-unknown' => 'Tuntematon',
+	'onlinestatusbar-title-online' => 'kirjautuneena', # Fuzzy
+	'onlinestatusbar-title-away' => 'poissa', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'piilotettu', # Fuzzy
+	'onlinestatusbar-title-offline' => 'ei kirjautuneena', # Fuzzy
+	'onlinestatusbar-title-unknown' => 'Tuntematon', # Fuzzy
 );
 
 /** French (français)
@@ -264,7 +264,7 @@ $messages['fi'] = array(
  * @author Zebulon84
  */
 $messages['fr'] = array(
-	'onlinestatusbar-desc' => "Barre d'état montrant si un utilisateur est en ligne, basé sur les préférences, sur leur page utilisateur",
+	'onlinestatusbar-desc' => "Barre d'état montrant si un utilisateur est en ligne, basé sur les préférences, sur leur page utilisateur", # Fuzzy
 	'prefs-onlinestatus' => 'État en ligne',
 	'onlinestatusbar-used' => 'Afficher votre statut en ligne sur vos pages utilisateur',
 	'onlinestatusbar-hide' => "Masquer la barre d'état sur les pages d'utilisateur afin d'utiliser le mot magique seulement (pour les utilisateurs avancés)",
@@ -272,17 +272,17 @@ $messages['fr'] = array(
 	'onlinestatusbar-purge' => 'Vider la page utilisateur chaque vous que vous vous connectez ou vous déconnectez',
 	'onlinestatusbar-status' => 'Quel est le statut par défaut que vous souhaitez utiliser ?',
 	'onlinestatusbar-away-time' => 'Combien minutes avant de changer le status en "absent" :',
-	'onlinestatusbar-title-online' => 'Présent',
-	'onlinestatusbar-title-busy' => 'Occupé',
-	'onlinestatusbar-title-away' => 'Parti',
-	'onlinestatusbar-title-hidden' => 'Masqué',
-	'onlinestatusbar-title-offline' => 'Absent',
-	'onlinestatusbar-title-unknown' => 'Inconnu',
-	'onlinestatusbar-tooltip-online' => 'Cet utilisateur est maintenant connecté',
-	'onlinestatusbar-tooltip-busy' => 'Cet utilisateur est occupé et peut ne pas être disponible',
-	'onlinestatusbar-tooltip-away' => 'Cet utilisateur est inactif et peut ne pas être disponible',
-	'onlinestatusbar-tooltip-offline' => 'Cet utilisateur est non connecté',
-	'onlinestatusbar-tooltip-unknown' => 'Le statut de cet utilisateur est inconnu',
+	'onlinestatusbar-title-online' => 'Présent', # Fuzzy
+	'onlinestatusbar-title-busy' => 'Occupé', # Fuzzy
+	'onlinestatusbar-title-away' => 'Parti', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'Masqué', # Fuzzy
+	'onlinestatusbar-title-offline' => 'Absent', # Fuzzy
+	'onlinestatusbar-title-unknown' => 'Inconnu', # Fuzzy
+	'onlinestatusbar-tooltip-online' => 'Cet utilisateur est maintenant connecté', # Fuzzy
+	'onlinestatusbar-tooltip-busy' => 'Cet utilisateur est occupé et peut ne pas être disponible', # Fuzzy
+	'onlinestatusbar-tooltip-away' => 'Cet utilisateur est inactif et peut ne pas être disponible', # Fuzzy
+	'onlinestatusbar-tooltip-offline' => 'Cet utilisateur est non connecté', # Fuzzy
+	'onlinestatusbar-tooltip-unknown' => 'Le statut de cet utilisateur est inconnu', # Fuzzy
 );
 
 /** Franco-Provençal (arpetan)
@@ -290,11 +290,11 @@ $messages['fr'] = array(
  */
 $messages['frp'] = array(
 	'prefs-onlinestatus' => 'Ètat en legne',
-	'onlinestatusbar-title-online' => 'Present',
-	'onlinestatusbar-title-busy' => 'Ocupo',
-	'onlinestatusbar-title-away' => 'Viâ',
-	'onlinestatusbar-title-hidden' => 'Cachiê',
-	'onlinestatusbar-title-offline' => 'Absent',
+	'onlinestatusbar-title-online' => 'Present', # Fuzzy
+	'onlinestatusbar-title-busy' => 'Ocupo', # Fuzzy
+	'onlinestatusbar-title-away' => 'Viâ', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'Cachiê', # Fuzzy
+	'onlinestatusbar-title-offline' => 'Absent', # Fuzzy
 	'onlinestatusbar-title-unknown' => 'l’ètat est encognu', # Fuzzy
 );
 
@@ -302,7 +302,7 @@ $messages['frp'] = array(
  * @author Toliño
  */
 $messages['gl'] = array(
-	'onlinestatusbar-desc' => 'Barra de estado que mostra na páxina de usuario se un usuario está conectado',
+	'onlinestatusbar-desc' => 'Barra de estado que mostra na páxina de usuario se un usuario está conectado', # Fuzzy
 	'prefs-onlinestatus' => 'Conectado',
 	'onlinestatusbar-used' => 'Mostrar se está conectado nas súas páxinas de usuario',
 	'onlinestatusbar-hide' => 'Agochar a barra de estado nas páxinas de usuario para usar unicamente a palabra máxica (para usuarios avanzados)',
@@ -310,24 +310,24 @@ $messages['gl'] = array(
 	'onlinestatusbar-purge' => 'Purgar a páxina de usuario cada vez que se identifique ou saia do sistema',
 	'onlinestatusbar-status' => 'Cal é o estado por defecto que quere usar?',
 	'onlinestatusbar-away-time' => 'Cantos minutos deben pasar ata considerar que marchou?',
-	'onlinestatusbar-title-online' => 'Conectado',
-	'onlinestatusbar-title-busy' => 'Ocupado',
-	'onlinestatusbar-title-away' => 'Ausente',
-	'onlinestatusbar-title-hidden' => 'Agochado',
-	'onlinestatusbar-title-offline' => 'Desconectado',
-	'onlinestatusbar-title-unknown' => 'Descoñecido',
-	'onlinestatusbar-tooltip-online' => 'O usuario está conectado',
-	'onlinestatusbar-tooltip-busy' => 'O usuario está ocupado e pode non estar dispoñible',
-	'onlinestatusbar-tooltip-away' => 'O usuario está inactivo e pode non estar dispoñible',
-	'onlinestatusbar-tooltip-offline' => 'O usuario está desconectado',
-	'onlinestatusbar-tooltip-unknown' => 'Descoñécese o estado do usuario',
+	'onlinestatusbar-title-online' => 'Conectado', # Fuzzy
+	'onlinestatusbar-title-busy' => 'Ocupado', # Fuzzy
+	'onlinestatusbar-title-away' => 'Ausente', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'Agochado', # Fuzzy
+	'onlinestatusbar-title-offline' => 'Desconectado', # Fuzzy
+	'onlinestatusbar-title-unknown' => 'Descoñecido', # Fuzzy
+	'onlinestatusbar-tooltip-online' => 'O usuario está conectado', # Fuzzy
+	'onlinestatusbar-tooltip-busy' => 'O usuario está ocupado e pode non estar dispoñible', # Fuzzy
+	'onlinestatusbar-tooltip-away' => 'O usuario está inactivo e pode non estar dispoñible', # Fuzzy
+	'onlinestatusbar-tooltip-offline' => 'O usuario está desconectado', # Fuzzy
+	'onlinestatusbar-tooltip-unknown' => 'Descoñécese o estado do usuario', # Fuzzy
 );
 
 /** Hebrew (עברית)
  * @author Amire80
  */
 $messages['he'] = array(
-	'onlinestatusbar-desc' => 'שורת מצב שמציגה בדף המשתמש אם המשתמש מקוון, בהתאם להעדפות',
+	'onlinestatusbar-desc' => 'שורת מצב שמציגה בדף המשתמש אם המשתמש מקוון, בהתאם להעדפות', # Fuzzy
 	'prefs-onlinestatus' => 'מצב ההימצאות באתר',
 	'onlinestatusbar-used' => 'להציג לאחרים את מצב ההתחברות שלך',
 	'onlinestatusbar-hide' => 'להסתיר את שורת המצב כדי להשתמש רק במילת הקסם (למשתמשים מתקדמים)',
@@ -335,11 +335,11 @@ $messages['he'] = array(
 	'onlinestatusbar-purge' => 'לנקות את המטמון של דף המשתמש בכל פעם שאתם נכנסים או יוצאים',
 	'onlinestatusbar-status' => 'מהו המצב שתרצו להיות פה לפי בררת המחדל?',
 	'onlinestatusbar-away-time' => 'אחרי כמה לסמך אותך בתור "לא נמצא":',
-	'onlinestatusbar-title-online' => 'באתר',
-	'onlinestatusbar-title-busy' => 'עסוק',
-	'onlinestatusbar-title-away' => 'לא ליד מחשב',
-	'onlinestatusbar-title-hidden' => 'מוסתר',
-	'onlinestatusbar-title-offline' => 'לא באתר',
+	'onlinestatusbar-title-online' => 'באתר', # Fuzzy
+	'onlinestatusbar-title-busy' => 'עסוק', # Fuzzy
+	'onlinestatusbar-title-away' => 'לא ליד מחשב', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'מוסתר', # Fuzzy
+	'onlinestatusbar-title-offline' => 'לא באתר', # Fuzzy
 	'onlinestatusbar-title-unknown' => 'המצב אינו ידוע', # Fuzzy
 );
 
@@ -347,7 +347,7 @@ $messages['he'] = array(
  * @author Michawiki
  */
 $messages['hsb'] = array(
-	'onlinestatusbar-desc' => 'Statusowa lajsta, kotraž na zakładźe nastajenjow pokazuje, hač wužiwar je na swojej wužiwarskej stronje online',
+	'onlinestatusbar-desc' => 'Statusowa lajsta, kotraž na zakładźe nastajenjow pokazuje, hač wužiwar je na swojej wužiwarskej stronje online', # Fuzzy
 	'prefs-onlinestatus' => 'Onlinestatus',
 	'onlinestatusbar-used' => 'Waš onlinestatus na wašich wužiwarskich stronach pokazać',
 	'onlinestatusbar-hide' => 'Statusowu lajstu na wužiwarskich stronach schować, zo by so jenož magiske słowo wužiwało (za pokročenych wužiwarjow)',
@@ -355,24 +355,24 @@ $messages['hsb'] = array(
 	'onlinestatusbar-purge' => 'Pufrowak wužiwarskeje strony kóždy raz wuprózdnić, hdyž so přizjewješ abo wotzjewješ',
 	'onlinestatusbar-status' => 'Što je standardny status, kotryž chceće wužiwać?',
 	'onlinestatusbar-away-time' => 'Ličba mjeńšin, prjedy hač maće so jako "njepřitomny" markěrować:',
-	'onlinestatusbar-title-online' => 'Online',
-	'onlinestatusbar-title-busy' => 'Ma dźěło',
-	'onlinestatusbar-title-away' => 'Preč',
-	'onlinestatusbar-title-hidden' => 'Schowany',
-	'onlinestatusbar-title-offline' => 'Offline',
-	'onlinestatusbar-title-unknown' => 'Njeznaty',
-	'onlinestatusbar-tooltip-online' => 'Tutón wužiwar je nětko online',
-	'onlinestatusbar-tooltip-busy' => 'Tutón wužiwar dźěła a snano njeje přitomny',
-	'onlinestatusbar-tooltip-away' => 'Tutón wužiwar njeje aktiwny a snano njeje přitomny',
-	'onlinestatusbar-tooltip-offline' => 'Tutón wužiwar je offline',
-	'onlinestatusbar-tooltip-unknown' => 'Status tutoho wužiwarja je njeznaty',
+	'onlinestatusbar-title-online' => 'Online', # Fuzzy
+	'onlinestatusbar-title-busy' => 'Ma dźěło', # Fuzzy
+	'onlinestatusbar-title-away' => 'Preč', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'Schowany', # Fuzzy
+	'onlinestatusbar-title-offline' => 'Offline', # Fuzzy
+	'onlinestatusbar-title-unknown' => 'Njeznaty', # Fuzzy
+	'onlinestatusbar-tooltip-online' => 'Tutón wužiwar je nětko online', # Fuzzy
+	'onlinestatusbar-tooltip-busy' => 'Tutón wužiwar dźěła a snano njeje přitomny', # Fuzzy
+	'onlinestatusbar-tooltip-away' => 'Tutón wužiwar njeje aktiwny a snano njeje přitomny', # Fuzzy
+	'onlinestatusbar-tooltip-offline' => 'Tutón wužiwar je offline', # Fuzzy
+	'onlinestatusbar-tooltip-unknown' => 'Status tutoho wužiwarja je njeznaty', # Fuzzy
 );
 
 /** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
-	'onlinestatusbar-desc' => 'Barra de stato que monstra si un usator es in linea, dependente de su preferentias, in su pagina de usator',
+	'onlinestatusbar-desc' => 'Barra de stato que monstra si un usator es in linea, dependente de su preferentias, in su pagina de usator', # Fuzzy
 	'prefs-onlinestatus' => 'Stato in linea',
 	'onlinestatusbar-used' => 'Monstrar si tu es in linea in tu pagina de usator',
 	'onlinestatusbar-hide' => 'Celar le barra de stato in paginas de usator pro usar solmente le parola magic (Pro usatores avantiate)',
@@ -380,11 +380,11 @@ $messages['ia'] = array(
 	'onlinestatusbar-purge' => 'Purgar le pagina de usator cata vice que tu aperi o claude session',
 	'onlinestatusbar-status' => 'Qual es le stato predefinite que tu vole usar?',
 	'onlinestatusbar-away-time' => 'Quante minutas ante que tu es marcate como absente:',
-	'onlinestatusbar-title-online' => 'In linea',
-	'onlinestatusbar-title-busy' => 'Occupate',
-	'onlinestatusbar-title-away' => 'Absente',
-	'onlinestatusbar-title-hidden' => 'Celate',
-	'onlinestatusbar-title-offline' => 'Foras de linea',
+	'onlinestatusbar-title-online' => 'In linea', # Fuzzy
+	'onlinestatusbar-title-busy' => 'Occupate', # Fuzzy
+	'onlinestatusbar-title-away' => 'Absente', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'Celate', # Fuzzy
+	'onlinestatusbar-title-offline' => 'Foras de linea', # Fuzzy
 	'onlinestatusbar-title-unknown' => 'stato es incognite', # Fuzzy
 );
 
@@ -393,7 +393,7 @@ $messages['ia'] = array(
  * @author Darth Kule
  */
 $messages['it'] = array(
-	'onlinestatusbar-desc' => 'Barra di stato che mostra se un utente è online, in base delle preferenze, sulla loro pagina utente',
+	'onlinestatusbar-desc' => 'Barra di stato che mostra se un utente è online, in base delle preferenze, sulla loro pagina utente', # Fuzzy
 	'prefs-onlinestatus' => 'Stato online',
 	'onlinestatusbar-used' => 'Mostra il tuo stato online nella tua pagina utente',
 	'onlinestatusbar-hide' => 'Nascondi la barra di stato sulle pagine degli utenti, per poter utilizzare solo la magic word (per utenti esperti)',
@@ -401,17 +401,17 @@ $messages['it'] = array(
 	'onlinestatusbar-purge' => 'Aggiorna la pagina utente ogni volta che accedi o esci',
 	'onlinestatusbar-status' => 'Qual è lo stato predefinito che vuoi usare?',
 	'onlinestatusbar-away-time' => 'Quanti minuti prima di essere considerato lontano:',
-	'onlinestatusbar-title-online' => 'connesso',
-	'onlinestatusbar-title-busy' => 'occupato',
-	'onlinestatusbar-title-away' => 'lontano',
-	'onlinestatusbar-title-hidden' => 'nascosto',
-	'onlinestatusbar-title-offline' => 'non connesso',
-	'onlinestatusbar-title-unknown' => 'sconosciuto',
-	'onlinestatusbar-tooltip-online' => 'Questo utente è attualmente connesso',
-	'onlinestatusbar-tooltip-busy' => 'Questo utente è attualmente occupato e potrebbe non essere disponibile',
-	'onlinestatusbar-tooltip-away' => 'Questo utente è attualmente lontano e potrebbe non essere disponibile',
-	'onlinestatusbar-tooltip-offline' => 'Questo utente è attualmente non connesso',
-	'onlinestatusbar-tooltip-unknown' => 'Lo stato di questo utente è sconosciuto',
+	'onlinestatusbar-title-online' => 'connesso', # Fuzzy
+	'onlinestatusbar-title-busy' => 'occupato', # Fuzzy
+	'onlinestatusbar-title-away' => 'lontano', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'nascosto', # Fuzzy
+	'onlinestatusbar-title-offline' => 'non connesso', # Fuzzy
+	'onlinestatusbar-title-unknown' => 'sconosciuto', # Fuzzy
+	'onlinestatusbar-tooltip-online' => 'Questo utente è attualmente connesso', # Fuzzy
+	'onlinestatusbar-tooltip-busy' => 'Questo utente è attualmente occupato e potrebbe non essere disponibile', # Fuzzy
+	'onlinestatusbar-tooltip-away' => 'Questo utente è attualmente lontano e potrebbe non essere disponibile', # Fuzzy
+	'onlinestatusbar-tooltip-offline' => 'Questo utente è attualmente non connesso', # Fuzzy
+	'onlinestatusbar-tooltip-unknown' => 'Lo stato di questo utente è sconosciuto', # Fuzzy
 );
 
 /** Japanese (日本語)
@@ -446,11 +446,11 @@ $messages['ka'] = array(
 	'prefs-onlinestatus' => 'ონლაინ სტატუსი',
 	'onlinestatusbar-used' => 'თქვენი მიმდინარე სტატუსის გამოსახვა, თქვენი მომხმარებლის გვერდზე',
 	'onlinestatusbar-status' => 'რომელია სტანდარტული სტატუსი რომლის გამოყენებაც გსურთ?',
-	'onlinestatusbar-title-online' => 'ქსელში',
-	'onlinestatusbar-title-busy' => 'დაკავებული',
-	'onlinestatusbar-title-away' => 'გასული',
-	'onlinestatusbar-title-hidden' => 'დამალული',
-	'onlinestatusbar-title-offline' => 'არ არის ქსელში',
+	'onlinestatusbar-title-online' => 'ქსელში', # Fuzzy
+	'onlinestatusbar-title-busy' => 'დაკავებული', # Fuzzy
+	'onlinestatusbar-title-away' => 'გასული', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'დამალული', # Fuzzy
+	'onlinestatusbar-title-offline' => 'არ არის ქსელში', # Fuzzy
 	'onlinestatusbar-title-unknown' => 'სტატუსი უცნობია', # Fuzzy
 );
 
@@ -458,7 +458,7 @@ $messages['ka'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
-	'onlinestatusbar-desc' => 'Määt ene Zohschtandsaanzeijer op Metmaacher-Sigge müjjelesch, woh aanjezeisch weed, ov dä onllain es, afhängesch vun däm Metmaacher singe Enschtällonge.',
+	'onlinestatusbar-desc' => 'Määt ene Zohschtandsaanzeijer op Metmaacher-Sigge müjjelesch, woh aanjezeisch weed, ov dä onllain es, afhängesch vun däm Metmaacher singe Enschtällonge.', # Fuzzy
 );
 
 /** Luxembourgish (Lëtzebuergesch)
@@ -471,16 +471,16 @@ $messages['lb'] = array(
 	'onlinestatusbar-purge' => "De'Benotzersäit all kéier wann Dir Iech eran oder erausloggt eidel maachen",
 	'onlinestatusbar-status' => 'Wéi ass de Standard-Status deen Dir benotze wëllt?',
 	'onlinestatusbar-away-time' => "Minutte bis Dir als 'net do' markéiert gitt:",
-	'onlinestatusbar-title-online' => 'Online',
-	'onlinestatusbar-title-busy' => 'Beschäftegt',
-	'onlinestatusbar-title-away' => 'Net do',
-	'onlinestatusbar-title-hidden' => 'Verstoppt',
-	'onlinestatusbar-title-offline' => 'Offline',
-	'onlinestatusbar-title-unknown' => 'Onbekannt',
-	'onlinestatusbar-tooltip-online' => 'Dëse Benotzer ass elo online',
-	'onlinestatusbar-tooltip-busy' => 'Dëse Benotzer ass beschäftegt a méiglecherweis net disponibel',
-	'onlinestatusbar-tooltip-away' => 'Dëse Benotzer ass net aktiv a méiglecherweis net disponibel',
-	'onlinestatusbar-tooltip-offline' => 'Dëse Benotzer ass elo offline',
+	'onlinestatusbar-title-online' => 'Online', # Fuzzy
+	'onlinestatusbar-title-busy' => 'Beschäftegt', # Fuzzy
+	'onlinestatusbar-title-away' => 'Net do', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'Verstoppt', # Fuzzy
+	'onlinestatusbar-title-offline' => 'Offline', # Fuzzy
+	'onlinestatusbar-title-unknown' => 'Onbekannt', # Fuzzy
+	'onlinestatusbar-tooltip-online' => 'Dëse Benotzer ass elo online', # Fuzzy
+	'onlinestatusbar-tooltip-busy' => 'Dëse Benotzer ass beschäftegt a méiglecherweis net disponibel', # Fuzzy
+	'onlinestatusbar-tooltip-away' => 'Dëse Benotzer ass net aktiv a méiglecherweis net disponibel', # Fuzzy
+	'onlinestatusbar-tooltip-offline' => 'Dëse Benotzer ass elo offline', # Fuzzy
 );
 
 /** Macedonian (македонски)
@@ -512,7 +512,7 @@ $messages['mk'] = array(
  * @author Anakmalaysia
  */
 $messages['ms'] = array(
-	'onlinestatusbar-desc' => 'Palang status yang menunjukkan sama pengguna berada dalam talian atau tidak, berasaskan keutamaan pada laman penggunanya',
+	'onlinestatusbar-desc' => 'Palang status yang menunjukkan sama pengguna berada dalam talian atau tidak, berasaskan keutamaan pada laman penggunanya', # Fuzzy
 	'prefs-onlinestatus' => 'Status dalam talian',
 	'onlinestatusbar-used' => 'Paparkan status online anda pada laman-laman pengguna anda',
 	'onlinestatusbar-hide' => 'Sorokkan palang status di laman pengguna untuk menggunakan kata sakti sahaja (Untuk pengguna yang lebih berpengalaman)',
@@ -520,17 +520,17 @@ $messages['ms'] = array(
 	'onlinestatusbar-purge' => 'Singkirkan isi laman pengguna setiap kali ketika log masuk/keluar',
 	'onlinestatusbar-status' => 'Yang manakah status asali yang ingin anda gunakan?',
 	'onlinestatusbar-away-time' => 'Berapa minit sehingga anda dianggap tiada:',
-	'onlinestatusbar-title-online' => 'Dalam talian',
-	'onlinestatusbar-title-busy' => 'Sibuk',
-	'onlinestatusbar-title-away' => 'Tiada',
-	'onlinestatusbar-title-hidden' => 'Tersorok',
-	'onlinestatusbar-title-offline' => 'Luar talian',
-	'onlinestatusbar-title-unknown' => 'Tidak diketahui',
-	'onlinestatusbar-tooltip-online' => 'Pengguna ini kini di dalam talian',
-	'onlinestatusbar-tooltip-busy' => 'Pengguna ini sibuk dan mungkin tidak boleh dihubungi',
-	'onlinestatusbar-tooltip-away' => 'Pengguna ini melahu dan mungkin tidak boleh dihubungi',
-	'onlinestatusbar-tooltip-offline' => 'Pengguna ini di luar talian',
-	'onlinestatusbar-tooltip-unknown' => 'Status pengguna ini tidak diketahui',
+	'onlinestatusbar-title-online' => 'Dalam talian', # Fuzzy
+	'onlinestatusbar-title-busy' => 'Sibuk', # Fuzzy
+	'onlinestatusbar-title-away' => 'Tiada', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'Tersorok', # Fuzzy
+	'onlinestatusbar-title-offline' => 'Luar talian', # Fuzzy
+	'onlinestatusbar-title-unknown' => 'Tidak diketahui', # Fuzzy
+	'onlinestatusbar-tooltip-online' => 'Pengguna ini kini di dalam talian', # Fuzzy
+	'onlinestatusbar-tooltip-busy' => 'Pengguna ini sibuk dan mungkin tidak boleh dihubungi', # Fuzzy
+	'onlinestatusbar-tooltip-away' => 'Pengguna ini melahu dan mungkin tidak boleh dihubungi', # Fuzzy
+	'onlinestatusbar-tooltip-offline' => 'Pengguna ini di luar talian', # Fuzzy
+	'onlinestatusbar-tooltip-unknown' => 'Status pengguna ini tidak diketahui', # Fuzzy
 );
 
 /** Dutch (Nederlands)
@@ -539,7 +539,7 @@ $messages['ms'] = array(
  * @author Wiki13
  */
 $messages['nl'] = array(
-	'onlinestatusbar-desc' => 'Statusbalk die weergeeft of een gebruiker online is, op basis van voorkeuren, op zijn/haar gebruikerspagina',
+	'onlinestatusbar-desc' => 'Statusbalk die weergeeft of een gebruiker online is, op basis van voorkeuren, op zijn/haar gebruikerspagina', # Fuzzy
 	'prefs-onlinestatus' => 'Onlinestatus',
 	'onlinestatusbar-used' => "Uw onlinestatus weergeven op uw gebruikerspagina's",
 	'onlinestatusbar-hide' => "De statusbalk op gebruikerpagina's verbergen en alleen het magische woord gebruiken (voor geavanceerde gebruikers)",
@@ -547,17 +547,17 @@ $messages['nl'] = array(
 	'onlinestatusbar-purge' => 'Uw gebruikerspagina bij aanmelden en afmelden uit de cache verwijderen',
 	'onlinestatusbar-status' => 'Welke standaard status wilt u gebruiken?',
 	'onlinestatusbar-away-time' => 'Aantal minuten totdat u als weg gemarkeerd wordt:',
-	'onlinestatusbar-title-online' => 'Online',
-	'onlinestatusbar-title-busy' => 'Druk',
-	'onlinestatusbar-title-away' => 'Weg',
-	'onlinestatusbar-title-hidden' => 'Verborgen',
-	'onlinestatusbar-title-offline' => 'Offline',
-	'onlinestatusbar-title-unknown' => 'Onbekend',
-	'onlinestatusbar-tooltip-online' => 'Deze gebruiker is nu online',
-	'onlinestatusbar-tooltip-busy' => 'Deze gebruiker is druk en mogelijk niet beschikbaar',
-	'onlinestatusbar-tooltip-away' => 'Deze gebruiker is inactief en mogelijk niet beschikbaar',
-	'onlinestatusbar-tooltip-offline' => 'Deze gebruiker is offline',
-	'onlinestatusbar-tooltip-unknown' => 'Status van deze gebruiker is onbekend',
+	'onlinestatusbar-title-online' => 'Online', # Fuzzy
+	'onlinestatusbar-title-busy' => 'Druk', # Fuzzy
+	'onlinestatusbar-title-away' => 'Weg', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'Verborgen', # Fuzzy
+	'onlinestatusbar-title-offline' => 'Offline', # Fuzzy
+	'onlinestatusbar-title-unknown' => 'Onbekend', # Fuzzy
+	'onlinestatusbar-tooltip-online' => 'Deze gebruiker is nu online', # Fuzzy
+	'onlinestatusbar-tooltip-busy' => 'Deze gebruiker is druk en mogelijk niet beschikbaar', # Fuzzy
+	'onlinestatusbar-tooltip-away' => 'Deze gebruiker is inactief en mogelijk niet beschikbaar', # Fuzzy
+	'onlinestatusbar-tooltip-offline' => 'Deze gebruiker is offline', # Fuzzy
+	'onlinestatusbar-tooltip-unknown' => 'Status van deze gebruiker is onbekend', # Fuzzy
 );
 
 /** Polish (polski)
@@ -565,7 +565,7 @@ $messages['nl'] = array(
  * @author Matma Rex
  */
 $messages['pl'] = array(
-	'onlinestatusbar-desc' => 'Pasek statusu, który informuje na stronie użytkownika, czy ten jest dostępny, w oparciu o preferencje',
+	'onlinestatusbar-desc' => 'Pasek statusu, który informuje na stronie użytkownika, czy ten jest dostępny, w oparciu o preferencje', # Fuzzy
 	'prefs-onlinestatus' => 'Status dostępności',
 	'onlinestatusbar-used' => 'Wyświetlaj mój status na moich stronach użytkownika',
 	'onlinestatusbar-hide' => 'Ukryj pasek statusu na stronach użytkownika, aby wykorzystać tylko magiczne słowo (dla użytkowników zaawansowanych)',
@@ -573,17 +573,17 @@ $messages['pl'] = array(
 	'onlinestatusbar-purge' => 'Odśwież stronę użytkownika za każdym razem, gdy loguję się lub wylogowuję',
 	'onlinestatusbar-status' => 'Jaki jest domyślny status, którego chcesz użyć?',
 	'onlinestatusbar-away-time' => 'Ile minut do oznaczenia jako "nieobecny"?',
-	'onlinestatusbar-title-online' => 'dostępny',
-	'onlinestatusbar-title-busy' => 'zajęty',
-	'onlinestatusbar-title-away' => 'nieobecny',
-	'onlinestatusbar-title-hidden' => 'ukryty',
-	'onlinestatusbar-title-offline' => 'niedostępny',
-	'onlinestatusbar-title-unknown' => 'nieznany',
-	'onlinestatusbar-tooltip-online' => 'Ten użytkownik jest teraz dostępny',
-	'onlinestatusbar-tooltip-busy' => 'Ten użytkownik jest zajęty i może być niedostępny',
-	'onlinestatusbar-tooltip-away' => 'Ten użytkownik jest bezczynny i może być niedostępny',
-	'onlinestatusbar-tooltip-offline' => 'Ten użytkownik jest niedostępny',
-	'onlinestatusbar-tooltip-unknown' => 'Status tego użytkownika jest nieznany',
+	'onlinestatusbar-title-online' => 'dostępny', # Fuzzy
+	'onlinestatusbar-title-busy' => 'zajęty', # Fuzzy
+	'onlinestatusbar-title-away' => 'nieobecny', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'ukryty', # Fuzzy
+	'onlinestatusbar-title-offline' => 'niedostępny', # Fuzzy
+	'onlinestatusbar-title-unknown' => 'nieznany', # Fuzzy
+	'onlinestatusbar-tooltip-online' => 'Ten użytkownik jest teraz dostępny', # Fuzzy
+	'onlinestatusbar-tooltip-busy' => 'Ten użytkownik jest zajęty i może być niedostępny', # Fuzzy
+	'onlinestatusbar-tooltip-away' => 'Ten użytkownik jest bezczynny i może być niedostępny', # Fuzzy
+	'onlinestatusbar-tooltip-offline' => 'Ten użytkownik jest niedostępny', # Fuzzy
+	'onlinestatusbar-tooltip-unknown' => 'Status tego użytkownika jest nieznany', # Fuzzy
 );
 
 /** Pashto (پښتو)
@@ -591,11 +591,11 @@ $messages['pl'] = array(
  */
 $messages['ps'] = array(
 	'prefs-onlinestatus' => 'پرليکه دريځ',
-	'onlinestatusbar-title-online' => 'پر ليکه',
-	'onlinestatusbar-title-busy' => 'بوخت',
-	'onlinestatusbar-title-away' => 'ليرې',
-	'onlinestatusbar-title-hidden' => 'پټ',
-	'onlinestatusbar-title-offline' => 'پرې ليکه',
+	'onlinestatusbar-title-online' => 'پر ليکه', # Fuzzy
+	'onlinestatusbar-title-busy' => 'بوخت', # Fuzzy
+	'onlinestatusbar-title-away' => 'ليرې', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'پټ', # Fuzzy
+	'onlinestatusbar-title-offline' => 'پرې ليکه', # Fuzzy
 	'onlinestatusbar-title-unknown' => 'دريځ ناڅرګنده دی', # Fuzzy
 );
 
@@ -604,7 +604,7 @@ $messages['ps'] = array(
  * @author Stelistcristi
  */
 $messages['ro'] = array(
-	'onlinestatusbar-desc' => 'Bară de stare care arată dacă un utilizator este conectat, în funcție de preferințe, pe pagina sa de utilizator',
+	'onlinestatusbar-desc' => 'Bară de stare care arată dacă un utilizator este conectat, în funcție de preferințe, pe pagina sa de utilizator', # Fuzzy
 	'prefs-onlinestatus' => 'Stare în on-line',
 	'onlinestatusbar-used' => 'Afișează starea dumneavoastră din on-line pe paginile de utilizator',
 	'onlinestatusbar-hide' => 'Ascunde bara de stare din paginile de utilizator pentru a utiliza doar cuvântul magic (pentru utilizatori avansați)',
@@ -612,17 +612,17 @@ $messages['ro'] = array(
 	'onlinestatusbar-purge' => 'Curățați pagina de utilizator ori de câte ori vă autentificați sau deconectați',
 	'onlinestatusbar-status' => 'Care este starea implicită pe care doriți să o utilizați?',
 	'onlinestatusbar-away-time' => 'Câte minute până când starea va fi schimbată în „plecat”?',
-	'onlinestatusbar-title-online' => 'Conectat',
-	'onlinestatusbar-title-busy' => 'Ocupat',
-	'onlinestatusbar-title-away' => 'Plecat',
-	'onlinestatusbar-title-hidden' => 'Ascuns',
-	'onlinestatusbar-title-offline' => 'Deconectat',
-	'onlinestatusbar-title-unknown' => 'Necunoscut',
-	'onlinestatusbar-tooltip-online' => 'Acest utilizator este acum conectat',
-	'onlinestatusbar-tooltip-busy' => 'Acest utilizator este ocupat și ar putea fi indisponibil',
-	'onlinestatusbar-tooltip-away' => 'Acest utilizator este inactiv și ar putea fi indisponibil',
-	'onlinestatusbar-tooltip-offline' => 'Acest utilizator este deconectat',
-	'onlinestatusbar-tooltip-unknown' => 'Starea acestui utilizator este necunoscută',
+	'onlinestatusbar-title-online' => 'Conectat', # Fuzzy
+	'onlinestatusbar-title-busy' => 'Ocupat', # Fuzzy
+	'onlinestatusbar-title-away' => 'Plecat', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'Ascuns', # Fuzzy
+	'onlinestatusbar-title-offline' => 'Deconectat', # Fuzzy
+	'onlinestatusbar-title-unknown' => 'Necunoscut', # Fuzzy
+	'onlinestatusbar-tooltip-online' => 'Acest utilizator este acum conectat', # Fuzzy
+	'onlinestatusbar-tooltip-busy' => 'Acest utilizator este ocupat și ar putea fi indisponibil', # Fuzzy
+	'onlinestatusbar-tooltip-away' => 'Acest utilizator este inactiv și ar putea fi indisponibil', # Fuzzy
+	'onlinestatusbar-tooltip-offline' => 'Acest utilizator este deconectat', # Fuzzy
+	'onlinestatusbar-tooltip-unknown' => 'Starea acestui utilizator este necunoscută', # Fuzzy
 );
 
 /** Sinhala (සිංහල)
@@ -630,10 +630,10 @@ $messages['ro'] = array(
  */
 $messages['si'] = array(
 	'prefs-onlinestatus' => 'මාර්ගගත තත්වය',
-	'onlinestatusbar-title-online' => 'මාර්ගගතයි',
-	'onlinestatusbar-title-busy' => 'කාර්යබහුලයි',
-	'onlinestatusbar-title-hidden' => 'සඟවනලද',
-	'onlinestatusbar-title-offline' => 'මාර්ගඅපගතයි',
+	'onlinestatusbar-title-online' => 'මාර්ගගතයි', # Fuzzy
+	'onlinestatusbar-title-busy' => 'කාර්යබහුලයි', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'සඟවනලද', # Fuzzy
+	'onlinestatusbar-title-offline' => 'මාර්ගඅපගතයි', # Fuzzy
 	'onlinestatusbar-title-unknown' => 'තත්වය නොදනියි', # Fuzzy
 );
 
@@ -642,11 +642,11 @@ $messages['si'] = array(
  */
 $messages['sv'] = array(
 	'prefs-onlinestatus' => 'Onlinestatus',
-	'onlinestatusbar-title-online' => 'ansluten',
-	'onlinestatusbar-title-busy' => 'upptagen',
-	'onlinestatusbar-title-away' => 'borta',
-	'onlinestatusbar-title-hidden' => 'dold',
-	'onlinestatusbar-title-offline' => 'inte ansluten',
+	'onlinestatusbar-title-online' => 'ansluten', # Fuzzy
+	'onlinestatusbar-title-busy' => 'upptagen', # Fuzzy
+	'onlinestatusbar-title-away' => 'borta', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'dold', # Fuzzy
+	'onlinestatusbar-title-offline' => 'inte ansluten', # Fuzzy
 	'onlinestatusbar-title-unknown' => 'status är okänd', # Fuzzy
 );
 
@@ -657,8 +657,8 @@ $messages['sv'] = array(
 $messages['ta'] = array(
 	'onlinestatusbar-used' => 'உங்கள் இணைப்பிலுள்ள நிலையை உங்கள் பயனர் பக்கத்தில் தெரிவிக்கவும்',
 	'onlinestatusbar-status' => 'நீங்கள் பயன்படுத்த விரும்பும் இயல்புநிலை நிலை என்ன?',
-	'onlinestatusbar-title-online' => 'இணைப்பில்',
-	'onlinestatusbar-title-offline' => 'இணைப்பிலில்லை',
+	'onlinestatusbar-title-online' => 'இணைப்பில்', # Fuzzy
+	'onlinestatusbar-title-offline' => 'இணைப்பிலில்லை', # Fuzzy
 );
 
 /** Telugu (తెలుగు)
@@ -673,7 +673,7 @@ $messages['te'] = array(
  * @author AnakngAraw
  */
 $messages['tl'] = array(
-	'onlinestatusbar-desc' => 'Bareta ng katayuan na nagpapakita kung ang isang tagagamit ay naka-Internet, na nakabatay sa mga kanaisan, na nasa ibabaw ng kanilang pahina ng tagagamit',
+	'onlinestatusbar-desc' => 'Bareta ng katayuan na nagpapakita kung ang isang tagagamit ay naka-Internet, na nakabatay sa mga kanaisan, na nasa ibabaw ng kanilang pahina ng tagagamit', # Fuzzy
 	'prefs-onlinestatus' => 'Katayuan sa Internet',
 	'onlinestatusbar-used' => 'Ipakita ang iyong katayuang nasa Internet na nasa mga pahina mo ng tagagamit',
 	'onlinestatusbar-hide' => 'Itago ang bareta ng katayuan na nasa mga pahina ng tagagamit upang gamitin lamang ang salitang masalamangka (Para sa mas masusulong na mga tagagamit)',
@@ -681,11 +681,11 @@ $messages['tl'] = array(
 	'onlinestatusbar-purge' => 'Purgahin ang pahina ng tagagamit tuwing lalagda ka o aalis mula sa pagkakalagda',
 	'onlinestatusbar-status' => 'Ano ang nais mong gamitin na likas na nakatakdang katayuan?',
 	'onlinestatusbar-away-time' => 'Ilang mga minuto hanggang sa markahan ka bilang wala rito at malayo:',
-	'onlinestatusbar-title-online' => 'nakaugnay sa Internet',
-	'onlinestatusbar-title-busy' => 'abala',
-	'onlinestatusbar-title-away' => 'wala at malayo',
-	'onlinestatusbar-title-hidden' => 'nakatago',
-	'onlinestatusbar-title-offline' => 'hindi nakaugnay sa Internet',
+	'onlinestatusbar-title-online' => 'nakaugnay sa Internet', # Fuzzy
+	'onlinestatusbar-title-busy' => 'abala', # Fuzzy
+	'onlinestatusbar-title-away' => 'wala at malayo', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'nakatago', # Fuzzy
+	'onlinestatusbar-title-offline' => 'hindi nakaugnay sa Internet', # Fuzzy
 	'onlinestatusbar-title-unknown' => 'hindi alam ang katayuan', # Fuzzy
 );
 
@@ -693,7 +693,7 @@ $messages['tl'] = array(
  * @author Suelnur
  */
 $messages['tr'] = array(
-	'onlinestatusbar-title-offline' => 'Çevrimdışı',
+	'onlinestatusbar-title-offline' => 'Çevrimdışı', # Fuzzy
 );
 
 /** Urdu (اردو)
@@ -701,23 +701,23 @@ $messages['tr'] = array(
  */
 $messages['ur'] = array(
 	'prefs-onlinestatus' => 'آن لائن کی حیثیت',
-	'onlinestatusbar-title-online' => 'ڈاؤن لوڈ ، اتارنا',
-	'onlinestatusbar-title-busy' => 'مصروف',
-	'onlinestatusbar-title-away' => 'دور',
-	'onlinestatusbar-title-hidden' => 'پوشیدہ',
-	'onlinestatusbar-title-offline' => 'آف لائن',
+	'onlinestatusbar-title-online' => 'ڈاؤن لوڈ ، اتارنا', # Fuzzy
+	'onlinestatusbar-title-busy' => 'مصروف', # Fuzzy
+	'onlinestatusbar-title-away' => 'دور', # Fuzzy
+	'onlinestatusbar-title-hidden' => 'پوشیدہ', # Fuzzy
+	'onlinestatusbar-title-offline' => 'آف لائن', # Fuzzy
 	'onlinestatusbar-title-unknown' => 'کی کیفیت نامعلوم ہے', # Fuzzy
 );
 
 /** Simplified Chinese (中文（简体）‎)
  */
 $messages['zh-hans'] = array(
-	'onlinestatusbar-title-hidden' => '隐藏',
+	'onlinestatusbar-title-hidden' => '隐藏', # Fuzzy
 );
 
 /** Traditional Chinese (中文（繁體）‎)
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
-	'onlinestatusbar-title-hidden' => '隱藏',
+	'onlinestatusbar-title-hidden' => '隱藏', # Fuzzy
 );
