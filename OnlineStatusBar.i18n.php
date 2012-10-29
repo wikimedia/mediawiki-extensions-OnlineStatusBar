@@ -264,7 +264,7 @@ $messages['fi'] = array(
  * @author Zebulon84
  */
 $messages['fr'] = array(
-	'onlinestatusbar-desc' => "Barre d'état montrant si un utilisateur est en ligne, basé sur les préférences, sur leur page utilisateur", # Fuzzy
+	'onlinestatusbar-desc' => "Barre d'état montrant si un utilisateur est en ligne sur sa page utilisateur",
 	'prefs-onlinestatus' => 'État en ligne',
 	'onlinestatusbar-used' => 'Afficher votre statut en ligne sur vos pages utilisateur',
 	'onlinestatusbar-hide' => "Masquer la barre d'état sur les pages d'utilisateur afin d'utiliser le mot magique seulement (pour les utilisateurs avancés)",
@@ -272,17 +272,17 @@ $messages['fr'] = array(
 	'onlinestatusbar-purge' => 'Vider la page utilisateur chaque vous que vous vous connectez ou vous déconnectez',
 	'onlinestatusbar-status' => 'Quel est le statut par défaut que vous souhaitez utiliser ?',
 	'onlinestatusbar-away-time' => 'Combien minutes avant de changer le status en "absent" :',
-	'onlinestatusbar-title-online' => 'Présent', # Fuzzy
-	'onlinestatusbar-title-busy' => 'Occupé', # Fuzzy
-	'onlinestatusbar-title-away' => 'Parti', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'Masqué', # Fuzzy
-	'onlinestatusbar-title-offline' => 'Absent', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'Inconnu', # Fuzzy
-	'onlinestatusbar-tooltip-online' => 'Cet utilisateur est maintenant connecté', # Fuzzy
-	'onlinestatusbar-tooltip-busy' => 'Cet utilisateur est occupé et peut ne pas être disponible', # Fuzzy
-	'onlinestatusbar-tooltip-away' => 'Cet utilisateur est inactif et peut ne pas être disponible', # Fuzzy
-	'onlinestatusbar-tooltip-offline' => 'Cet utilisateur est non connecté', # Fuzzy
-	'onlinestatusbar-tooltip-unknown' => 'Le statut de cet utilisateur est inconnu', # Fuzzy
+	'onlinestatusbar-title-online' => '{{GENDER:$1|En ligne}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Occupé|Occupée}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Parti|Partie}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Masqué|Masquée}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Absent|Absente}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Inconnu|Inconnue}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|Cet utilisateur|Cette utilisatrice}} est maintenant en ligne',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|Cet utilisateur est occupé|Cette utilisatrice est occupée}} et peut ne pas être disponible',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|Cet utilisateur est inactif|Cette utilisatrice est inactive}} et peut ne pas être disponible',
+	'onlinestatusbar-tooltip-offline' => "{{GENDER:$1|Cet utilisateur n'est pas connecté|Cette utilisatrice n'est pas connectée}}",
+	'onlinestatusbar-tooltip-unknown' => 'Le statut de {{GENDER:$1|cet utilisateur|cette utilisatrice}} est inconnu',
 );
 
 /** Franco-Provençal (arpetan)
