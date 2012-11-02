@@ -710,9 +710,28 @@ $messages['ur'] = array(
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
-	'onlinestatusbar-title-hidden' => '隐藏', # Fuzzy
+	'onlinestatusbar-desc' => '在其用户页上的状态栏显示用户是否在线',
+	'prefs-onlinestatus' => '在线状态',
+	'onlinestatusbar-used' => '在您的用户页上显示您的在线状态',
+	'onlinestatusbar-hide' => '在用户页使用这个魔术字就能隐藏状态栏（适用于高级用户）',
+	'onlinestatusbar-away' => '定义多长时间无操作就视为已离开',
+	'onlinestatusbar-purge' => '每次您登录或登出时都刷新（Purge）用户页缓存',
+	'onlinestatusbar-status' => '您想使用哪个作为默认状态？',
+	'onlinestatusbar-away-time' => '您想多少分钟后标记为已离开？',
+	'onlinestatusbar-title-online' => '{{GENDER:$1|在线}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|忙碌}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|离开}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|隐身}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|离线}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|未知}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|此用户}}现在在线',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|此用户}}正忙，可能无法回应',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|此用户}}处于离开状态，可能无法回应',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|此用户}}处于离线状态',
+	'onlinestatusbar-tooltip-unknown' => '{{GENDER:$1|此用户}}的状态未知',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
