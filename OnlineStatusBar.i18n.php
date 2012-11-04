@@ -547,17 +547,17 @@ $messages['nl'] = array(
 	'onlinestatusbar-purge' => 'Uw gebruikerspagina bij aanmelden en afmelden uit de cache verwijderen',
 	'onlinestatusbar-status' => 'Welke standaard status wilt u gebruiken?',
 	'onlinestatusbar-away-time' => 'Aantal minuten totdat u als weg gemarkeerd wordt:',
-	'onlinestatusbar-title-online' => 'Online', # Fuzzy
-	'onlinestatusbar-title-busy' => 'Druk', # Fuzzy
-	'onlinestatusbar-title-away' => 'Weg', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'Verborgen', # Fuzzy
-	'onlinestatusbar-title-offline' => 'Offline', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'Onbekend', # Fuzzy
-	'onlinestatusbar-tooltip-online' => 'Deze gebruiker is nu online', # Fuzzy
-	'onlinestatusbar-tooltip-busy' => 'Deze gebruiker is druk en mogelijk niet beschikbaar', # Fuzzy
-	'onlinestatusbar-tooltip-away' => 'Deze gebruiker is inactief en mogelijk niet beschikbaar', # Fuzzy
-	'onlinestatusbar-tooltip-offline' => 'Deze gebruiker is offline', # Fuzzy
-	'onlinestatusbar-tooltip-unknown' => 'Status van deze gebruiker is onbekend', # Fuzzy
+	'onlinestatusbar-title-online' => '{{GENDER:$1|Online}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Druk}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Weg}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Verborgen}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Offline}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Onbekend}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|Deze gebruiker}} is nu online',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|Deze gebruiker}} is druk en mogelijk niet beschikbaar',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|Deze gebruiker}} is inactief en mogelijk niet beschikbaar',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|Deze gebruiker}} is offline',
+	'onlinestatusbar-tooltip-unknown' => 'Status van {{GENDER:$1|deze gebruiker}} is onbekend',
 );
 
 /** Polish (polski)
