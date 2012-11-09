@@ -302,7 +302,7 @@ $messages['frp'] = array(
  * @author Toliño
  */
 $messages['gl'] = array(
-	'onlinestatusbar-desc' => 'Barra de estado que mostra na páxina de usuario se un usuario está conectado', # Fuzzy
+	'onlinestatusbar-desc' => 'Barra de estado que mostra na páxina de usuario se un usuario está conectado',
 	'prefs-onlinestatus' => 'Conectado',
 	'onlinestatusbar-used' => 'Mostrar se está conectado nas súas páxinas de usuario',
 	'onlinestatusbar-hide' => 'Agochar a barra de estado nas páxinas de usuario para usar unicamente a palabra máxica (para usuarios avanzados)',
@@ -310,17 +310,17 @@ $messages['gl'] = array(
 	'onlinestatusbar-purge' => 'Purgar a páxina de usuario cada vez que se identifique ou saia do sistema',
 	'onlinestatusbar-status' => 'Cal é o estado por defecto que quere usar?',
 	'onlinestatusbar-away-time' => 'Cantos minutos deben pasar ata considerar que marchou?',
-	'onlinestatusbar-title-online' => 'Conectado', # Fuzzy
-	'onlinestatusbar-title-busy' => 'Ocupado', # Fuzzy
-	'onlinestatusbar-title-away' => 'Ausente', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'Agochado', # Fuzzy
-	'onlinestatusbar-title-offline' => 'Desconectado', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'Descoñecido', # Fuzzy
-	'onlinestatusbar-tooltip-online' => 'O usuario está conectado', # Fuzzy
-	'onlinestatusbar-tooltip-busy' => 'O usuario está ocupado e pode non estar dispoñible', # Fuzzy
-	'onlinestatusbar-tooltip-away' => 'O usuario está inactivo e pode non estar dispoñible', # Fuzzy
-	'onlinestatusbar-tooltip-offline' => 'O usuario está desconectado', # Fuzzy
-	'onlinestatusbar-tooltip-unknown' => 'Descoñécese o estado do usuario', # Fuzzy
+	'onlinestatusbar-title-online' => '{{GENDER:$1|Conectado|Conectada}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Ocupado|Ocupada}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Ausente}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Agochado|Agochada}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Desconectado|Desconectada}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Descoñecido}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|O usuario|A usuaria}} está {{GENDER:$1|conectado|conectada}}',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|O usuario|A usuaria}} está {{GENDER:$1|ocupado|ocupada}} e pode non estar dispoñible',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|O usuario|A usuaria}} está {{GENDER:$1|inactivo|inactiva}} e pode non estar dispoñible',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|O usuario|A usuaria}} está {{GENDER:$1|desconectado|desconectada}}',
+	'onlinestatusbar-tooltip-unknown' => 'Descoñécese o estado {{GENDER:$1|do usuario|da usuaria}}',
 );
 
 /** Hebrew (עברית)
