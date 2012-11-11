@@ -325,9 +325,10 @@ $messages['gl'] = array(
 
 /** Hebrew (עברית)
  * @author Amire80
+ * @author חיים
  */
 $messages['he'] = array(
-	'onlinestatusbar-desc' => 'שורת מצב שמציגה בדף המשתמש אם המשתמש מקוון, בהתאם להעדפות', # Fuzzy
+	'onlinestatusbar-desc' => 'שורת מצב שמציגה בדף המשתמש אם המשתמש מקוון',
 	'prefs-onlinestatus' => 'מצב ההימצאות באתר',
 	'onlinestatusbar-used' => 'להציג לאחרים את מצב ההתחברות שלך',
 	'onlinestatusbar-hide' => 'להסתיר את שורת המצב כדי להשתמש רק במילת הקסם (למשתמשים מתקדמים)',
@@ -335,12 +336,12 @@ $messages['he'] = array(
 	'onlinestatusbar-purge' => 'לנקות את המטמון של דף המשתמש בכל פעם שאתם נכנסים או יוצאים',
 	'onlinestatusbar-status' => 'מהו המצב שתרצו להיות פה לפי בררת המחדל?',
 	'onlinestatusbar-away-time' => 'אחרי כמה לסמך אותך בתור "לא נמצא":',
-	'onlinestatusbar-title-online' => 'באתר', # Fuzzy
-	'onlinestatusbar-title-busy' => 'עסוק', # Fuzzy
-	'onlinestatusbar-title-away' => 'לא ליד מחשב', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'מוסתר', # Fuzzy
-	'onlinestatusbar-title-offline' => 'לא באתר', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'המצב אינו ידוע', # Fuzzy
+	'onlinestatusbar-title-online' => '{{GENDER:$1|מקוון}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|עסוק|עסוקה}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|לא זמין|לא זמינה}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|נסתר|נסתרת}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|לא מקוון}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|לא ידוע}}',
 );
 
 /** Upper Sorbian (hornjoserbsce)
@@ -471,11 +472,11 @@ $messages['lb'] = array(
 	'onlinestatusbar-purge' => "De'Benotzersäit all kéier wann Dir Iech eran oder erausloggt eidel maachen",
 	'onlinestatusbar-status' => 'Wéi ass de Standard-Status deen Dir benotze wëllt?',
 	'onlinestatusbar-away-time' => "Minutte bis Dir als 'net do' markéiert gitt:",
-	'onlinestatusbar-title-online' => 'Online', # Fuzzy
+	'onlinestatusbar-title-online' => '{{GENDER:$1|Online}}',
 	'onlinestatusbar-title-busy' => 'Beschäftegt', # Fuzzy
-	'onlinestatusbar-title-away' => 'Net do', # Fuzzy
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Net do}}',
 	'onlinestatusbar-title-hidden' => 'Verstoppt', # Fuzzy
-	'onlinestatusbar-title-offline' => 'Offline', # Fuzzy
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Offline}}',
 	'onlinestatusbar-title-unknown' => 'Onbekannt', # Fuzzy
 	'onlinestatusbar-tooltip-online' => 'Dëse Benotzer ass elo online', # Fuzzy
 	'onlinestatusbar-tooltip-busy' => 'Dëse Benotzer ass beschäftegt a méiglecherweis net disponibel', # Fuzzy
@@ -534,12 +535,13 @@ $messages['ms'] = array(
 );
 
 /** Dutch (Nederlands)
+ * @author Rcdeboer
  * @author SPQRobin
  * @author Siebrand
  * @author Wiki13
  */
 $messages['nl'] = array(
-	'onlinestatusbar-desc' => 'Statusbalk die weergeeft of een gebruiker online is, op basis van voorkeuren, op zijn/haar gebruikerspagina', # Fuzzy
+	'onlinestatusbar-desc' => 'Statusbalk die weergeeft of een gebruiker online is op zijn/haar gebruikerspagina',
 	'prefs-onlinestatus' => 'Onlinestatus',
 	'onlinestatusbar-used' => "Uw onlinestatus weergeven op uw gebruikerspagina's",
 	'onlinestatusbar-hide' => "De statusbalk op gebruikerpagina's verbergen en alleen het magische woord gebruiken (voor geavanceerde gebruikers)",
