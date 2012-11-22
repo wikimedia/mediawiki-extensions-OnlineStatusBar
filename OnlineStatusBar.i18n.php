@@ -164,15 +164,16 @@ $messages['de-formal'] = array(
 
 /** Zazaki (Zazaki)
  * @author Erdemaslancan
+ * @author Mirzali
  */
 $messages['diq'] = array(
 	'prefs-onlinestatus' => 'Weziyetê çerxmiyani',
 	'onlinestatusbar-title-online' => '{{GENDER:$1|Çerxmiyan}}',
-	'onlinestatusbar-title-busy' => '{{GENDER:$1|Mesgul}}',
-	'onlinestatusbar-title-away' => '{{GENDER:$1|Teber deyo}}',
-	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Bınımne}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Meşğul}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Duri}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Nımıte}}',
 	'onlinestatusbar-title-offline' => '{{GENDER:$1|Çerxteber}}',
-	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Nêzanêno}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Nêzaniyaye}}',
 );
 
 /** Lower Sorbian (dolnoserbski)
