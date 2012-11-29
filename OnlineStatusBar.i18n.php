@@ -253,13 +253,17 @@ $messages['fa'] = array(
 /** Finnish (suomi)
  * @author Beluga
  * @author Crt
+ * @author Nedergard
  */
 $messages['fi'] = array(
-	'onlinestatusbar-title-online' => 'kirjautuneena', # Fuzzy
-	'onlinestatusbar-title-away' => 'poissa', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'piilotettu', # Fuzzy
-	'onlinestatusbar-title-offline' => 'ei kirjautuneena', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'Tuntematon', # Fuzzy
+	'onlinestatusbar-title-online' => '{{GENDER:$1|Kirjautuneena}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Poissa}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Piilotettu}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Ei kirjautuneena}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Tuntematon}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|Tämä käyttäjä}} on nyt kirjautunut sisään',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|Tämä käyttäjä}} ei ole kirjautunut sisään',
+	'onlinestatusbar-tooltip-unknown' => '{{GENDER:$1|Tämän käyttäjän}} tila on tuntematon',
 );
 
 /** French (français)
