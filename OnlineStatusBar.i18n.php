@@ -709,6 +709,31 @@ $messages['tr'] = array(
 	'onlinestatusbar-title-offline' => 'Çevrimdışı', # Fuzzy
 );
 
+/** Ukrainian (українська)
+ * @author Base
+ */
+$messages['uk'] = array(
+	'onlinestatusbar-desc' => 'Панель стану, що показує на сторінці користувача чи він онлайн',
+	'prefs-onlinestatus' => 'Онлайн-статус',
+	'onlinestatusbar-used' => 'Показувати Ваш онлайн статус на Вашій сторінці користувача',
+	'onlinestatusbar-hide' => 'Приховувати панель стану на сторінках користувачів, для використання магічного слова (Для досвідчених користувачів)',
+	'onlinestatusbar-away' => 'Автоматично встановлювати статус «Немає на місці» після визначеного інтервалу',
+	'onlinestatusbar-purge' => 'Очищати кеш сторінки кожного разу, коли Ви входите чи виходите',
+	'onlinestatusbar-status' => 'Який статус Ви бажаєте використовувати за замовчуванням?',
+	'onlinestatusbar-away-time' => 'Через скільки хвилин змінювати Ваш статус на «Немає на місці»?',
+	'onlinestatusbar-title-online' => '{{GENDER:$1|Онлайн}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Зайнятий|Зайнята}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Немає на місці}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Невидимий|Невидима}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Офлайн}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Невідомий}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|Цей користувач|Ця користувачка}} зараз онлайн',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|Цей користувач|Ця користувачка}} зараз зайнятий і може бути {{GENDER:$1|недоступним|недоступною}}',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|Цей користувач|Ця користувачка}} зараз {{GENDER:$1|неактивний|неактивна}} і може бути {{GENDER:$1|недоступним|недоступною}}',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|Цей користувач|Ця користувачка}} зараз офлайн',
+	'onlinestatusbar-tooltip-unknown' => 'Статус {{GENDER:$1|цього користувача|цієї користувачки}} невідомий',
+);
+
 /** Urdu (اردو)
  * @author පසිඳු කාවින්ද
  */
