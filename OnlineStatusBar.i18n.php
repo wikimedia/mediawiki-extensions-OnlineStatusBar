@@ -50,7 +50,7 @@ $messages['en'] = array(
  * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'onlinestatusbar-desc' => '{{desc}}', # Fuzzy
+	'onlinestatusbar-desc' => '{{desc|name=Online Status Bar|url=http://www.mediawiki.org/wiki/Extension:OnlineStatusBar}}',
 	'prefs-onlinestatus' => 'Section for config, located in preferences - misc',
 	'onlinestatusbar-used' => 'Message in config asking user if they want to enable it, checkbox',
 	'onlinestatusbar-hide' => 'Ask user if they want to hide status bar this is useful when they are using custom template but need to check if they are online',
@@ -59,25 +59,25 @@ $messages['qqq'] = array(
 	'onlinestatusbar-status' => 'Message in config asking what status they want to use, option box',
 	'onlinestatusbar-away-time' => 'Question in preferences asking user how many minutes to wait until he would be flagged as away',
 	'onlinestatusbar-title-online' => 'Status for users who mark themselves as active. Parameters:
-* $1 is the name of the user for GENDER.', # Fuzzy
+* $1 is the name of the user for GENDER.',
 	'onlinestatusbar-title-busy' => 'Status for users who mark themselves as busy. Parameters:
 * $1 is the name of the user for GENDER.',
 	'onlinestatusbar-title-away' => 'Status for users who mark themselves as away. Parameters:
-* $1 is the name of the user for GENDER.', # Fuzzy
+* $1 is the name of the user for GENDER.',
 	'onlinestatusbar-title-hidden' => 'Status for users who mark themselves as hidden. Parameters:
-* $1 is the name of the user for GENDER.', # Fuzzy
+* $1 is the name of the user for GENDER.',
 	'onlinestatusbar-title-offline' => 'Status for users who are offline. Parameters:
 * $1 is the name of the user for GENDER.',
 	'onlinestatusbar-title-unknown' => 'Displayed for users with an unknown status. Parameters:
 * $1 is the name of the user for GENDER.',
 	'onlinestatusbar-tooltip-online' => 'Tooltip for {{msg-mw|onlinestatusbar-title-online}}. Parameters:
-* $1 is the name of the user for GENDER.', # Fuzzy
+* $1 is the name of the user for GENDER.',
 	'onlinestatusbar-tooltip-busy' => 'Tooltip for {{msg-mw|onlinestatusbar-title-busy}}. Parameters:
-* $1 is the name of the user for GENDER.', # Fuzzy
+* $1 is the name of the user for GENDER.',
 	'onlinestatusbar-tooltip-away' => 'Tooltip for {{msg-mw|onlinestatusbar-title-away}}. Parameters:
-* $1 is the name of the user for GENDER.', # Fuzzy
+* $1 is the name of the user for GENDER.',
 	'onlinestatusbar-tooltip-offline' => 'Tooltip for {{msg-mw|onlinestatusbar-title-offline}}. Parameters:
-* $1 is the name of the user for GENDER.', # Fuzzy
+* $1 is the name of the user for GENDER.',
 	'onlinestatusbar-tooltip-unknown' => 'Tooltip for {{msg-mw|onlinestatusbar-title-unknown}}. Parameters:
 * $1 is the name of the user for GENDER.',
 );
