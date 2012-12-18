@@ -458,12 +458,12 @@ $messages['ka'] = array(
 	'prefs-onlinestatus' => 'ონლაინ სტატუსი',
 	'onlinestatusbar-used' => 'თქვენი მიმდინარე სტატუსის გამოსახვა, თქვენი მომხმარებლის გვერდზე',
 	'onlinestatusbar-status' => 'რომელია სტანდარტული სტატუსი რომლის გამოყენებაც გსურთ?',
-	'onlinestatusbar-title-online' => 'ქსელში', # Fuzzy
-	'onlinestatusbar-title-busy' => 'დაკავებული', # Fuzzy
-	'onlinestatusbar-title-away' => 'გასული', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'დამალული', # Fuzzy
-	'onlinestatusbar-title-offline' => 'არ არის ქსელში', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'სტატუსი უცნობია', # Fuzzy
+	'onlinestatusbar-title-online' => '{{GENDER:$1|ქსელში}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|დაკავებული}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|გასული}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|დამალული}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|არ არის ქსელში}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|უცნობია}}',
 );
 
 /** Colognian (Ripoarisch)
