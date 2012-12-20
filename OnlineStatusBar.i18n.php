@@ -654,13 +654,25 @@ $messages['si'] = array(
  * @author WikiPhoenix
  */
 $messages['sv'] = array(
+	'onlinestatusbar-desc' => 'Statusfält som visar om en användare är ansluten på sin användarsida',
 	'prefs-onlinestatus' => 'Onlinestatus',
-	'onlinestatusbar-title-online' => 'ansluten', # Fuzzy
-	'onlinestatusbar-title-busy' => 'upptagen', # Fuzzy
-	'onlinestatusbar-title-away' => 'borta', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'dold', # Fuzzy
-	'onlinestatusbar-title-offline' => 'inte ansluten', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'status är okänd', # Fuzzy
+	'onlinestatusbar-used' => 'Visa din anslutningsstatus på dina användarsidor',
+	'onlinestatusbar-hide' => 'Dölj statusfältet på användarsidor för att bara använda det magiska ordet (För avancerade användare)',
+	'onlinestatusbar-away' => 'Behandla som borta automatiskt efter definierat intervall',
+	'onlinestatusbar-purge' => 'Rensa användarsidan varje gång du loggar in eller ut',
+	'onlinestatusbar-status' => 'Vilken standardstatus önskar du använda?',
+	'onlinestatusbar-away-time' => 'Hur många minuter innan du markeras som borta?',
+	'onlinestatusbar-title-online' => '{{GENDER:$1|Ansluten}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Upptagen}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Borta}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Dold}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Inte ansluten}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Okänd}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|Denna användare}} är nu inte ansluten',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|Denna användare}} är upptagen och kan vara oanträffbar',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|Denna användare}} är inaktiv och kan vara oanträffbar',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|Denna användare}} är inte ansluten',
+	'onlinestatusbar-tooltip-unknown' => 'Statusen för {{GENDER:$1|denna användare}} är okänd',
 );
 
 /** Tamil (தமிழ்)
