@@ -228,14 +228,19 @@ $messages['es'] = array(
 
 /** Estonian (eesti)
  * @author Avjoska
+ * @author Pikne
  */
 $messages['et'] = array(
-	'onlinestatusbar-title-online' => 'arvuti juures', # Fuzzy
-	'onlinestatusbar-title-busy' => 'hõivatud', # Fuzzy
-	'onlinestatusbar-title-away' => 'eemal', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'peidetud', # Fuzzy
-	'onlinestatusbar-title-offline' => 'ühenduseta', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'olek on teadmata', # Fuzzy
+	'onlinestatusbar-title-online' => '{{GENDER:$1|Võrgus}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Hõivatud}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Eemal}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Peidus}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Ühenduseta}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Teadmata}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|See kasutaja}} on nüüd võrgus',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|See kasutaja}} on hõivatud ja ei pruugi olla saadaval',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|See kasutaja}} on jõude ja ei pruugi olla saadaval',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|See kasutaja}} ei ole sisse loginud',
 );
 
 /** Persian (فارسی)
@@ -248,6 +253,11 @@ $messages['fa'] = array(
 	'onlinestatusbar-title-hidden' => 'پنهان', # Fuzzy
 	'onlinestatusbar-title-offline' => 'برون‌خط', # Fuzzy
 	'onlinestatusbar-title-unknown' => 'وضعیت ناشناخته است', # Fuzzy
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|این کاربر}} اکنون برخط است',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|این کاربر}} مشغول است و ممکن است در دسترس نباشد',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|این کاربر}} بیکار است (فعالیتی انجام نداده است) و ممکن است در دسترس نباشد',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|این کاربر}} برون‌خط است',
+	'onlinestatusbar-tooltip-unknown' => 'وضعیت {{GENDER:$1|این کاربر}} نامعلوم است',
 );
 
 /** Finnish (suomi)
