@@ -693,6 +693,8 @@ $messages['ta'] = array(
 	'onlinestatusbar-used' => 'உங்கள் இணைப்பிலுள்ள நிலையை உங்கள் பயனர் பக்கத்தில் தெரிவிக்கவும்',
 	'onlinestatusbar-status' => 'நீங்கள் பயன்படுத்த விரும்பும் இயல்புநிலை நிலை என்ன?',
 	'onlinestatusbar-title-online' => 'இணைப்பில்', # Fuzzy
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|வேலையாகவுள்ளார்}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|வெளியே சென்றுள்ளார்}}',
 	'onlinestatusbar-title-offline' => 'இணைப்பிலில்லை', # Fuzzy
 );
 
