@@ -609,6 +609,31 @@ $messages['pl'] = array(
 	'onlinestatusbar-tooltip-unknown' => 'Status tego użytkownika jest nieznany', # Fuzzy
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Dragonòt
+ */
+$messages['pms'] = array(
+	'onlinestatusbar-desc' => "La bara dë stat che a mosta quand n'utent a l'é an linia dzora soa pagina utent",
+	'prefs-onlinestatus' => 'Stat an linia',
+	'onlinestatusbar-used' => 'Mosta tò stat an linia dzora toa pagina utent',
+	'onlinestatusbar-hide' => 'Stërma la bara dë stat dzora pagine utent për dovré mach la parola màgica (Për utent avansà)',
+	'onlinestatusbar-away' => "Trata com automaticament lontan d'aprenn n'antërval definì",
+	'onlinestatusbar-purge' => 'Purga la pagina utent sempe quand it intre o it seurte',
+	'onlinestatusbar-status' => "Col ch'a l'é lë stat predefinì ch'it veule dovré?",
+	'onlinestatusbar-away-time' => "Vàire minute prima ch'it sie marcà com lontan?",
+	'onlinestatusbar-title-online' => '{{GENDER:$1|An linia}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Ocopà}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Lontan}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Stërmà}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Fòra linia}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Pa conossù}}',
+	'onlinestatusbar-tooltip-online' => "{{GENDER:$1|St'utent}} a l'é adess an linia",
+	'onlinestatusbar-tooltip-busy' => "{{GENDER:$1|St'utent}} a l'é ocupà e a peul esse pa disponìbil",
+	'onlinestatusbar-tooltip-away' => "{{GENDER:$1|St'utent}} a l'é lontan e a peul esse pa disponìbil",
+	'onlinestatusbar-tooltip-offline' => "{{GENDER:$1|St'utent}} a l'é fòra linia",
+	'onlinestatusbar-tooltip-unknown' => "Lë stat dë {{GENDER:$1|st'utent}} a l'é sconossù",
+);
+
 /** Pashto (پښتو)
  * @author Ahmed-Najib-Biabani-Ibrahimkhel
  */
@@ -695,7 +720,12 @@ $messages['ta'] = array(
 	'onlinestatusbar-title-online' => 'இணைப்பில்', # Fuzzy
 	'onlinestatusbar-title-busy' => '{{GENDER:$1|வேலையாகவுள்ளார்}}',
 	'onlinestatusbar-title-away' => '{{GENDER:$1|வெளியே சென்றுள்ளார்}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|மறைக்கப்பட்டது}}',
 	'onlinestatusbar-title-offline' => 'இணைப்பிலில்லை', # Fuzzy
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|அறியப்படாதது}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|இந்தப் பயனர்}} இப்போது இணைப்பிலுள்ளார்',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|இந்தப் பயனர்}} வேலையாகவுள்ளார், மேலும் இப்போது கிடைக்காமலிருக்கலாம்',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|இந்தப் பயனர்}} இப்போது இணைப்பிலில்லை',
 );
 
 /** Telugu (తెలుగు)
