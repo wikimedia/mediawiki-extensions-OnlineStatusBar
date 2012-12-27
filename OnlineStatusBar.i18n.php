@@ -264,9 +264,17 @@ $messages['fa'] = array(
  * @author Beluga
  * @author Crt
  * @author Nedergard
+ * @author VezonThunder
  */
 $messages['fi'] = array(
+	'onlinestatusbar-desc' => 'Tilarivi, joka näyttää, onko käyttäjä kirjautuneena tämän keskustelusivulla',
+	'prefs-onlinestatus' => 'Sisäänkirjautumisen tila',
+	'onlinestatusbar-used' => 'Näytä sisäänkirjautumisesi tila käyttäjäsivullasi',
+	'onlinestatusbar-hide' => 'Piilota tilarivi käyttäjäsivuilla käyttääksesi vain taikasanaa (edistyneille käyttäjille)',
+	'onlinestatusbar-status' => 'Mitä haluat käyttää oletustilana?',
+	'onlinestatusbar-away-time' => 'Montako minuuttia ennen kuin sinut merkitään poissaolevaksi?',
 	'onlinestatusbar-title-online' => '{{GENDER:$1|Kirjautuneena}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Varattu}}',
 	'onlinestatusbar-title-away' => '{{GENDER:$1|Poissa}}',
 	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Piilotettu}}',
 	'onlinestatusbar-title-offline' => '{{GENDER:$1|Ei kirjautuneena}}',
@@ -388,6 +396,23 @@ $messages['hsb'] = array(
 	'onlinestatusbar-tooltip-away' => 'Tutón wužiwar njeje aktiwny a snano njeje přitomny', # Fuzzy
 	'onlinestatusbar-tooltip-offline' => 'Tutón wužiwar je offline', # Fuzzy
 	'onlinestatusbar-tooltip-unknown' => 'Status tutoho wužiwarja je njeznaty', # Fuzzy
+);
+
+/** Hungarian (magyar)
+ * @author Dj
+ */
+$messages['hu'] = array(
+	'onlinestatusbar-title-online' => '{{GENDER:$1|Online}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Elfoglalt}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Távol}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Rejtett}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Offline}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Ismeretlen}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|Ez a felhasználó}} most online',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|Ez a felhasználó}} elfoglalt, és ezért lehet, hogy nem elérhető',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|Ez a felhasználó}} tétlen és lehet, hogy nem érhető el',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|Ez a felhasználó}} offline',
+	'onlinestatusbar-tooltip-unknown' => '{{GENDER:$1|Ezen felhasználó}} státusza ismeretlen',
 );
 
 /** Interlingua (interlingua)
