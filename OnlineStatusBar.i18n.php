@@ -664,12 +664,14 @@ $messages['pms'] = array(
  */
 $messages['ps'] = array(
 	'prefs-onlinestatus' => 'پرليکه دريځ',
-	'onlinestatusbar-title-online' => 'پر ليکه', # Fuzzy
-	'onlinestatusbar-title-busy' => 'بوخت', # Fuzzy
-	'onlinestatusbar-title-away' => 'ليرې', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'پټ', # Fuzzy
-	'onlinestatusbar-title-offline' => 'پرې ليکه', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'دريځ ناڅرګنده دی', # Fuzzy
+	'onlinestatusbar-title-online' => '{{GENDER:$1|پر ليکه}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|بوخت}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|ليري}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|پټ}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|پرې ليکه}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|ناجوت}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|دا کارن}} اوس پر ليکه دی',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|دا کارن}} پرې ليکه دی',
 );
 
 /** Romanian (română)
