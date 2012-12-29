@@ -707,9 +707,11 @@ $messages['si'] = array(
 	'prefs-onlinestatus' => 'මාර්ගගත තත්වය',
 	'onlinestatusbar-title-online' => 'මාර්ගගතයි', # Fuzzy
 	'onlinestatusbar-title-busy' => 'කාර්යබහුලයි', # Fuzzy
+	'onlinestatusbar-title-away' => '{{GENDER:$1|බැහැර}}',
 	'onlinestatusbar-title-hidden' => 'සඟවනලද', # Fuzzy
 	'onlinestatusbar-title-offline' => 'මාර්ගඅපගතයි', # Fuzzy
 	'onlinestatusbar-title-unknown' => 'තත්වය නොදනියි', # Fuzzy
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|මෙම පරිශීලකයා}} දැන් මාර්ගගතයි',
 );
 
 /** Swedish (svenska)
