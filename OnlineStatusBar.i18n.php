@@ -319,12 +319,22 @@ $messages['fr'] = array(
  */
 $messages['frp'] = array(
 	'prefs-onlinestatus' => 'Ètat en legne',
-	'onlinestatusbar-title-online' => 'Present', # Fuzzy
-	'onlinestatusbar-title-busy' => 'Ocupo', # Fuzzy
-	'onlinestatusbar-title-away' => 'Viâ', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'Cachiê', # Fuzzy
-	'onlinestatusbar-title-offline' => 'Absent', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'l’ètat est encognu', # Fuzzy
+	'onlinestatusbar-used' => 'Fâre vêre voutron statut en legne sur voutres pâges utilisator',
+	'onlinestatusbar-away' => 'Trètar ôtomaticament coment « viâ » aprés un entèrvalo dèfeni',
+	'onlinestatusbar-purge' => 'Purgiér la pâge utilisator tôs los côps que vos vos branchiéd ou ben dèbranchiéd',
+	'onlinestatusbar-status' => 'Quint est lo statut per dèfôt que vos souhètâd empleyér ?',
+	'onlinestatusbar-away-time' => 'Gouéro menutes devant que vos éte marcâ coment « viâ » ?',
+	'onlinestatusbar-title-online' => '{{GENDER:$1|En legne}}',
+	'onlinestatusbar-title-busy' => 'Ocup{{GENDER:$1|o|a}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Viâ}}',
+	'onlinestatusbar-title-hidden' => 'Cachiê{{GENDER:$1||ye}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|En defôr de legne}}',
+	'onlinestatusbar-title-unknown' => 'Encognu{{GENDER:$1||a}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|Cet’utilisator|Cet’utilisatrice}} est ora en legne',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|Cet’utilisator est ocupo|Cet’utilisatrice est ocupa}} et pués pôt pas étre disponibl{{GENDER:$1|o|a}}',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|Cet’utilisator|Cet’utilisatrice}} fât ren du tot et pués pôt pas étre disponibl{{GENDER:$1|o|a}}',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|Cet’utilisator|Cet’utilisatrice}} est en defôr de legne',
+	'onlinestatusbar-tooltip-unknown' => 'Lo statut de {{GENDER:$1|cet’utilisator|cet’utilisatrice}} est encognu',
 );
 
 /** Galician (galego)
