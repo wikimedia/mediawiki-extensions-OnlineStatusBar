@@ -65,7 +65,8 @@ $messages['qqq'] = array(
 	'onlinestatusbar-title-away' => 'Status for users who mark themselves as away. Parameters:
 * $1 is the name of the user for GENDER.',
 	'onlinestatusbar-title-hidden' => 'Status for users who mark themselves as hidden. Parameters:
-* $1 is the name of the user for GENDER.',
+* $1 is the name of the user for GENDER.
+{{Identical|Hidden}}',
 	'onlinestatusbar-title-offline' => 'Status for users who are offline. Parameters:
 * $1 is the name of the user for GENDER.',
 	'onlinestatusbar-title-unknown' => 'Displayed for users with an unknown status. Parameters:
@@ -645,13 +646,14 @@ $messages['pl'] = array(
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Dragonòt
  */
 $messages['pms'] = array(
-	'onlinestatusbar-desc' => "La bara dë stat che a mosta quand n'utent a l'é an linia dzora soa pagina utent",
+	'onlinestatusbar-desc' => "La bara dë stat che a mostra quand n'utent a l'é an linia dzora soa pàgina utent",
 	'prefs-onlinestatus' => 'Stat an linia',
-	'onlinestatusbar-used' => 'Mosta tò stat an linia dzora toa pagina utent',
-	'onlinestatusbar-hide' => 'Stërma la bara dë stat dzora pagine utent për dovré mach la parola màgica (Për utent avansà)',
+	'onlinestatusbar-used' => 'Smon-e sò statù an linia dzora soe pàgina utent',
+	'onlinestatusbar-hide' => "Stërmé la bara dë stat an sle pàgine d'utent për dovré mach la paròla màgica (Për j'utent avansà)",
 	'onlinestatusbar-away' => "Trata com automaticament lontan d'aprenn n'antërval definì",
 	'onlinestatusbar-purge' => 'Purga la pagina utent sempe quand it intre o it seurte',
 	'onlinestatusbar-status' => "Col ch'a l'é lë stat predefinì ch'it veule dovré?",
