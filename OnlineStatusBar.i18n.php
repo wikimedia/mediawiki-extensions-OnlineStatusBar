@@ -50,7 +50,8 @@ $messages['en'] = array(
  * @author Shirayuki
  */
 $messages['qqq'] = array(
-	'onlinestatusbar-desc' => '{{desc|name=Online Status Bar|url=http://www.mediawiki.org/wiki/Extension:OnlineStatusBar}}',
+	'onlinestatusbar-desc' => '{{doc-singularthey}}
+{{desc|name=Online Status Bar|url=http://www.mediawiki.org/wiki/Extension:OnlineStatusBar}}',
 	'prefs-onlinestatus' => 'Section for config, located in preferences - misc',
 	'onlinestatusbar-used' => 'Message in config asking user if they want to enable it, checkbox',
 	'onlinestatusbar-hide' => 'Ask user if they want to hide status bar this is useful when they are using custom template but need to check if they are online',
