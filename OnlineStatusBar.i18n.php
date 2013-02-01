@@ -713,6 +713,18 @@ $messages['ro'] = array(
 	'onlinestatusbar-tooltip-unknown' => 'Starea acestui utilizator este necunoscută', # Fuzzy
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'onlinestatusbar-title-online' => '{{GENDER:$1|In linèe}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Occupate}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Assende}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Scunnute}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Fore linèe}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Scanusciute}}',
+);
+
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
