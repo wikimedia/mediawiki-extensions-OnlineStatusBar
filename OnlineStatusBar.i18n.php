@@ -511,6 +511,10 @@ $messages['ka'] = array(
 	'onlinestatusbar-title-hidden' => '{{GENDER:$1|დამალული}}',
 	'onlinestatusbar-title-offline' => '{{GENDER:$1|არ არის ქსელში}}',
 	'onlinestatusbar-title-unknown' => '{{GENDER:$1|უცნობია}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|ეს მომხარებელი}} ახლა ქსელშია',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|ეს მომხარებელი}} დაკავებულია ან შესაძლოა მიუწვდომელია',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|ეს მომხარებელი}} არ არის ქსელში',
+	'onlinestatusbar-tooltip-unknown' => '{{GENDER:$1|ამ მოხმარებლის}} სტატუსი უცნობია',
 );
 
 /** Colognian (Ripoarisch)
