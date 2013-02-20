@@ -71,7 +71,8 @@ $messages['qqq'] = array(
 	'onlinestatusbar-title-offline' => 'Status for users who are offline. Parameters:
 * $1 is the name of the user for GENDER.',
 	'onlinestatusbar-title-unknown' => 'Displayed for users with an unknown status. Parameters:
-* $1 is the name of the user for GENDER.',
+* $1 is the name of the user for GENDER.
+{{Identical|Unknown}}',
 	'onlinestatusbar-tooltip-online' => 'Tooltip for {{msg-mw|onlinestatusbar-title-online}}. Parameters:
 * $1 is the name of the user for GENDER.',
 	'onlinestatusbar-tooltip-busy' => 'Tooltip for {{msg-mw|onlinestatusbar-title-busy}}. Parameters:
