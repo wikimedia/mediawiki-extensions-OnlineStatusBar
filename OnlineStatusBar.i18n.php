@@ -118,6 +118,7 @@ $messages['be-tarask'] = array(
 );
 
 /** Breton (brezhoneg)
+ * @author Fohanno
  * @author Fulup
  */
 $messages['br'] = array(
@@ -127,7 +128,7 @@ $messages['br'] = array(
 	'onlinestatusbar-title-away' => 'Er-maez', # Fuzzy
 	'onlinestatusbar-title-hidden' => 'Kuzhet', # Fuzzy
 	'onlinestatusbar-title-offline' => 'Ezvezant', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'Statud dianav', # Fuzzy
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Dianav}}',
 );
 
 /** German (Deutsch)
