@@ -69,6 +69,13 @@
 
 				// No need to re-create the field if the status is still the same
 				if ( $statusbarFields.data( 'onlinestatusbar.status' ) !== status ) {
+					// Give grep a chance to find the usages:
+					// onlinestatusbar-title-online, onlinestatusbar-title-busy,
+					// onlinestatusbar-title-away, onlinestatusbar-title-hidden,
+					// onlinestatusbar-title-offline, onlinestatusbar-title-unknown,
+					// onlinestatusbar-tooltip-online, onlinestatusbar-tooltip-busy,
+					// onlinestatusbar-tooltip-away, onlinestatusbar-tooltip-offline,
+					// onlinestatusbar-tooltip-unknown
 					$statusbarFields
 						.empty()
 						.text( mw.msg( 'onlinestatusbar-title-' + status, gender ) )
