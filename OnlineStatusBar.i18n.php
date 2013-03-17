@@ -184,7 +184,7 @@ $messages['diq'] = array(
  * @author Michawiki
  */
 $messages['dsb'] = array(
-	'onlinestatusbar-desc' => 'Statusowa kšoma, kótaraž pokazujo na zakłaźe nastajenjow na wužywarskem boku, lěc wužywaŕ jo online', # Fuzzy
+	'onlinestatusbar-desc' => 'Statusowa lejstwa, kótaraž pokazujo na wužywarskem boku, lěc wužywaŕ jo online',
 	'prefs-onlinestatus' => 'Onlinestatus',
 	'onlinestatusbar-used' => 'Twój onlinestatus na twójich wužywarskich bokach pokazaś',
 	'onlinestatusbar-hide' => 'Statusowu kšomu na wužywarskich bokach schowaś, aby se jano magiske słowo wužywało (za pókšacanych wužywarjow)',
@@ -192,17 +192,17 @@ $messages['dsb'] = array(
 	'onlinestatusbar-purge' => 'Cache wužywarskego boka kuždy raz wuprozniś, gaž se pśizjawjaš abo wótzjawjaš',
 	'onlinestatusbar-status' => 'Standardny status, kótaryž coš wužywaś?',
 	'onlinestatusbar-away-time' => 'Licba minutow, nježli až maš se ako "njepśibytny" markěrowaś:',
-	'onlinestatusbar-title-online' => 'Online', # Fuzzy
-	'onlinestatusbar-title-busy' => 'Zabrany', # Fuzzy
-	'onlinestatusbar-title-away' => 'Njepśibytny', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'Schowany', # Fuzzy
-	'onlinestatusbar-title-offline' => 'Offline', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'Njeznaty', # Fuzzy
-	'onlinestatusbar-tooltip-online' => 'Toś ten wužywaŕ jo něnto online', # Fuzzy
-	'onlinestatusbar-tooltip-busy' => 'Toś ten wužywaŕ źěła a snaź njejo pśibytny', # Fuzzy
-	'onlinestatusbar-tooltip-away' => 'Toś ten wužywaŕ njejo aktiwny a snaź njejo pśibytny', # Fuzzy
-	'onlinestatusbar-tooltip-offline' => 'Toś ten wužywaŕ jo offline', # Fuzzy
-	'onlinestatusbar-tooltip-unknown' => 'Status toś togo wužywarja jo njeznaty', # Fuzzy
+	'onlinestatusbar-title-online' => '{{GENDER:$1|Online}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Zabrany|Zabrana}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Njepśibytny|Njepśibytna}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Schowany|Schowana}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Offline}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Njeznaty|Njeznata}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|Toś ten wužywaŕ|Toś ta wužywarka}} jo něnto online',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|Toś ten wužywaŕ|Toś ta wužywarka}} źěła a njejo snaź {{GENDER:$1|pśibytny|pśibytna}}',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|Toś ten wužywaŕ|Toś ta wužywarka}} njejo {{GENDER:$1|aktiwny|aktiwna}} a njejo snaź {{GENDER:$1|pśibytny|pśibytna}}',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|Toś ten wužywaŕ|Toś ta wužywarka}} jo offline',
+	'onlinestatusbar-tooltip-unknown' => 'Status {{GENDER:$1|toś togo wužywarja|toś teje wužywarki}} jo njeznaty',
 );
 
 /** Spanish (español)
@@ -391,7 +391,7 @@ $messages['he'] = array(
  * @author Michawiki
  */
 $messages['hsb'] = array(
-	'onlinestatusbar-desc' => 'Statusowa lajsta, kotraž na zakładźe nastajenjow pokazuje, hač wužiwar je na swojej wužiwarskej stronje online', # Fuzzy
+	'onlinestatusbar-desc' => 'Statusowa lajsta, kotraž pokazuje, hač wužiwar je na swojej wužiwarskej stronje online',
 	'prefs-onlinestatus' => 'Onlinestatus',
 	'onlinestatusbar-used' => 'Waš onlinestatus na wašich wužiwarskich stronach pokazać',
 	'onlinestatusbar-hide' => 'Statusowu lajstu na wužiwarskich stronach schować, zo by so jenož magiske słowo wužiwało (za pokročenych wužiwarjow)',
@@ -399,17 +399,17 @@ $messages['hsb'] = array(
 	'onlinestatusbar-purge' => 'Pufrowak wužiwarskeje strony kóždy raz wuprózdnić, hdyž so přizjewješ abo wotzjewješ',
 	'onlinestatusbar-status' => 'Što je standardny status, kotryž chceće wužiwać?',
 	'onlinestatusbar-away-time' => 'Ličba mjeńšin, prjedy hač maće so jako "njepřitomny" markěrować:',
-	'onlinestatusbar-title-online' => 'Online', # Fuzzy
-	'onlinestatusbar-title-busy' => 'Ma dźěło', # Fuzzy
-	'onlinestatusbar-title-away' => 'Preč', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'Schowany', # Fuzzy
-	'onlinestatusbar-title-offline' => 'Offline', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'Njeznaty', # Fuzzy
-	'onlinestatusbar-tooltip-online' => 'Tutón wužiwar je nětko online', # Fuzzy
-	'onlinestatusbar-tooltip-busy' => 'Tutón wužiwar dźěła a snano njeje přitomny', # Fuzzy
-	'onlinestatusbar-tooltip-away' => 'Tutón wužiwar njeje aktiwny a snano njeje přitomny', # Fuzzy
-	'onlinestatusbar-tooltip-offline' => 'Tutón wužiwar je offline', # Fuzzy
-	'onlinestatusbar-tooltip-unknown' => 'Status tutoho wužiwarja je njeznaty', # Fuzzy
+	'onlinestatusbar-title-online' => '{{GENDER:$1|Online}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Ma}} dźěło',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Njepřitomny|Njepřitomna}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Schowany|Schowana}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Offline}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Njeznaty|Njeznata}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|Tutón wužiwar|Tuta wužiwarka}} je nětko online',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|Tutón wužiwar|Tuta wužiwarka}} dźěła a njeje snano {{GENDER:$1|přitomny|přitomna}}',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|Tutón wužiwar|Tuta wužiwarka}} njeje {{GENDER:$1|aktiwny|aktiwna}} a njeje snano {{GENDER:$1|přitomny|přitomna}}',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|Tutón wužiwar|Tuta wužiwarka}} je offline',
+	'onlinestatusbar-tooltip-unknown' => 'Status {{GENDER:$1|tutoho wužiwarja|tuteje wužiwarki}}  je njeznaty',
 );
 
 /** Hungarian (magyar)
