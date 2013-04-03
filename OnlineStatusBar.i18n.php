@@ -454,7 +454,7 @@ $messages['ia'] = array(
  * @author Darth Kule
  */
 $messages['it'] = array(
-	'onlinestatusbar-desc' => 'Barra di stato che mostra se un utente è online, in base delle preferenze, sulla loro pagina utente', # Fuzzy
+	'onlinestatusbar-desc' => 'Barra di stato che mostra se un utente è online sulla sua pagina utente',
 	'prefs-onlinestatus' => 'Stato online',
 	'onlinestatusbar-used' => 'Mostra il tuo stato online nella tua pagina utente',
 	'onlinestatusbar-hide' => 'Nascondi la barra di stato sulle pagine degli utenti, per poter utilizzare solo la magic word (per utenti esperti)',
@@ -462,17 +462,17 @@ $messages['it'] = array(
 	'onlinestatusbar-purge' => 'Aggiorna la pagina utente ogni volta che accedi o esci',
 	'onlinestatusbar-status' => 'Qual è lo stato predefinito che vuoi usare?',
 	'onlinestatusbar-away-time' => 'Quanti minuti prima di essere considerato lontano:',
-	'onlinestatusbar-title-online' => 'connesso', # Fuzzy
-	'onlinestatusbar-title-busy' => 'occupato', # Fuzzy
-	'onlinestatusbar-title-away' => 'lontano', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'nascosto', # Fuzzy
-	'onlinestatusbar-title-offline' => 'non connesso', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'sconosciuto', # Fuzzy
-	'onlinestatusbar-tooltip-online' => 'Questo utente è attualmente connesso', # Fuzzy
-	'onlinestatusbar-tooltip-busy' => 'Questo utente è attualmente occupato e potrebbe non essere disponibile', # Fuzzy
-	'onlinestatusbar-tooltip-away' => 'Questo utente è attualmente lontano e potrebbe non essere disponibile', # Fuzzy
-	'onlinestatusbar-tooltip-offline' => 'Questo utente è attualmente non connesso', # Fuzzy
-	'onlinestatusbar-tooltip-unknown' => 'Lo stato di questo utente è sconosciuto', # Fuzzy
+	'onlinestatusbar-title-online' => '{{GENDER:$1|Connesso|Connessa|Connesso/a}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Occupato|Occupata|Occupato/a}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Lontano|Lontana|Lontano/a}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Nascosto|Nascosta|Nascosto/a}}',
+	'onlinestatusbar-title-offline' => 'Non {{GENDER:$1|connesso|connessa|connesso/a}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Sconosciuto|Sconosciuta|Sconosciuto/a}}',
+	'onlinestatusbar-tooltip-online' => 'Questo utente è attualmente {{GENDER:$1|connesso|connessa|connesso/a}}',
+	'onlinestatusbar-tooltip-busy' => 'Questo utente è attualmente {{GENDER:$1|occupato|occupata|occupato/a}} e potrebbe non essere disponibile',
+	'onlinestatusbar-tooltip-away' => 'Questo utente è attualmente {{GENDER:$1|lontano|lontana|lontano/a}} e potrebbe non essere disponibile',
+	'onlinestatusbar-tooltip-offline' => 'Questo utente è attualmente non {{GENDER:$1|connesso|connessa|connesso/a}}',
+	'onlinestatusbar-tooltip-unknown' => 'Lo stato di questo utente è {{GENDER:$1|sconosciuto}}',
 );
 
 /** Japanese (日本語)
