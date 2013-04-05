@@ -542,10 +542,11 @@ $messages['lb'] = array(
 	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Verstoppt}}',
 	'onlinestatusbar-title-offline' => '{{GENDER:$1|Offline}}',
 	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Onbekannt}}',
-	'onlinestatusbar-tooltip-online' => 'Dëse Benotzer ass elo online', # Fuzzy
-	'onlinestatusbar-tooltip-busy' => 'Dëse Benotzer ass beschäftegt a méiglecherweis net disponibel', # Fuzzy
-	'onlinestatusbar-tooltip-away' => 'Dëse Benotzer ass net aktiv a méiglecherweis net disponibel', # Fuzzy
-	'onlinestatusbar-tooltip-offline' => 'Dëse Benotzer ass elo offline', # Fuzzy
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|Dëse Benotzer}} ass elo online',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|Dëse Benotzer}} ass beschäftegt a méiglecherweis net disponibel',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|Dëse Benotzer}} ass net aktiv a méiglecherweis net disponibel',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|Dëse Benotzer}} ass offline',
+	'onlinestatusbar-tooltip-unknown' => 'De Status vun {{GENDER:$1|dësem Benotzer}} ass onbekannt',
 );
 
 /** Macedonian (македонски)
