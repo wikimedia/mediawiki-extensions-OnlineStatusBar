@@ -630,9 +630,10 @@ $messages['nl'] = array(
 /** Polish (polski)
  * @author BeginaFelicysym
  * @author Matma Rex
+ * @author Odie2
  */
 $messages['pl'] = array(
-	'onlinestatusbar-desc' => 'Pasek statusu, który informuje na stronie użytkownika, czy ten jest dostępny, w oparciu o preferencje', # Fuzzy
+	'onlinestatusbar-desc' => 'Pasek statusu, który pokazuje na stronie użytkownika, czy ten jest dostępny',
 	'prefs-onlinestatus' => 'Status dostępności',
 	'onlinestatusbar-used' => 'Wyświetlaj mój status na moich stronach użytkownika',
 	'onlinestatusbar-hide' => 'Ukryj pasek statusu na stronach użytkownika, aby wykorzystać tylko magiczne słowo (dla użytkowników zaawansowanych)',
@@ -640,17 +641,17 @@ $messages['pl'] = array(
 	'onlinestatusbar-purge' => 'Odśwież stronę użytkownika za każdym razem, gdy loguję się lub wylogowuję',
 	'onlinestatusbar-status' => 'Jaki jest domyślny status, którego chcesz użyć?',
 	'onlinestatusbar-away-time' => 'Ile minut do oznaczenia jako "nieobecny"?',
-	'onlinestatusbar-title-online' => 'dostępny', # Fuzzy
-	'onlinestatusbar-title-busy' => 'zajęty', # Fuzzy
-	'onlinestatusbar-title-away' => 'nieobecny', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'ukryty', # Fuzzy
-	'onlinestatusbar-title-offline' => 'niedostępny', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'nieznany', # Fuzzy
-	'onlinestatusbar-tooltip-online' => 'Ten użytkownik jest teraz dostępny', # Fuzzy
-	'onlinestatusbar-tooltip-busy' => 'Ten użytkownik jest zajęty i może być niedostępny', # Fuzzy
-	'onlinestatusbar-tooltip-away' => 'Ten użytkownik jest bezczynny i może być niedostępny', # Fuzzy
-	'onlinestatusbar-tooltip-offline' => 'Ten użytkownik jest niedostępny', # Fuzzy
-	'onlinestatusbar-tooltip-unknown' => 'Status tego użytkownika jest nieznany', # Fuzzy
+	'onlinestatusbar-title-online' => '{{GENDER:$1|Dostępny}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Zajęty}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Przerwa}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Ukryty}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Niedostępny}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Nieznany}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|Ten użytkownik}} jest teraz dostępny',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|Ten użytkownik}} jest zajęty i może być niedostępny',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|Ten użytkownik}} jest bezczynny i może być niedostępny',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|Ten użytkownik}} jest niedostępny',
+	'onlinestatusbar-tooltip-unknown' => 'Status {{GENDER:$1|tego użytkownika}} jest nieznany',
 );
 
 /** Piedmontese (Piemontèis)
