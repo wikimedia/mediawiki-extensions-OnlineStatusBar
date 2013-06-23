@@ -578,7 +578,7 @@ $messages['mk'] = array(
  * @author Anakmalaysia
  */
 $messages['ms'] = array(
-	'onlinestatusbar-desc' => 'Palang status yang menunjukkan sama pengguna berada dalam talian atau tidak, berasaskan keutamaan pada laman penggunanya', # Fuzzy
+	'onlinestatusbar-desc' => 'Palang status yang menunjukkan sama pengguna berada dalam talian atau tidak pada laman penggunanya',
 	'prefs-onlinestatus' => 'Status dalam talian',
 	'onlinestatusbar-used' => 'Paparkan status online anda pada laman-laman pengguna anda',
 	'onlinestatusbar-hide' => 'Sorokkan palang status di laman pengguna untuk menggunakan kata sakti sahaja (Untuk pengguna yang lebih berpengalaman)',
@@ -586,17 +586,17 @@ $messages['ms'] = array(
 	'onlinestatusbar-purge' => 'Singkirkan isi laman pengguna setiap kali ketika log masuk/keluar',
 	'onlinestatusbar-status' => 'Yang manakah status asali yang ingin anda gunakan?',
 	'onlinestatusbar-away-time' => 'Berapa minit sehingga anda dianggap tiada:',
-	'onlinestatusbar-title-online' => 'Dalam talian', # Fuzzy
-	'onlinestatusbar-title-busy' => 'Sibuk', # Fuzzy
-	'onlinestatusbar-title-away' => 'Tiada', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'Tersorok', # Fuzzy
-	'onlinestatusbar-title-offline' => 'Luar talian', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'Tidak diketahui', # Fuzzy
-	'onlinestatusbar-tooltip-online' => 'Pengguna ini kini di dalam talian', # Fuzzy
-	'onlinestatusbar-tooltip-busy' => 'Pengguna ini sibuk dan mungkin tidak boleh dihubungi', # Fuzzy
-	'onlinestatusbar-tooltip-away' => 'Pengguna ini melahu dan mungkin tidak boleh dihubungi', # Fuzzy
-	'onlinestatusbar-tooltip-offline' => 'Pengguna ini di luar talian', # Fuzzy
-	'onlinestatusbar-tooltip-unknown' => 'Status pengguna ini tidak diketahui', # Fuzzy
+	'onlinestatusbar-title-online' => '{{GENDER:$1|Dalam Talian}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Sibuk}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Jauh dari Komputer}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Tersembunyi}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Luar Talian}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Tidak Pasti}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|Pengguna}} ini berada di dalam talian',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|Pengguna}} ini sibuk dan mungkin tidak boleh dihubungi',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|Pengguna}} ini berjauhan dari komputer dan mungkin tidak boleh dihubungi',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|Pengguna}} ini berada di luar talian',
+	'onlinestatusbar-tooltip-unknown' => 'Status {{GENDER:$1|pengguna}} ini tidak dipastikan',
 );
 
 /** Dutch (Nederlands)
