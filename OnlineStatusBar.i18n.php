@@ -433,7 +433,7 @@ $messages['hu'] = array(
  * @author McDutchie
  */
 $messages['ia'] = array(
-	'onlinestatusbar-desc' => 'Barra de stato que monstra si un usator es in linea, dependente de su preferentias, in su pagina de usator', # Fuzzy
+	'onlinestatusbar-desc' => 'Barra de stato que monstra si un usator es in linea in su pagina de usator',
 	'prefs-onlinestatus' => 'Stato in linea',
 	'onlinestatusbar-used' => 'Monstrar si tu es in linea in tu pagina de usator',
 	'onlinestatusbar-hide' => 'Celar le barra de stato in paginas de usator pro usar solmente le parola magic (Pro usatores avantiate)',
@@ -441,12 +441,12 @@ $messages['ia'] = array(
 	'onlinestatusbar-purge' => 'Purgar le pagina de usator cata vice que tu aperi o claude session',
 	'onlinestatusbar-status' => 'Qual es le stato predefinite que tu vole usar?',
 	'onlinestatusbar-away-time' => 'Quante minutas ante que tu es marcate como absente:',
-	'onlinestatusbar-title-online' => 'In linea', # Fuzzy
-	'onlinestatusbar-title-busy' => 'Occupate', # Fuzzy
-	'onlinestatusbar-title-away' => 'Absente', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'Celate', # Fuzzy
-	'onlinestatusbar-title-offline' => 'Foras de linea', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'stato es incognite', # Fuzzy
+	'onlinestatusbar-title-online' => '{{GENDER:$1|In linea}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Occupate}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Absente}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Celate}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Foras de linea}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Incognite}}',
 );
 
 /** Italian (italiano)
