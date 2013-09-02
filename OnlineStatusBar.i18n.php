@@ -725,12 +725,19 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'prefs-onlinestatus' => 'State in linèe',
+	'onlinestatusbar-used' => "Face vedè 'u state in linèe tune sus 'a pàgene utende toje",
 	'onlinestatusbar-title-online' => '{{GENDER:$1|In linèe}}',
 	'onlinestatusbar-title-busy' => '{{GENDER:$1|Occupate}}',
 	'onlinestatusbar-title-away' => '{{GENDER:$1|Assende}}',
 	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Scunnute}}',
 	'onlinestatusbar-title-offline' => '{{GENDER:$1|Fore linèe}}',
 	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Scanusciute}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|Stu utende}} mò ste in linèe',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|Stu utende}} ste occupate o pò essere indisponibbile',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|Stu utende}} ste inattive o pò essere indisponibbile',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|Stu utende}} mò ste fore linèe',
+	'onlinestatusbar-tooltip-unknown' => '{{GENDER:$1|Stu utende}} jè scanusciute',
 );
 
 /** Sinhala (සිංහල)
