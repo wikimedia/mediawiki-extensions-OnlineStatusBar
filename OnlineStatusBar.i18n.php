@@ -725,8 +725,10 @@ $messages['ro'] = array(
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'onlinestatusbar-desc' => "Barre de state ca face vedè ce 'n'utende ste in linèe sus a le pàggene sue",
 	'prefs-onlinestatus' => 'State in linèe',
 	'onlinestatusbar-used' => "Face vedè 'u state in linèe tune sus 'a pàgene utende toje",
+	'onlinestatusbar-hide' => "Scunne 'a barre de state sus a le pàggene utende ce ause 'a parola maggeche (Pe le utinde avanzate)",
 	'onlinestatusbar-title-online' => '{{GENDER:$1|In linèe}}',
 	'onlinestatusbar-title-busy' => '{{GENDER:$1|Occupate}}',
 	'onlinestatusbar-title-away' => '{{GENDER:$1|Assende}}',
