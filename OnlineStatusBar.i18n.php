@@ -902,8 +902,9 @@ $messages['zh-hans'] = array(
 );
 
 /** Traditional Chinese (中文（繁體）‎)
+ * @author Ch.Andrew
  * @author Simon Shek
  */
 $messages['zh-hant'] = array(
-	'onlinestatusbar-title-hidden' => '隱藏', # Fuzzy
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|隱藏}}',
 );
