@@ -746,6 +746,31 @@ $messages['roa-tara'] = array(
 	'onlinestatusbar-tooltip-unknown' => '{{GENDER:$1|Stu utende}} jè scanusciute',
 );
 
+/** Russian (русский)
+ * @author Okras
+ */
+$messages['ru'] = array(
+	'onlinestatusbar-desc' => 'Строка состояния, которая показывает на странице участника, находится ли он в сети',
+	'prefs-onlinestatus' => 'Статус в сети',
+	'onlinestatusbar-used' => 'Показывать ваш статус в сети на странице участника',
+	'onlinestatusbar-hide' => 'Скрыть строку состояния на странице участника, используя только «волшебное слово» (для продвинутых пользователей)',
+	'onlinestatusbar-away' => 'Автоматически устанавливать статус «отошёл» через определённый интервал',
+	'onlinestatusbar-purge' => 'Очищать кэш страницы участника каждый раз, когда вы входите или завершаете сеанс',
+	'onlinestatusbar-status' => 'Какой статус вы хотите использовать по умолчанию?',
+	'onlinestatusbar-away-time' => 'Через сколько минут показывать, что вы отошли?',
+	'onlinestatusbar-title-online' => '{{GENDER:$1|В сети}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|Занят}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|Отошёл}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|Невидимый}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|Не в сети}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|Неизвестно}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|Этот участник}} сейчас в сети',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|Этот участник}} занят и может быть недоступен',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|Этот участник}} неактивен и может быть недоступен',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|Этот участник}} не в сети',
+	'onlinestatusbar-tooltip-unknown' => 'Статус {{GENDER:$1|этого участника}} неизвестен',
+);
+
 /** Sinhala (සිංහල)
  * @author පසිඳු කාවින්ද
  */
