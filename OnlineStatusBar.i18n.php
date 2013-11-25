@@ -902,6 +902,7 @@ $messages['ur'] = array(
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Xiaomingyan
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
@@ -922,7 +923,7 @@ $messages['zh-hans'] = array(
 	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|此用户}}现在在线',
 	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|此用户}}正忙，可能无法回应',
 	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|此用户}}处于离开状态，可能无法回应',
-	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|此用户}}处于离线状态',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|该用户}}离线',
 	'onlinestatusbar-tooltip-unknown' => '{{GENDER:$1|此用户}}的状态未知',
 );
 
