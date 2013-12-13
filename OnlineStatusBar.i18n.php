@@ -249,14 +249,15 @@ $messages['et'] = array(
 
 /** Persian (فارسی)
  * @author Mjbmr
+ * @author Omidh
  */
 $messages['fa'] = array(
-	'onlinestatusbar-title-online' => 'برخط', # Fuzzy
-	'onlinestatusbar-title-busy' => 'گرفتار', # Fuzzy
-	'onlinestatusbar-title-away' => 'خارج از دسترس', # Fuzzy
-	'onlinestatusbar-title-hidden' => 'پنهان', # Fuzzy
-	'onlinestatusbar-title-offline' => 'برون‌خط', # Fuzzy
-	'onlinestatusbar-title-unknown' => 'وضعیت ناشناخته است', # Fuzzy
+	'onlinestatusbar-title-online' => '{{GENDER:$1|برخط}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|گرفتار}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|خارج از دسترس}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|پنهان}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|برون‌خط}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|ناشناخته}}',
 	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|این کاربر}} اکنون برخط است',
 	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|این کاربر}} مشغول است و ممکن است در دسترس نباشد',
 	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|این کاربر}} بیکار است (فعالیتی انجام نداده است) و ممکن است در دسترس نباشد',
