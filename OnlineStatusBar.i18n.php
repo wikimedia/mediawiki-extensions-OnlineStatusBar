@@ -248,10 +248,15 @@ $messages['et'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Armin1392
  * @author Mjbmr
  * @author Omidh
  */
 $messages['fa'] = array(
+	'prefs-onlinestatus' => 'وضعیت آنلاین',
+	'onlinestatusbar-used' => 'نمایش وضعیت آنلاین شما در صفحات کاربریتان',
+	'onlinestatusbar-purge' => 'پاکسازی هر دفعهٔ صفحهٔ کاربری هنگامی که شما وارد یا خارج می‌شوید',
+	'onlinestatusbar-status' => 'مایل به استفاده از چه وضعیت پیش‌فرضی هستید؟',
 	'onlinestatusbar-title-online' => '{{GENDER:$1|برخط}}',
 	'onlinestatusbar-title-busy' => '{{GENDER:$1|گرفتار}}',
 	'onlinestatusbar-title-away' => '{{GENDER:$1|خارج از دسترس}}',
