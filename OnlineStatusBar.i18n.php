@@ -525,6 +525,24 @@ $messages['ka'] = array(
 	'onlinestatusbar-tooltip-unknown' => '{{GENDER:$1|ამ მოხმარებლის}} სტატუსი უცნობია',
 );
 
+/** Korean (한국어)
+ * @author Priviet
+ */
+$messages['ko'] = array(
+	'prefs-onlinestatus' => '온라인 상태',
+	'onlinestatusbar-title-online' => '{{GENDER:$1|온라인}}',
+	'onlinestatusbar-title-busy' => '{{GENDER:$1|바쁨}}',
+	'onlinestatusbar-title-away' => '{{GENDER:$1|자리 비움}}',
+	'onlinestatusbar-title-hidden' => '{{GENDER:$1|숨겨짐}}',
+	'onlinestatusbar-title-offline' => '{{GENDER:$1|오프라인}}',
+	'onlinestatusbar-title-unknown' => '{{GENDER:$1|알 수 없음}}',
+	'onlinestatusbar-tooltip-online' => '{{GENDER:$1|이 사용자}}는 현재 온라인입니다',
+	'onlinestatusbar-tooltip-busy' => '{{GENDER:$1|이 사용자}}는 현재 바쁘며 응답하지 않을 수 있습니다',
+	'onlinestatusbar-tooltip-away' => '{{GENDER:$1|이 사용자}}는 현재 자리를 비운 상태이며 응답하지 않을 수 있습니다',
+	'onlinestatusbar-tooltip-offline' => '{{GENDER:$1|이 사용자}}는 현재 오프라인입니다',
+	'onlinestatusbar-tooltip-unknown' => '{{GENDER:$1|이 사용자}}의 상태를 알 수 없습니다',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
