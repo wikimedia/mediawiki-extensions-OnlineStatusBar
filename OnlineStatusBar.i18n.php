@@ -529,7 +529,14 @@ $messages['ka'] = array(
  * @author Priviet
  */
 $messages['ko'] = array(
+	'onlinestatusbar-desc' => '사용자 문서에서 사용자가 온라인인지 보여주는 상태 막대',
 	'prefs-onlinestatus' => '온라인 상태',
+	'onlinestatusbar-used' => '사용자 문서에서 당신의 온라인 상태를 보이기',
+	'onlinestatusbar-hide' => '매직 워드를 사용하여 사용자 문서에서 상태 막대를 숨기기(고급 사용자용)',
+	'onlinestatusbar-away' => '지정된 시간이 지나면 자리비움으로 간주',
+	'onlinestatusbar-purge' => '로그인하거나 로그인할 때마다 사용자 문서를 새로 고침',
+	'onlinestatusbar-status' => '상태의 기본값을 무엇으로 설정하시겠습니까?',
+	'onlinestatusbar-away-time' => '자리비움으로 표시할 때까지의 시간을 몇 분으로 하시겠습니까?',
 	'onlinestatusbar-title-online' => '{{GENDER:$1|온라인}}',
 	'onlinestatusbar-title-busy' => '{{GENDER:$1|바쁨}}',
 	'onlinestatusbar-title-away' => '{{GENDER:$1|자리 비움}}',
