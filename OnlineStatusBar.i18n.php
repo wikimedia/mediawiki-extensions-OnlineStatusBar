@@ -253,10 +253,14 @@ $messages['et'] = array(
  * @author Omidh
  */
 $messages['fa'] = array(
+	'onlinestatusbar-desc' => 'نوار وضعیتی که نشان می‌دهد که آیا کاربر در صفحهٔ کاربری خود آنلاین است',
 	'prefs-onlinestatus' => 'وضعیت آنلاین',
 	'onlinestatusbar-used' => 'نمایش وضعیت آنلاین شما در صفحات کاربریتان',
+	'onlinestatusbar-hide' => 'پنهان کردن نوار وضعیت در صفحات کاربری برای فقط استفاده از کلمهٔ جادویی (برای کاربران پیشرفته)',
+	'onlinestatusbar-away' => 'تلقی به عنوان دور به طور خودکار پس از مدت تعریف شده',
 	'onlinestatusbar-purge' => 'پاکسازی هر دفعهٔ صفحهٔ کاربری هنگامی که شما وارد یا خارج می‌شوید',
 	'onlinestatusbar-status' => 'مایل به استفاده از چه وضعیت پیش‌فرضی هستید؟',
+	'onlinestatusbar-away-time' => 'چند دقیقه تا زمای که شما به دور علامت‌گذاری شده‌اید؟',
 	'onlinestatusbar-title-online' => '{{GENDER:$1|برخط}}',
 	'onlinestatusbar-title-busy' => '{{GENDER:$1|گرفتار}}',
 	'onlinestatusbar-title-away' => '{{GENDER:$1|خارج از دسترس}}',
