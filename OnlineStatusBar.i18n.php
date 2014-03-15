@@ -64,7 +64,8 @@ $messages['qqq'] = array(
 	'onlinestatusbar-title-busy' => 'Status for users who mark themselves as busy. Parameters:
 * $1 is the name of the user for GENDER.',
 	'onlinestatusbar-title-away' => 'Status for users who mark themselves as away. Parameters:
-* $1 is the name of the user for GENDER.',
+* $1 - the name of the user for GENDER
+{{Identical|Away}}',
 	'onlinestatusbar-title-hidden' => 'Status for users who mark themselves as hidden. Parameters:
 * $1 is the name of the user for GENDER.
 {{Identical|Hidden}}',
