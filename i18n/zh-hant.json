@@ -1,0 +1,9 @@
+{
+    "@metadata": {
+        "authors": [
+            "Ch.Andrew",
+            "Simon Shek"
+        ]
+    },
+    "onlinestatusbar-title-hidden": "{{GENDER:$1|隱藏}}"
+}

@@ -17,13 +17,14 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 $wgExtensionCredits['other'][] = array(
 	'path' => __FILE__,
 	'name' => 'Online Status Bar',
-	'version' => '1.1.0',
+	'version' => '1.2.0',
 	'author' => array( 'Petr Bena' ),
 	'descriptionmsg' => 'onlinestatusbar-desc',
 	'url' => 'https://www.mediawiki.org/wiki/Extension:OnlineStatusBar',
 );
 
 $dir = dirname( __FILE__ );
+$wgMessagesDirs['OnlineStatusBar'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['OnlineStatusBar'] = "$dir/OnlineStatusBar.i18n.php";
 $wgExtensionMessagesFiles['OnlineStatusBarMagic'] = "$dir/OnlineStatusBar.i18n.magic.php";
 

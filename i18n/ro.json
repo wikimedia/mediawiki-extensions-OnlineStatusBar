@@ -1,0 +1,27 @@
+{
+    "@metadata": {
+        "authors": [
+            "Minisarm",
+            "Stelistcristi"
+        ]
+    },
+    "onlinestatusbar-desc": "Bară de stare care arată dacă un utilizator este conectat, în funcție de preferințe, pe pagina sa de utilizator",
+    "prefs-onlinestatus": "Stare în on-line",
+    "onlinestatusbar-used": "Afișează starea dumneavoastră din on-line pe paginile de utilizator",
+    "onlinestatusbar-hide": "Ascunde bara de stare din paginile de utilizator pentru a utiliza doar cuvântul magic (pentru utilizatori avansați)",
+    "onlinestatusbar-away": "Consideră automat ca „plecat” după un interval definit",
+    "onlinestatusbar-purge": "Curățați pagina de utilizator ori de câte ori vă autentificați sau deconectați",
+    "onlinestatusbar-status": "Care este starea implicită pe care doriți să o utilizați?",
+    "onlinestatusbar-away-time": "Câte minute până când starea va fi schimbată în „plecat”?",
+    "onlinestatusbar-title-online": "Conectat",
+    "onlinestatusbar-title-busy": "Ocupat",
+    "onlinestatusbar-title-away": "Plecat",
+    "onlinestatusbar-title-hidden": "Ascuns",
+    "onlinestatusbar-title-offline": "Deconectat",
+    "onlinestatusbar-title-unknown": "Necunoscut",
+    "onlinestatusbar-tooltip-online": "Acest utilizator este acum conectat",
+    "onlinestatusbar-tooltip-busy": "Acest utilizator este ocupat și ar putea fi indisponibil",
+    "onlinestatusbar-tooltip-away": "Acest utilizator este inactiv și ar putea fi indisponibil",
+    "onlinestatusbar-tooltip-offline": "Acest utilizator este deconectat",
+    "onlinestatusbar-tooltip-unknown": "Starea acestui utilizator este necunoscută"
+}
