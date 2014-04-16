@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "AnakngAraw"
-        ]
-    },
-    "onlinestatusbar-desc": "Bareta ng katayuan na nagpapakita kung ang isang tagagamit ay naka-Internet, na nakabatay sa mga kanaisan, na nasa ibabaw ng kanilang pahina ng tagagamit",
-    "prefs-onlinestatus": "Katayuan sa Internet",
-    "onlinestatusbar-used": "Ipakita ang iyong katayuang nasa Internet na nasa mga pahina mo ng tagagamit",
-    "onlinestatusbar-hide": "Itago ang bareta ng katayuan na nasa mga pahina ng tagagamit upang gamitin lamang ang salitang masalamangka (Para sa mas masusulong na mga tagagamit)",
-    "onlinestatusbar-away": "Kusang ituring bilang wala rito at malayo pagkaraan ng tinukoy na agwat",
-    "onlinestatusbar-purge": "Purgahin ang pahina ng tagagamit tuwing lalagda ka o aalis mula sa pagkakalagda",
-    "onlinestatusbar-status": "Ano ang nais mong gamitin na likas na nakatakdang katayuan?",
-    "onlinestatusbar-away-time": "Ilang mga minuto hanggang sa markahan ka bilang wala rito at malayo:",
-    "onlinestatusbar-title-online": "nakaugnay sa Internet",
-    "onlinestatusbar-title-busy": "abala",
-    "onlinestatusbar-title-away": "wala at malayo",
-    "onlinestatusbar-title-hidden": "nakatago",
-    "onlinestatusbar-title-offline": "hindi nakaugnay sa Internet",
-    "onlinestatusbar-title-unknown": "hindi alam ang katayuan"
+	"@metadata": {
+		"authors": [
+			"AnakngAraw"
+		]
+	},
+	"onlinestatusbar-desc": "Bareta ng katayuan na nagpapakita kung ang isang tagagamit ay naka-Internet, na nakabatay sa mga kanaisan, na nasa ibabaw ng kanilang pahina ng tagagamit",
+	"prefs-onlinestatus": "Katayuan sa Internet",
+	"onlinestatusbar-used": "Ipakita ang iyong katayuang nasa Internet na nasa mga pahina mo ng tagagamit",
+	"onlinestatusbar-hide": "Itago ang bareta ng katayuan na nasa mga pahina ng tagagamit upang gamitin lamang ang salitang masalamangka (Para sa mas masusulong na mga tagagamit)",
+	"onlinestatusbar-away": "Kusang ituring bilang wala rito at malayo pagkaraan ng tinukoy na agwat",
+	"onlinestatusbar-purge": "Purgahin ang pahina ng tagagamit tuwing lalagda ka o aalis mula sa pagkakalagda",
+	"onlinestatusbar-status": "Ano ang nais mong gamitin na likas na nakatakdang katayuan?",
+	"onlinestatusbar-away-time": "Ilang mga minuto hanggang sa markahan ka bilang wala rito at malayo:",
+	"onlinestatusbar-title-online": "nakaugnay sa Internet",
+	"onlinestatusbar-title-busy": "abala",
+	"onlinestatusbar-title-away": "wala at malayo",
+	"onlinestatusbar-title-hidden": "nakatago",
+	"onlinestatusbar-title-offline": "hindi nakaugnay sa Internet",
+	"onlinestatusbar-title-unknown": "hindi alam ang katayuan"
 }

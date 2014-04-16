@@ -1,21 +1,21 @@
 {
-    "@metadata": {
-        "authors": [
-            "Wizardist"
-        ]
-    },
-    "onlinestatusbar-desc": "Панэль стану, якая адлюстроўвае наяўнасьць карыстальніка на сайце, у залежнасьці ад наладаў",
-    "prefs-onlinestatus": "Анлайн-статус",
-    "onlinestatusbar-used": "Адлюстроўваць ваш анлайн-статус на вашай старонцы ўдзельніка",
-    "onlinestatusbar-hide": "Хаваць панэль стану на старонках удзельнікаў для выкарыстаньня магічнага слова (для дасьведчаных удзельнікаў)",
-    "onlinestatusbar-away": "Аўтаматычна пераводзіць у стан «адыйшоў» пасьля вызначанага інтэрвалу",
-    "onlinestatusbar-purge": "Ачышчаць кэш старонкі ўдзельніка па кожным уваходзе або выхадзе",
-    "onlinestatusbar-status": "Перадвызначаны стан, які мусіць выкарыстоўвацца?",
-    "onlinestatusbar-away-time": "Колькі хвілінаў чакаць да пераходу ў стан «адыйшоў»:",
-    "onlinestatusbar-title-online": "на сайце",
-    "onlinestatusbar-title-busy": "заняты",
-    "onlinestatusbar-title-away": "адыйшоў",
-    "onlinestatusbar-title-hidden": "схаваны",
-    "onlinestatusbar-title-offline": "недаступны",
-    "onlinestatusbar-title-unknown": "стан невядомы"
+	"@metadata": {
+		"authors": [
+			"Wizardist"
+		]
+	},
+	"onlinestatusbar-desc": "Панэль стану, якая адлюстроўвае наяўнасьць карыстальніка на сайце, у залежнасьці ад наладаў",
+	"prefs-onlinestatus": "Анлайн-статус",
+	"onlinestatusbar-used": "Адлюстроўваць ваш анлайн-статус на вашай старонцы ўдзельніка",
+	"onlinestatusbar-hide": "Хаваць панэль стану на старонках удзельнікаў для выкарыстаньня магічнага слова (для дасьведчаных удзельнікаў)",
+	"onlinestatusbar-away": "Аўтаматычна пераводзіць у стан «адыйшоў» пасьля вызначанага інтэрвалу",
+	"onlinestatusbar-purge": "Ачышчаць кэш старонкі ўдзельніка па кожным уваходзе або выхадзе",
+	"onlinestatusbar-status": "Перадвызначаны стан, які мусіць выкарыстоўвацца?",
+	"onlinestatusbar-away-time": "Колькі хвілінаў чакаць да пераходу ў стан «адыйшоў»:",
+	"onlinestatusbar-title-online": "на сайце",
+	"onlinestatusbar-title-busy": "заняты",
+	"onlinestatusbar-title-away": "адыйшоў",
+	"onlinestatusbar-title-hidden": "схаваны",
+	"onlinestatusbar-title-offline": "недаступны",
+	"onlinestatusbar-title-unknown": "стан невядомы"
 }
