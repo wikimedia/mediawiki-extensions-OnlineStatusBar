@@ -2,8 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Ch.Andrew",
-			"Simon Shek"
+			"Simon Shek",
+			"Cwlin0416"
 		]
 	},
-	"onlinestatusbar-title-hidden": "{{GENDER:$1|隱藏}}"
+	"onlinestatusbar-title-online": "{{GENDER:$1|線上}}",
+	"onlinestatusbar-title-busy": "{{GENDER:$1|忙碌}}",
+	"onlinestatusbar-title-away": "{{GENDER:$1|離開}}",
+	"onlinestatusbar-title-hidden": "{{GENDER:$1|隱藏}}",
+	"onlinestatusbar-title-offline": "{{GENDER:$1|離線}}",
+	"onlinestatusbar-title-unknown": "{{GENDER:$1|不明}}"
 }
