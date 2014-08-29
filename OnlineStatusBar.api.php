@@ -55,12 +55,6 @@ class ApiOnlineStatus extends ApiQueryBase {
 		return 'Returns online status and gender of user.';
 	}
 
-	public function getPossibleErrors() {
-		return array_merge( parent::getPossibleErrors(), array(
-			array( 'code' => 'unknown', 'info' => "User doesn't allow to display user status" ),
-		) );
-	}
-
 	public function getExamples() {
 		return array(
 			'api.php?action=query&prop=onlinestatus&onlinestatususer=Petrb',
