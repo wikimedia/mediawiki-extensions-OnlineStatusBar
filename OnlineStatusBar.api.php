@@ -60,8 +60,4 @@ class ApiOnlineStatus extends ApiQueryBase {
 			'api.php?action=query&prop=onlinestatus&onlinestatususer=Petrb',
 		);
 	}
-
-	public function getVersion() {
-		return __CLASS__ . ': $Id: OnlineStatusBar.api.php petrb $';
-	}
 }
