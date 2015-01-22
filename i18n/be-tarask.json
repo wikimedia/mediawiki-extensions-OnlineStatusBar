@@ -13,7 +13,7 @@
 	"onlinestatusbar-purge": "Ачышчаць кэш старонкі ўдзельніка па кожным уваходзе або выхадзе",
 	"onlinestatusbar-status": "Перадвызначаны стан, які мусіць выкарыстоўвацца?",
 	"onlinestatusbar-away-time": "Колькі хвілінаў чакаць да пераходу ў стан «адыйшоў»:",
-	"onlinestatusbar-title-online": "на сайце",
+	"onlinestatusbar-title-online": "{{GENDER:$1|Он-лайн}}",
 	"onlinestatusbar-title-busy": "заняты",
 	"onlinestatusbar-title-away": "адыйшоў",
 	"onlinestatusbar-title-hidden": "схаваны",
