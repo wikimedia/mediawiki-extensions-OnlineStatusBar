@@ -15,8 +15,8 @@
 	"onlinestatusbar-away-time": "Колькі хвілінаў чакаць да пераходу ў стан «адыйшоў»:",
 	"onlinestatusbar-title-online": "{{GENDER:$1|Он-лайн}}",
 	"onlinestatusbar-title-busy": "{{GENDER:$1|Заняты|Занятая}}",
-	"onlinestatusbar-title-away": "адыйшоў",
-	"onlinestatusbar-title-hidden": "схаваны",
+	"onlinestatusbar-title-away": "{{GENDER:$1|Адышоў|Адышла}}",
+	"onlinestatusbar-title-hidden": "{{GENDER:$1|Нябачны|Нябачная}}",
 	"onlinestatusbar-title-offline": "недаступны",
 	"onlinestatusbar-title-unknown": "стан невядомы"
 }
