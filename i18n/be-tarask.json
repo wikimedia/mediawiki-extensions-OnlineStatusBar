@@ -17,6 +17,6 @@
 	"onlinestatusbar-title-busy": "{{GENDER:$1|Заняты|Занятая}}",
 	"onlinestatusbar-title-away": "{{GENDER:$1|Адышоў|Адышла}}",
 	"onlinestatusbar-title-hidden": "{{GENDER:$1|Нябачны|Нябачная}}",
-	"onlinestatusbar-title-offline": "недаступны",
+	"onlinestatusbar-title-offline": "{{GENDER:$1|Оф-лайн}}",
 	"onlinestatusbar-title-unknown": "стан невядомы"
 }
