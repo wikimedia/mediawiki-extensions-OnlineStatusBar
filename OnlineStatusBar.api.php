@@ -44,20 +44,23 @@ class ApiOnlineStatus extends ApiQueryBase {
 				),
 		);
 	}
-
-	public function getParamDescription() {
-		return array(
-			'user' => 'Username of user you want to get status for',
-		);
-	}
-
-	public function getDescription() {
-		return 'Returns online status and gender of user.';
-	}
-
+  
+	/**
+	 * @deprecated since MediaWiki core 1.25
+	 */
 	public function getExamples() {
 		return array(
 			'api.php?action=query&prop=onlinestatus&onlinestatususer=Petrb',
+		);
+	}
+  
+	/**
+	* @see ApiBase::getExamplesMessages()
+	*/
+	protected function getExamplesMessages() {
+		return array(
+			'action=query&prop=onlinestatus'
+				=> 'apihelp-query+onlinestatus-example',
 		);
 	}
 }
