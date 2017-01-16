@@ -20,5 +20,7 @@
 	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Dëse Benotzer}} ass beschäftegt a méiglecherweis net disponibel",
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Dëse Benotzer}} ass net aktiv a méiglecherweis net disponibel",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Dëse Benotzer}} ass offline",
-	"onlinestatusbar-tooltip-unknown": "De Status vun {{GENDER:$1|dësem Benotzer}} ass onbekannt"
+	"onlinestatusbar-tooltip-unknown": "De Status vun {{GENDER:$1|dësem Benotzer}} ass onbekannt",
+	"apihelp-query+onlinestatus-description": "Gëtt den Online-Status an d'Geschlecht vum Benotzer zréck",
+	"apihelp-query+onlinestatus-param-user": "Benotzernumm vum Benotzer vun deem Dir de Status kréie wëllt"
 }

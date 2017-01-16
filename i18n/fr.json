@@ -6,7 +6,8 @@
 			"Gomoko",
 			"Tititou36",
 			"Verdy p",
-			"Zebulon84"
+			"Zebulon84",
+			"Wladek92"
 		]
 	},
 	"onlinestatusbar-desc": "Barre d'état montrant si un utilisateur est en ligne sur sa page utilisateur",
@@ -27,5 +28,8 @@
 	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Cet utilisateur est occupé|Cette utilisatrice est occupée}} et peut ne pas être disponible",
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Cet utilisateur est inactif|Cette utilisatrice est inactive}} et peut ne pas être disponible",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Cet utilisateur n'est pas connecté|Cette utilisatrice n'est pas connectée}}",
-	"onlinestatusbar-tooltip-unknown": "Le statut de {{GENDER:$1|cet utilisateur|cette utilisatrice}} est inconnu"
+	"onlinestatusbar-tooltip-unknown": "Le statut de {{GENDER:$1|cet utilisateur|cette utilisatrice}} est inconnu",
+	"apihelp-query+onlinestatus-description": "Retourne le statut en ligne et le sexe de l'utilisateur",
+	"apihelp-query+onlinestatus-param-user": "Nom d'utilisateur de la personne dont vous souhaitez obtenir le statut",
+	"apihelp-query+onlinestatus-example": "Afficher le statut en ligne de Petrb"
 }

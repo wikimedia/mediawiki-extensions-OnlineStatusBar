@@ -22,5 +22,8 @@
 	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Корисникот}} сега е зафатен и може да е недостапен",
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Корисникот}} е неактивен и може да е недостапен",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Корисникот}} е исклучен",
-	"onlinestatusbar-tooltip-unknown": "Статусот на {{GENDER:$1|корисникот}} е непознат"
+	"onlinestatusbar-tooltip-unknown": "Статусот на {{GENDER:$1|корисникот}} е непознат",
+	"apihelp-query+onlinestatus-description": "Дава приклученост (дали корисникот е на линија) и неговиот пол",
+	"apihelp-query+onlinestatus-param-user": "За кое корисничко име да се добие сознанието",
+	"apihelp-query+onlinestatus-example": "Прикажи приклученост за Petrb"
 }

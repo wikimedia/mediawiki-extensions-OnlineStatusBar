@@ -23,5 +23,8 @@
 	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Dieser Benutzer|Diese Benutzerin}} ist beschäftigt und möglicherweise nicht anwesend",
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Dieser Benutzer|Diese Benutzerin}} ist inaktiv und möglichweise nicht anwesend",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Dieser Benutzer|Diese Benutzerin}} ist offline",
-	"onlinestatusbar-tooltip-unknown": "Der Status {{GENDER:$1|dieses Benutzers|dieser Benutzerin}} ist unbekannt"
+	"onlinestatusbar-tooltip-unknown": "Der Status {{GENDER:$1|dieses Benutzers|dieser Benutzerin}} ist unbekannt",
+	"apihelp-query+onlinestatus-description": "Gibt den Onlinestatus und das Geschlecht des Benutzers zurück",
+	"apihelp-query+onlinestatus-param-user": "Name des Benutzers, für den du den Status abrufen möchtest.",
+	"apihelp-query+onlinestatus-example": "Zeigt den Onlinestatus für Petrb an"
 }

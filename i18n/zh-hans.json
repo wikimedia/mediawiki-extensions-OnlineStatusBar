@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Xiaomingyan",
-			"Yfdyh000"
+			"Yfdyh000",
+			"Liuxinyu970226"
 		]
 	},
 	"onlinestatusbar-desc": "在其用户页上的状态栏显示用户是否在线",
@@ -23,5 +24,8 @@
 	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|此用户}}正忙，可能无法回应",
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|此用户}}处于离开状态，可能无法回应",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|该用户}}离线",
-	"onlinestatusbar-tooltip-unknown": "{{GENDER:$1|此用户}}的状态未知"
+	"onlinestatusbar-tooltip-unknown": "{{GENDER:$1|此用户}}的状态未知",
+	"apihelp-query+onlinestatus-description": "返回用户的在线状态和性别",
+	"apihelp-query+onlinestatus-param-user": "您希望获取状态的用户的用户名",
+	"apihelp-query+onlinestatus-example": "显示Petrb的在线状态"
 }
