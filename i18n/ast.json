@@ -22,5 +22,8 @@
 	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Esti usuariu|Esta usuaria}} ta {{GENDER:$1|ocupáu|ocupada}} y pue que nun tea disponible",
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Esti usuariu ta inactivu|Esta usuaria ta inactiva}} y pue que nun tea disponible",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Esti usuariu ta desconectáu|Esta usuaria ta desconectada}}",
-	"onlinestatusbar-tooltip-unknown": "L'estau d'{{GENDER:$1|esti usuariu|esta usuaria}} ye desconocíu"
+	"onlinestatusbar-tooltip-unknown": "L'estau d'{{GENDER:$1|esti usuariu|esta usuaria}} ye desconocíu",
+	"apihelp-query+onlinestatus-description": "Devuelve l'estáu de conexón y xéneru del usuariu",
+	"apihelp-query+onlinestatus-param-user": "Nome del usuariu del que quies saber l'estáu",
+	"apihelp-query+onlinestatus-example": "Ver l'estáu de conexón de Petrb"
 }
