@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Felipe L. Ewald"
+		]
+	},
+	"onlinestatusbar-title-unknown": "{{GENDER:$1|Desconhecido|Desconhecida|Desconhecido(a)}}"
+}
