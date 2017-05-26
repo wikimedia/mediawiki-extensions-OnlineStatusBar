@@ -29,6 +29,7 @@
 	"onlinestatusbar-tooltip-offline": "Tooltip for {{msg-mw|onlinestatusbar-title-offline}}. Parameters:\n* $1 is the name of the user for GENDER.",
 	"onlinestatusbar-tooltip-unknown": "Tooltip for {{msg-mw|onlinestatusbar-title-unknown}}. Parameters:\n* $1 is the name of the user for GENDER.",
 	"apihelp-query+onlinestatus-description": "{{doc-apihelp-description|query+onlinestatus}}",
+	"apihelp-query+onlinestatus-summary": "{{doc-apihelp-summary|query+onlinestatus}}",
 	"apihelp-query+onlinestatus-param-user": "{{doc-apihelp-param|query+onlinestatus|user}}",
 	"apihelp-query+onlinestatus-example": "{{doc-apihelp-example|query+onlinestatus}}"
 }
