@@ -24,6 +24,7 @@
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Корисникот}} е исклучен",
 	"onlinestatusbar-tooltip-unknown": "Статусот на {{GENDER:$1|корисникот}} е непознат",
 	"apihelp-query+onlinestatus-description": "Дава приклученост (дали корисникот е на линија) и неговиот пол",
+	"apihelp-query+onlinestatus-summary": "Ја дава вклученоста и полот на корисникот",
 	"apihelp-query+onlinestatus-param-user": "За кое корисничко име да се добие сознанието",
 	"apihelp-query+onlinestatus-example": "Прикажи приклученост за Petrb"
 }
