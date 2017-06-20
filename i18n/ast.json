@@ -24,6 +24,7 @@
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Esti usuariu ta desconectáu|Esta usuaria ta desconectada}}",
 	"onlinestatusbar-tooltip-unknown": "L'estau d'{{GENDER:$1|esti usuariu|esta usuaria}} ye desconocíu",
 	"apihelp-query+onlinestatus-description": "Devuelve l'estáu de conexón y xéneru del usuariu",
+	"apihelp-query+onlinestatus-summary": "Devuelve l'estáu de conexón y xéneru del usuariu",
 	"apihelp-query+onlinestatus-param-user": "Nome del usuariu del que quies saber l'estáu",
 	"apihelp-query+onlinestatus-example": "Ver l'estáu de conexón de Petrb"
 }
