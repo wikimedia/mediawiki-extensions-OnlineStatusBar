@@ -31,6 +31,7 @@
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Cet utilisateur n'est pas connecté|Cette utilisatrice n'est pas connectée}}",
 	"onlinestatusbar-tooltip-unknown": "Le statut de {{GENDER:$1|cet utilisateur|cette utilisatrice}} est inconnu",
 	"apihelp-query+onlinestatus-description": "Retourne le statut en ligne et le sexe de l'utilisateur",
+	"apihelp-query+onlinestatus-summary": "Retourne le status de connexion et le genre de l'utilisateur",
 	"apihelp-query+onlinestatus-param-user": "Nom d'utilisateur de la personne dont vous souhaitez obtenir le statut",
 	"apihelp-query+onlinestatus-example": "Afficher le statut en ligne de Petrb"
 }

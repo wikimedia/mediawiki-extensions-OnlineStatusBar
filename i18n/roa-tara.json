@@ -22,5 +22,9 @@
 	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Stu utende}} ste occupate o pò essere indisponibbile",
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Stu utende}} ste inattive o pò essere indisponibbile",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Stu utende}} mò ste fore linèe",
-	"onlinestatusbar-tooltip-unknown": "{{GENDER:$1|Stu utende}} jè scanusciute"
+	"onlinestatusbar-tooltip-unknown": "{{GENDER:$1|Stu utende}} jè scanusciute",
+	"apihelp-query+onlinestatus-description": "Dèje 'u state in linée e 'u sesse de l'utende",
+	"apihelp-query+onlinestatus-summary": "Dèje 'u state in linée e 'u sesse de l'utende",
+	"apihelp-query+onlinestatus-param-user": "Nome utende de l'utende ca tu vuè ccu canosce 'u state",
+	"apihelp-query+onlinestatus-example": "Fà 'ndrucà 'u state in linée de Petrb"
 }
