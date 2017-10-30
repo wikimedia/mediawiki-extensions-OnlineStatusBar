@@ -25,7 +25,6 @@ $wgExtensionCredits['other'][] = array(
 
 $dir = dirname( __FILE__ );
 $wgMessagesDirs['OnlineStatusBar'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['OnlineStatusBar'] = "$dir/OnlineStatusBar.i18n.php";
 $wgExtensionMessagesFiles['OnlineStatusBarMagic'] = "$dir/OnlineStatusBar.i18n.magic.php";
 
 $wgResourceModules['ext.OnlineStatusBar'] = array(
