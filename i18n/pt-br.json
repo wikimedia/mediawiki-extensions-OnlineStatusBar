@@ -1,8 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Eduardo Addad de Oliveira"
 		]
 	},
+	"onlinestatusbar-desc": "Barra de estado que indica se um utilizador está ligado, localizada na sua página de utilizador",
+	"prefs-onlinestatus": "Estado de ligação",
 	"onlinestatusbar-title-unknown": "{{GENDER:$1|Desconhecido|Desconhecida|Desconhecido(a)}}"
 }
