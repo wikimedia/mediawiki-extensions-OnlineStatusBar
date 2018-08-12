@@ -5,7 +5,7 @@
 			"BadDog"
 		]
 	},
-	"prefs-onlinestatus": "Статус на мрежи",
+	"prefs-onlinestatus": "Онлајн статус",
 	"onlinestatusbar-used": "Приказује ваш онлајн статус на вашим корисничким страницама",
 	"onlinestatusbar-title-online": "{{GENDER:$1|Онлајн}}",
 	"onlinestatusbar-title-busy": "{{GENDER:$1|Заузет}}",
