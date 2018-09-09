@@ -6,9 +6,9 @@
 			"Banjo"
 		]
 	},
-	"onlinestatusbar-desc": "Barra de estado que mostra na páxina de usuario se un usuario está conectado",
+	"onlinestatusbar-desc": "Barra de estado que amosa na páxina de usuario se un usuario está conectado",
 	"prefs-onlinestatus": "Conectado",
-	"onlinestatusbar-used": "Mostrar se está conectado nas súas páxinas de usuario",
+	"onlinestatusbar-used": "Amosar se está conectado nas súas páxinas de usuario",
 	"onlinestatusbar-hide": "Agochar a barra de estado nas páxinas de usuario para usar unicamente a palabra máxica (para usuarios avanzados)",
 	"onlinestatusbar-away": "Considerar automaticamente que marchou despois do intervalo definido",
 	"onlinestatusbar-purge": "Purgar a páxina de usuario cada vez que se identifique ou saia do sistema",
@@ -28,5 +28,5 @@
 	"apihelp-query+onlinestatus-description": "Devolve o estado en liña e o sexo do usuario",
 	"apihelp-query+onlinestatus-summary": "Devolve o estado de conexión e o xénero dun usuario",
 	"apihelp-query+onlinestatus-param-user": "Nome de usuario da persoa da que quere obter o estado",
-	"apihelp-query+onlinestatus-example": "Mostrar o estado en liña de Petrb"
+	"apihelp-query+onlinestatus-example": "Amosar o estado en liña de Petrb"
 }
