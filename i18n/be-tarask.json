@@ -18,5 +18,6 @@
 	"onlinestatusbar-title-away": "{{GENDER:$1|Адышоў|Адышла}}",
 	"onlinestatusbar-title-hidden": "{{GENDER:$1|Нябачны|Нябачная}}",
 	"onlinestatusbar-title-offline": "{{GENDER:$1|Оф-лайн}}",
-	"onlinestatusbar-title-unknown": "{{GENDER:$1|Невядома}}"
+	"onlinestatusbar-title-unknown": "{{GENDER:$1|Невядома}}",
+	"onlinestatusbar-tooltip-online": "{{GENDER:$1|Гэты ўдзельнік|Гэтая ўдзельніца}} цяпер он-лайн"
 }
