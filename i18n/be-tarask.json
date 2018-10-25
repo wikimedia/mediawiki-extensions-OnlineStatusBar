@@ -21,5 +21,6 @@
 	"onlinestatusbar-title-unknown": "{{GENDER:$1|Невядома}}",
 	"onlinestatusbar-tooltip-online": "{{GENDER:$1|Гэты ўдзельнік|Гэтая ўдзельніца}} цяпер он-лайн",
 	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Гэты ўдзельнік заняты|Гэтая ўдзельніца занятая}} і можа быць {{GENDER:$1|недаступны|недаступная}}",
-	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Гэты ўдзельнік|Гэтая ўдзельніца}} цяпер {{GENDER:$1|неактыўны|неактыўная}} і можа быць {{GENDER:$1|недаступны|недаступная}}."
+	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Гэты ўдзельнік|Гэтая ўдзельніца}} цяпер {{GENDER:$1|неактыўны|неактыўная}} і можа быць {{GENDER:$1|недаступны|недаступная}}.",
+	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Гэты ўдзельнік|Гэтая ўдзельніца}} цяпер {{GENDER:$1|недаступны|недаступная}}"
 }
