@@ -23,5 +23,6 @@
 	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Гэты ўдзельнік заняты|Гэтая ўдзельніца занятая}} і можа быць {{GENDER:$1|недаступны|недаступная}}",
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Гэты ўдзельнік|Гэтая ўдзельніца}} цяпер {{GENDER:$1|неактыўны|неактыўная}} і можа быць {{GENDER:$1|недаступны|недаступная}}.",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Гэты ўдзельнік|Гэтая ўдзельніца}} цяпер {{GENDER:$1|недаступны|недаступная}}",
-	"onlinestatusbar-tooltip-unknown": "Статус {{GENDER:$1|гэтага ўдзельніка|гэтай удзельніцы}} невядомы"
+	"onlinestatusbar-tooltip-unknown": "Статус {{GENDER:$1|гэтага ўдзельніка|гэтай удзельніцы}} невядомы",
+	"apihelp-query+onlinestatus-description": "Вяртае он-лайн-статус і плоць удзельніка"
 }
