@@ -6,7 +6,7 @@
  * @ingroup Extensions
  * @author Petr Bena <benapetr@gmail.com>
  * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
- * @link http://www.mediawiki.org/wiki/Extension:OnlineStatusBar Documentation
+ * @link https://www.mediawiki.org/wiki/Extension:OnlineStatusBar Documentation
  */
 
 class OnlineStatusBar_StatusCheck {
