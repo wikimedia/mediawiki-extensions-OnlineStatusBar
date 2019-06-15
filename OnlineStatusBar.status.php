@@ -73,7 +73,7 @@ class OnlineStatusBar_StatusCheck {
 
 			if ( $result == '' ) {
 				$t_time = OnlineStatusBar::getTimeoutDate();
-				$dbr = wfGetDB( DB_SLAVE );
+				$dbr = wfGetDB( DB_REPLICA );
 				$result = $dbr->selectField(
 					'online_status',
 					'timestamp',
@@ -92,7 +92,7 @@ class OnlineStatusBar_StatusCheck {
 			$w_time = OnlineStatusBar::getTimeoutDate( ONLINESTATUSBAR_CK_DELAYED );
 
 			if ( $result == '' ) {
-				$dbr = wfGetDB( DB_SLAVE );
+				$dbr = wfGetDB( DB_REPLICA );
 				$result = $dbr->selectField(
 					'online_status',
 					'timestamp',
@@ -231,7 +231,7 @@ class OnlineStatusBar_StatusCheck {
 		}
 
 		// Check if we actually need to delete something before we write to master
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$time = OnlineStatusBar::getTimeoutDate();
 		$result = $dbr->selectField(
 			'online_status',
