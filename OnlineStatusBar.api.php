@@ -5,6 +5,8 @@
  * @group Extensions
  */
 
+use MediaWiki\MediaWikiServices;
+
 class ApiOnlineStatus extends ApiQueryBase {
 	public function __construct( $query, $moduleName ) {
 		parent::__construct( $query, $moduleName, 'onlinestatus' );
@@ -24,7 +26,8 @@ class ApiOnlineStatus extends ApiQueryBase {
 			$gender = 'unknown';
 		} else {
 			$ret = $result[0];
-			$gender = GenderCache::singleton()->getGenderOf( $result[1]->getName() );
+			$genderCache = MediaWikiServices::getInstance()->getGenderCache();
+			$gender = $genderCache->getGenderOf( $result[1]->getName() );
 		}
 
 		$this->getResult()->addValue(
