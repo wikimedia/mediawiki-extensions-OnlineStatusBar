@@ -7,23 +7,15 @@
  */
 class OnlineStatusBarHooks {
 	/**
-	 * @param DatabaseUpdater|null $updater
-	 * @return bool
+	 * @param DatabaseUpdater $updater
 	 */
-	public static function ckSchema( $updater = null ) {
-		if ( $updater !== null ) {
-			$updater->addExtensionUpdate( array( 'addtable',
-				'online_status',
-				dirname( __FILE__ ) .
-				'/OnlineStatusBar.sql',
-				true )
-			);
-		} else {
-			global $wgExtNewTables;
-			$wgExtNewTables[] = array(
-				'online_status', dirname( __FILE__ ) . '/OnlineStatusBar.sql' );
-		}
-		return true;
+	public static function ckSchema( DatabaseUpdater $updater ) {
+		$updater->addExtensionUpdate( array(
+			'addtable',
+			'online_status',
+			dirname( __FILE__ ) . '/OnlineStatusBar.sql',
+			true
+		) );
 	}
 
 	/**
