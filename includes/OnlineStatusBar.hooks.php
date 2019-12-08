@@ -13,7 +13,7 @@ class OnlineStatusBarHooks {
 		$updater->addExtensionUpdate( array(
 			'addtable',
 			'online_status',
-			dirname( __FILE__ ) . '/OnlineStatusBar.sql',
+			dirname( __FILE__ ) . '/../sql/OnlineStatusBar.sql',
 			true
 		) );
 	}
