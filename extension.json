@@ -57,7 +57,7 @@
 		"LoadExtensionSchemaUpdates": "OnlineStatusBarHooks::ckSchema",
 		"UserLogout": "OnlineStatusBarHooks::logout",
 		"ArticleViewHeader": "OnlineStatusBarHooks::renderBar",
-		"UserLoginComplete": "OnlineStatusBarHooks::updateStatus",
+		"UserLoginComplete": "OnlineStatusBarHooks::onUserLoginComplete",
 		"GetPreferences": "OnlineStatusBarHooks::preferencesHook",
 		"UserGetDefaultOptions": "OnlineStatusBarHooks::setDefaultOptions",
 		"MagicWordwgVariableIDs": "OnlineStatusBarHooks::magicWordSet",

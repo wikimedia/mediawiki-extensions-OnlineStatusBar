@@ -144,13 +144,12 @@ class OnlineStatusBar_StatusCheck {
 
 	/**
 	 * Insert to the database
+	 * @param User $user
 	 * @return bool
 	 */
-	public static function updateDB() {
-		global $wgUser;
-
+	public static function updateDB( $user ) {
 		// Skip users we don't track
-		if ( OnlineStatusBar::isValid ( $wgUser ) != true ) {
+		if ( OnlineStatusBar::isValid ( $user ) != true ) {
 			return false;
 		}
 
@@ -158,10 +157,10 @@ class OnlineStatusBar_StatusCheck {
 		$dbw = wfGetDB( DB_MASTER );
 		$timestamp = $dbw->timestamp();
 		$row = array(
-			'username' => $wgUser->getName(),
+			'username' => $user->getName(),
 			'timestamp' => $timestamp,
 		);
-		self::setCache( $wgUser->getName(), $timestamp, ONLINESTATUSBAR_NORMAL_CACHE );
+		self::setCache( $user->getName(), $timestamp, ONLINESTATUSBAR_NORMAL_CACHE );
 		$dbw->insert( 'online_status', $row, __METHOD__ );
 		return false;
 	}
@@ -184,18 +183,19 @@ class OnlineStatusBar_StatusCheck {
 
 	/**
 	 * Update status of user
+	 * @param User $user
 	 * @return bool
 	 */
-	public static function updateStatus() {
-		global $wgUser, $wgOnlineStatusBarDefaultOffline;
+	public static function updateStatus( $user ) {
+		global $wgOnlineStatusBarDefaultOffline;
 
 		// if anon users are not tracked and user is anon leave it
-		if ( !OnlineStatusBar::isValid( $wgUser ) ) {
+		if ( !OnlineStatusBar::isValid( $user ) ) {
 			return false;
 		}
-		$user_status = self::getStatus( $wgUser, true );
+		$user_status = self::getStatus( $user, true );
 		if ( $user_status == $wgOnlineStatusBarDefaultOffline ) {
-			self::updateDB();
+			self::updateDB( $user );
 			return true;
 		}
 
@@ -205,10 +205,10 @@ class OnlineStatusBar_StatusCheck {
 			$dbw->update(
 				'online_status',
 				array( 'timestamp' => $timestamp ),
-				array( 'username' => $wgUser->getName() ),
+				array( 'username' => $user->getName() ),
 				__METHOD__
 			);
-			self::setCache( $wgUser->getName(), $timestamp, ONLINESTATUSBAR_NORMAL_CACHE );
+			self::setCache( $user->getName(), $timestamp, ONLINESTATUSBAR_NORMAL_CACHE );
 			self::deleteOld();
 		}
 		return true;

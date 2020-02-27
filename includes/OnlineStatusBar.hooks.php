@@ -36,15 +36,17 @@ class OnlineStatusBarHooks {
 
 	/**
 	 * Called everytime on login
+	 * @param User &$user
+	 * @param string &$inject_html
+	 * @param bool $direct
 	 * @return bool
 	 */
-	public static function updateStatus() {
-		global $wgUser;
-		if ( OnlineStatusBar::isValid( $wgUser ) ) {
+	public static function onUserLoginComplete( &$user, &$inject_html, $direct ) {
+		if ( OnlineStatusBar::isValid( $user ) ) {
 			// Update status
-			OnlineStatusBar_StatusCheck::updateStatus();
+			OnlineStatusBar_StatusCheck::updateStatus( $user );
 			// Purge user page (optional)
-			OnlineStatusBar::purge( $wgUser );
+			OnlineStatusBar::purge( $user );
 		}
 		return true;
 	}
@@ -58,8 +60,9 @@ class OnlineStatusBarHooks {
 	 */
 	public static function renderBar( &$article, &$outputDone, &$pcache ) {
 		global $wgOnlineStatusBarCacheTime;
+		$context = $article->getContext();
 		// Update status of all users who wants to be tracked
-		OnlineStatusBar_StatusCheck::updateStatus();
+		OnlineStatusBar_StatusCheck::updateStatus( $context->getUser() );
 
 		// Performace fix
 		$title = $article->getTitle();
@@ -83,7 +86,6 @@ class OnlineStatusBarHooks {
 		if ( $result->getOption( 'OnlineStatusBar_hide', false ) == true ) {
 			return true;
 		}
-		$context = $article->getContext();
 		$context->getOutput()->addModules( 'ext.OnlineStatusBar' );
 
 		return true;
