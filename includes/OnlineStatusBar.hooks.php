@@ -175,7 +175,7 @@ class OnlineStatusBarHooks {
 	 * @param $ret string?
 	 * @return bool
 	 */
-	public static function parserGetVariable( &$parser, &$varCache, &$index, &$ret ) {
+	public static function parserGetVariable( $parser, &$varCache, $index, &$ret ) {
 		global $wgOnlineStatusBarCacheTime;
 		if ( $index != 'ISONLINE' ) {
 			return true;
@@ -189,7 +189,7 @@ class OnlineStatusBarHooks {
 		}
 
 		if ( $result === false ) {
-			$ret = 'unknown';
+			$ret = $varCache[$index] = 'unknown';
 			return true;
 		}
 
@@ -198,7 +198,7 @@ class OnlineStatusBarHooks {
 			$parser->getOutput()->updateCacheExpiry( $wgOnlineStatusBarCacheTime[$result[0]] * 60 );
 		}
 
-		$ret = $result[0];
+		$ret = $varCache[$index] = $result[0];
 		return true;
 	}
 }
