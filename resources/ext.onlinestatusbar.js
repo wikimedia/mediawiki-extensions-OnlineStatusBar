@@ -8,16 +8,16 @@
  * @author Timo Tijhof
  * @author Bartosz Dziewoński
  */
-( function ( mw, $ ) {
+( function () {
 	'use strict';
 
 	// Due to the way we determine the target user (wgTitle)
 	// this code must never run outside the User/User talk namespace.
-	if ( $.inArray( mw.config.get( 'wgCanonicalNamespace' ), ['User', 'User_talk'] ) === -1 ) {
+	if ( $.inArray( mw.config.get( 'wgCanonicalNamespace' ), [ 'User', 'User_talk' ] ) === -1 ) {
 		return;
 	}
 
-	$( document ).ready( function () {
+	$.ready( document ).ready( function () {
 		var
 			$statusbarFields = $( '<span>' ).addClass( 'onlinestatusbar-pagetop onlinestatusbar-field metadata' ),
 			knownStatuses = [
@@ -29,8 +29,9 @@
 				'unknown'
 			],
 			apiPath = mw.util.wikiScript( 'api' ),
-			// WARNING: This way of determining a username is limited to user pages and user talk pages
-			username = mw.config.get( 'wgTitle' ).split( '/' )[0];
+			// WARNING: This way of determining a username is limited to user pages
+			// and user talk pages
+			username = mw.config.get( 'wgTitle' ).split( '/' )[ 0 ];
 
 		// Add status bar wrapper
 		$( 'h1' ).first().prepend( $statusbarFields );
@@ -41,7 +42,7 @@
 		 * @return {jqXHR}
 		 */
 		function updateOnlineStatusBar() {
-			return $.ajax({
+			return $.ajax( {
 				url: apiPath,
 				data: {
 					format: 'json',
@@ -49,7 +50,7 @@
 					prop: 'onlinestatus',
 					onlinestatususer: username
 				}
-			}).done( function ( data ) {
+			} ).done( function ( data ) {
 				var gender, status;
 
 				if ( !data || !data.onlinestatus ) {
@@ -85,11 +86,11 @@
 						.attr( 'title', mw.msg( 'onlinestatusbar-tooltip-' + status, gender ) );
 				}
 
-			}).always( function () {
+			} ).always( function () {
 				// Whether ajax succeeded or failed, once done, schedule an update
 				// (for when the user leaves the page open) 2 minutes from now.
 				setTimeout( updateOnlineStatusBar, 2 * 60 * 1000 );
-			});
+			} );
 		}
 
 		// Only intialize the status bar if we are on the right page.
@@ -99,6 +100,6 @@
 			// Update now
 			updateOnlineStatusBar();
 		}
-	});
+	} );
 
-}( mediaWiki, jQuery ) );
+}() );
