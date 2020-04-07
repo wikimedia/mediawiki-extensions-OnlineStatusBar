@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Okras",
-			"Facenapalm"
+			"Facenapalm",
+			"Okras"
 		]
 	},
 	"onlinestatusbar-desc": "Строка состояния, которая показывает на странице участника, находится ли он в сети",

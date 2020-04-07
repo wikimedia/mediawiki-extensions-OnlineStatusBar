@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Ch.Andrew",
-			"Simon Shek",
 			"Cwlin0416",
-			"Kly"
+			"Kly",
+			"Simon Shek"
 		]
 	},
 	"onlinestatusbar-desc": "狀態列在使用者頁面裡顯示使用者是否在線上",
