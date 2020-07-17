@@ -39,6 +39,7 @@
 		/**
 		 * Fetch the status of the user that owns this page or talk page and
 		 * update the status bar.
+		 *
 		 * @return {jqXHR}
 		 */
 		function updateOnlineStatusBar() {
