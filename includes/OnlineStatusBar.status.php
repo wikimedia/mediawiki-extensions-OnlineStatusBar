@@ -17,7 +17,7 @@ class OnlineStatusBar_StatusCheck {
 	 */
 	private static function getCacheKey( $user, $type ) {
 		// get a key for cache
-		return wfMemcKey( 'onlinestatusbar_cache', $type, $user );
+		return ObjectCache::getLocalClusterInstance()->makeKey( 'onlinestatusbar_cache', $type, $user );
 	}
 
 	/**
@@ -29,7 +29,7 @@ class OnlineStatusBar_StatusCheck {
 	 * @return true
 	 */
 	private static function setCache( $user, $values, $type, $time = null ) {
-		global $wgOnlineStatusBar_WriteTime, $wgMemc;
+		global $wgOnlineStatusBar_WriteTime;
 
 		// get a key
 		$cache_key = self::getCacheKey( $user, $type );
@@ -38,7 +38,7 @@ class OnlineStatusBar_StatusCheck {
 			$time = $wgOnlineStatusBar_WriteTime;
 		}
 
-		$wgMemc->set( $cache_key, $values, $time );
+		ObjectCache::getLocalClusterInstance()->set( $cache_key, $values, $time );
 		return true;
 	}
 
@@ -48,13 +48,11 @@ class OnlineStatusBar_StatusCheck {
 	 * @param $type string
 	 */
 	private static function getCache( $user, $type ) {
-		global $wgMemc;
-
 		// get a key
 		$cache_key = self::getCacheKey( $user, $type );
 
 		// get a value
-		return $wgMemc->get( $cache_key );
+		return ObjectCache::getLocalClusterInstance()->get( $cache_key );
 	}
 
 	/**
