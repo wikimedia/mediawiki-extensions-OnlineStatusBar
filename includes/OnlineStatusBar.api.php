@@ -6,10 +6,22 @@
  */
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\UserNameUtils;
 
 class ApiOnlineStatus extends ApiQueryBase {
-	public function __construct( $query, $moduleName ) {
+	/**
+	 * @var UserNameUtils
+	 */
+	private $userNameUtils;
+
+	/**
+	 * @param ApiQuery $query
+	 * @param string $moduleName
+	 * @param UserNameUtils $userNameUtils
+	 */
+	public function __construct( ApiQuery $query, $moduleName, UserNameUtils $userNameUtils ) {
 		parent::__construct( $query, $moduleName, 'onlinestatus' );
+		$this->userNameUtils = $userNameUtils;
 	}
 
 	public function execute() {
@@ -17,7 +29,7 @@ class ApiOnlineStatus extends ApiQueryBase {
 		$result = OnlineStatusBar::getUserInfoFromString( $params['user'] );
 
 		// if user is IP and we track them
-		if ( $result === false && User::isIP( $params['user'] )  ) {
+		if ( $result === false && $this->userNameUtils->isIP( $params['user'] ) ) {
 			$result = OnlineStatusBar::getAnonFromString( $params['user'] );
 		}
 
@@ -47,7 +59,7 @@ class ApiOnlineStatus extends ApiQueryBase {
 				),
 		);
 	}
-  
+
 	/**
 	 * @deprecated since MediaWiki core 1.25
 	 */
@@ -56,7 +68,7 @@ class ApiOnlineStatus extends ApiQueryBase {
 			'api.php?action=query&prop=onlinestatus&onlinestatususer=Petrb',
 		);
 	}
-  
+
 	/**
 	* @see ApiBase::getExamplesMessages()
 	*/

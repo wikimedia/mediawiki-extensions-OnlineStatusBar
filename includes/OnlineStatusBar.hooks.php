@@ -75,8 +75,10 @@ class OnlineStatusBarHooks {
 
 		// Retrieve status of user parsed from title
 		$result = OnlineStatusBar::getUserInfoFromTitle( $title );
+
+		$userNameUtils = MediaWikiServices::getInstance()->getUserNameUtils();
 		// In case that status can't be parsed we check if it isn't anon
-		if ( $result === false && User::isIP ( $title->getBaseText() ) ) {
+		if ( $result === false && $userNameUtils->isIP( $title->getBaseText() ) ) {
 			$result = OnlineStatusBar::getAnonFromTitle( $title );
 		}
 
@@ -186,8 +188,9 @@ class OnlineStatusBarHooks {
 
 		// get a status of user parsed from title
 		$result = OnlineStatusBar::getUserInfoFromString( $parser->getTitle()->getBaseText() );
+		$userNameUtils = MediaWikiServices::getInstance()->getUserNameUtils();
 		// if user is IP and we track them
-		if ( User::isIP( $parser->getTitle()->getBaseText() ) && $result === false ) {
+		if ( $userNameUtils->isIP( $parser->getTitle()->getBaseText() ) && $result === false ) {
 			$result = OnlineStatusBar::getAnonFromString( $parser->getTitle()->getBaseText() );
 		}
 
