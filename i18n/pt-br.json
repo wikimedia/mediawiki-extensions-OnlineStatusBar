@@ -7,7 +7,7 @@
 		]
 	},
 	"onlinestatusbar-desc": "Barra de estado que indica se um usuário está ligado, localizada na sua página de usuário",
-	"prefs-onlinestatus": "Estado de ligação",
+	"prefs-onlinestatus": "Status conectado",
 	"onlinestatusbar-used": "Mostrar o seu status de ligação nas suas páginas de usuário",
 	"onlinestatusbar-hide": "Ocultar a barra de status nas páginas de usuário, a fim de utilizar apenas a palavra mágica (Para usuários avançados)",
 	"onlinestatusbar-away": "Tratar automaticamente como ausente após um intervalo definido",
