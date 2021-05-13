@@ -109,7 +109,7 @@ class OnlineStatusBar_StatusCheck {
 			$status = $wgOnlineStatusBarDefaultOffline;
 		} else {
 			// let's check if it isn't anon
-			if ( $user->isLoggedIn() ) {
+			if ( $user->isRegistered() ) {
 				$status = $user->getOption( 'OnlineStatusBar_status', $wgOnlineStatusBarDefaultOnline );
 
 				if ( $delayed_check ) {
