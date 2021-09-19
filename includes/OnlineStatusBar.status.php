@@ -152,7 +152,7 @@ class OnlineStatusBar_StatusCheck {
 		}
 
 		// If we track them, let's insert it to the table
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$timestamp = $dbw->timestamp();
 		$row = array(
 			'username' => $user->getName(),
@@ -169,7 +169,7 @@ class OnlineStatusBar_StatusCheck {
 	 * @return bool
 	 */
 	static function deleteStatus( $userName ) {
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->delete( 'online_status', array( 'username' => $userName ), __METHOD__ ); // delete user
 
 		// remove from cache
@@ -198,7 +198,7 @@ class OnlineStatusBar_StatusCheck {
 		}
 
 		if ( $user_status == 'write' ) {
-			$dbw = wfGetDB( DB_MASTER );
+			$dbw = wfGetDB( DB_PRIMARY );
 			$timestamp = $dbw->timestamp();
 			$dbw->update(
 				'online_status',
@@ -245,7 +245,7 @@ class OnlineStatusBar_StatusCheck {
 		}
 
 		// calculate time and convert it back to mediawiki format
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->delete( 'online_status',
 			array( 'timestamp < ' . $dbw->addQuotes( $dbw->timestamp( $time ) ) ),
 			__METHOD__
