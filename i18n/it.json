@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Darth Kule"
+			"Darth Kule",
+			"Sakretsu"
 		]
 	},
 	"onlinestatusbar-desc": "Barra di stato che mostra se un utente è online sulla sua pagina utente",
@@ -20,7 +21,7 @@
 	"onlinestatusbar-title-offline": "Non {{GENDER:$1|connesso|connessa|connesso/a}}",
 	"onlinestatusbar-title-unknown": "{{GENDER:$1|Sconosciuto|Sconosciuta|Sconosciuto/a}}",
 	"onlinestatusbar-tooltip-online": "Questo utente è attualmente {{GENDER:$1|connesso|connessa|connesso/a}}",
-	"onlinestatusbar-tooltip-busy": "Questo utente è attualmente {{GENDER:$1|occupato|occupata|occupato/a}} e potrebbe non essere disponibile",
+	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Questo|Questa|Questo/a}} utente è attualmente {{GENDER:$1|impegnato|impegnata|impegnato/a}} e potrebbe non essere disponibile",
 	"onlinestatusbar-tooltip-away": "Questo utente è attualmente {{GENDER:$1|lontano|lontana|lontano/a}} e potrebbe non essere disponibile",
 	"onlinestatusbar-tooltip-offline": "Questo utente è attualmente non {{GENDER:$1|connesso|connessa|connesso/a}}",
 	"onlinestatusbar-tooltip-unknown": "Lo stato di questo utente è {{GENDER:$1|sconosciuto}}"
