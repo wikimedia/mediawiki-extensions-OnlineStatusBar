@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Xuacu"
+			"Xuacu",
+			"Fitoschido"
 		]
 	},
 	"onlinestatusbar-desc": "Barra d'estáu qu'amuesa si un usuario ta coneutáu na so páxina d'usuariu",
@@ -15,7 +16,7 @@
 	"onlinestatusbar-title-online": "{{GENDER:$1|Conectáu|Conectada}}",
 	"onlinestatusbar-title-busy": "{{GENDER:$1|Ocupáu|Ocupada}}",
 	"onlinestatusbar-title-away": "{{GENDER:$1|Ausente}}",
-	"onlinestatusbar-title-hidden": "{{GENDER:$1|Tapecíu|Tapecida}}",
+	"onlinestatusbar-title-hidden": "{{GENDER:$1|Anubríu|Anubrida}}",
 	"onlinestatusbar-title-offline": "{{GENDER:$1|Desconectáu|Desconectada}}",
 	"onlinestatusbar-title-unknown": "{{GENDER:$1|Desconocíu}}",
 	"onlinestatusbar-tooltip-online": "{{GENDER:$1|Esti usuariu|Esta usuaria}} ta en llinia",
