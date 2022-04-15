@@ -1,4 +1,5 @@
 {
+	"name": "OnlineStatusBar",
 	"private": true,
 	"scripts": {
 		"test": "grunt test"
