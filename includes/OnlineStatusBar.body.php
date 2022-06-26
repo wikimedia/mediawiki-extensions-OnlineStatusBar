@@ -10,6 +10,8 @@
  * @link https://www.mediawiki.org/wiki/Extension:OnlineStatusBar Documentation
  */
 
+use MediaWiki\MediaWikiServices;
+
 class OnlineStatusBar {
 	/**
 	 * @param Title $title
@@ -123,8 +125,15 @@ class OnlineStatusBar {
 			// purge both pages now
 			if ( $user->getOption( 'OnlineStatusBar_active', false ) ) {
 				if ( $user->getOption( 'OnlineStatusBar_autoupdate', false ) == true ) {
-					WikiPage::factory( $user->getUserPage() )->doPurge();
-					WikiPage::factory( $user->getTalkPage() )->doPurge();
+					if ( method_exists( MediaWikiServices::class, 'getWikiPageFactory' ) ) {
+						// MW 1.36+
+						$wikiPageFactory = MediaWikiServices::getInstance()->getWikiPageFactory();
+						$wikiPageFactory->newFromTitle( $user->getUserPage() )->doPurge();
+						$wikiPageFactory->newFromTitle( $user->getTalkPage() )->doPurge();
+					} else {
+						WikiPage::factory( $user->getUserPage() )->doPurge();
+						WikiPage::factory( $user->getTalkPage() )->doPurge();
+					}
 				}
 			}
 		}
