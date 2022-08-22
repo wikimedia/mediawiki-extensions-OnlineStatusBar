@@ -5,6 +5,8 @@
  *
  * @group Extensions
  */
+use MediaWiki\MediaWikiServices;
+
 class OnlineStatusBarHooks {
 	/**
 	 * @param DatabaseUpdater $updater
@@ -26,7 +28,8 @@ class OnlineStatusBarHooks {
 	public static function logout( &$user ) {
 		global $wgOnlineStatusBarDefaultEnabled;
 		// check if user had enabled this feature before we write to db
-		if ( $user->getOption( 'OnlineStatusBar_active', $wgOnlineStatusBarDefaultEnabled ) ) {
+		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+		if ( $userOptionsManager->getOption( $user, 'OnlineStatusBar_active', $wgOnlineStatusBarDefaultEnabled ) ) {
 			$userName = $user->getName();
 			OnlineStatusBar_StatusCheck::deleteStatus( $userName );
 			OnlineStatusBar::purge( $userName );

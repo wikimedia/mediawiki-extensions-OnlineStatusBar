@@ -123,8 +123,9 @@ class OnlineStatusBar {
 		// check if something weird didn't happen
 		if ( $user instanceof User ) {
 			// purge both pages now
-			if ( $user->getOption( 'OnlineStatusBar_active', false ) ) {
-				if ( $user->getOption( 'OnlineStatusBar_autoupdate', false ) == true ) {
+			$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+			if ( $userOptionsManager->getOption( $user, 'OnlineStatusBar_active', false ) ) {
+				if ( $userOptionsManager->getOption( $user, 'OnlineStatusBar_autoupdate', false ) == true ) {
 					if ( method_exists( MediaWikiServices::class, 'getWikiPageFactory' ) ) {
 						// MW 1.36+
 						$wikiPageFactory = MediaWikiServices::getInstance()->getWikiPageFactory();
@@ -157,7 +158,8 @@ class OnlineStatusBar {
 					if ( $user === false ) {
 						$time = $wgOnlineStatusBar_AwayTime;
 					} else {
-						$time = $user->getOption(
+						$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+						$time = $userOptionsManager->getOption( $user,
 							'OnlineStatusBar_awaytime',
 							$wgOnlineStatusBar_AwayTime
 						);
@@ -183,6 +185,7 @@ class OnlineStatusBar {
 		}
 
 		// do we track them
-		return $user->getOption( 'OnlineStatusBar_active', $wgOnlineStatusBarDefaultEnabled );
+		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+		return $userOptionsManager->getOption( $user, 'OnlineStatusBar_active', $wgOnlineStatusBarDefaultEnabled );
 	}
 }

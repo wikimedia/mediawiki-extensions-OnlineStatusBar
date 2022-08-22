@@ -9,6 +9,8 @@
  * @link https://www.mediawiki.org/wiki/Extension:OnlineStatusBar Documentation
  */
 
+use MediaWiki\MediaWikiServices;
+
 class OnlineStatusBar_StatusCheck {
 	/**
 	 * Return cache key
@@ -110,14 +112,15 @@ class OnlineStatusBar_StatusCheck {
 		} else {
 			// let's check if it isn't anon
 			if ( $user->isRegistered() ) {
-				$status = $user->getOption( 'OnlineStatusBar_status', $wgOnlineStatusBarDefaultOnline );
+				$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+				$status = $userOptionsManager->getOption( $user, 'OnlineStatusBar_status', $wgOnlineStatusBarDefaultOnline );
 
 				if ( $delayed_check ) {
 					// check if it's old or not
 					if ( $result < wfTimestamp( TS_MW, $w_time ) ) {
 						$status = 'write';
 					}
-				} else if ( $user->getOption( 'OnlineStatusBar_away', true ) == true ) {
+				} else if ( $userOptionsManager->getOption( $user, 'OnlineStatusBar_away', true ) == true ) {
 					$timeoutDate = wfTimestamp(	TS_MW, OnlineStatusBar::getTimeoutDate( ONLINESTATUSBAR_CK_AWAY, $user ) );
 					if ( $result < $timeoutDate ) {
 						$status = 'away';
