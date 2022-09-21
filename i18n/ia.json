@@ -17,5 +17,14 @@
 	"onlinestatusbar-title-away": "{{GENDER:$1|Absente}}",
 	"onlinestatusbar-title-hidden": "{{GENDER:$1|Celate}}",
 	"onlinestatusbar-title-offline": "{{GENDER:$1|Foras de linea}}",
-	"onlinestatusbar-title-unknown": "{{GENDER:$1|Incognite}}"
+	"onlinestatusbar-title-unknown": "{{GENDER:$1|Incognite}}",
+	"onlinestatusbar-tooltip-online": "{{GENDER:$1|Iste usator}} es ora in linea",
+	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Iste usator}} es occupate e pote esser indisponibile",
+	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Iste usator}} es inactive e pote esser indisponbile",
+	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Iste usator}} es foras de linea",
+	"onlinestatusbar-tooltip-unknown": "Le stato de {{GENDER:$1|iste usator}} non es cognoscite",
+	"apihelp-query+onlinestatus-description": "Retorna le stato in linea e le genere de un usator",
+	"apihelp-query+onlinestatus-summary": "Retorna le stato in linea e le genere de un usator",
+	"apihelp-query+onlinestatus-param-user": "Nomine de usator del persona pro qui obtener le stato",
+	"apihelp-query+onlinestatus-example": "Monstrar stato in linea pro Petrb"
 }
