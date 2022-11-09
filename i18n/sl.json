@@ -4,5 +4,6 @@
 			"Eleassar"
 		]
 	},
+	"onlinestatusbar-title-offline": "{{GENDER:$1|Brez povezave}}",
 	"onlinestatusbar-title-unknown": "{{GENDER:$1|Neznan}}"
 }
