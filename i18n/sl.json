@@ -4,8 +4,27 @@
 			"Eleassar"
 		]
 	},
+	"onlinestatusbar-desc": "Vrstica stanja, ki na uporabniški strani prikazuje, ali je uporabnik na spletu",
+	"prefs-onlinestatus": "Spletno stanje",
+	"onlinestatusbar-used": "Prikaži na mojih uporabniških straneh moje spletno stanje",
+	"onlinestatusbar-hide": "Na uporabniških straneh skrije vrstico stanja, da lahko uporabite samo čarobno besedo (za napredne uporabnike)",
+	"onlinestatusbar-away": "Po določenem intervalu samodejno obravnavaj kot odsotnost",
 	"onlinestatusbar-purge": "Osveži uporabniško stran ob vsaki prijavi ali odjavi",
+	"onlinestatusbar-status": "Kakšno je privzeto stanje, ki ga želite uporabiti?",
+	"onlinestatusbar-away-time": "Koliko minut do oznake, da ste odsotni?",
+	"onlinestatusbar-title-online": "{{GENDER:$1|Na spletu}}",
+	"onlinestatusbar-title-busy": "{{GENDER:$1|Zaposlen|Zaposlena|Zaposlen_a}}",
+	"onlinestatusbar-title-away": "{{GENDER:$1|Odsoten|Odsotna|Odsoten_na}}",
 	"onlinestatusbar-title-hidden": "{{GENDER:$1|Skrit|Skrita|Skrit_a}}",
 	"onlinestatusbar-title-offline": "{{GENDER:$1|Brez povezave}}",
-	"onlinestatusbar-title-unknown": "{{GENDER:$1|Neznano}}"
+	"onlinestatusbar-title-unknown": "{{GENDER:$1|Neznano}}",
+	"onlinestatusbar-tooltip-online": "{{GENDER:$1| Ta uporabnik|Ta uporabnica|Ta uporabnik_ca}} je zdaj na spletu",
+	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Ta uporabnik je zaseden in morda nedosegljiv|Ta uporabnica je zasedena in morda nedosegljiva|Ta uporabnik_ca je zaseden_a in morda nedosegljiv_a}}",
+	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Ta uporabnik je nedejaven in morda nedosegljiv|Ta uporabnica je nedejavna in morda nedosegljiva|Ta uporabnik_ca je nedejaven_na in morda nedosegljiv_a}}",
+	"onlinestatusbar-tooltip-offline": "{{GENDER:$1| Ta uporabnik|Ta uporabnica|Ta uporabnik_ca}} trenutno ni na spletu",
+	"onlinestatusbar-tooltip-unknown": "Stanje {{GENDER:$1|tega uporabnika|te uporabnice|tega_te uporabnika_ce}} je neznano",
+	"apihelp-query+onlinestatus-description": "Vrne spletno stanje in spol uporabnika",
+	"apihelp-query+onlinestatus-summary": "Vrne spletno stanje in spol uporabnika",
+	"apihelp-query+onlinestatus-param-user": "Uporabniško ime uporabnika, za katerega želite pridobiti stanje",
+	"apihelp-query+onlinestatus-example": "Prikaz spletnega stanja za Petrb"
 }
