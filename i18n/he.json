@@ -18,5 +18,14 @@
 	"onlinestatusbar-title-away": "{{GENDER:$1|לא זמין|לא זמינה}}",
 	"onlinestatusbar-title-hidden": "{{GENDER:$1|נסתר|נסתרת}}",
 	"onlinestatusbar-title-offline": "{{GENDER:$1|לא מקוון|לא מקוונת}}",
-	"onlinestatusbar-title-unknown": "{{GENDER:$1|לא ידוע}}"
+	"onlinestatusbar-title-unknown": "{{GENDER:$1|לא ידוע}}",
+	"onlinestatusbar-tooltip-online": "{{GENDER:$1|המשתמש הזה מחובר|המשתמשת הזאת מחוברת}} כעת",
+	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|המשתמש הזה עסוק וייתכן שאינו זמין|המשתמשת הזאת עסוקה וייתכן שאינה זמינה}}",
+	"onlinestatusbar-tooltip-away": "{{GENDER:$1|המשתמש הזה אינו פעיל וייתכן שאינו זמין|המשתמשת הזאת אינה פעילה וייתכן שאינה זמינה}}",
+	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|המשתמש הזה אינו מקוון|המשתמשת הזאת אינה מקוונת}}",
+	"onlinestatusbar-tooltip-unknown": "המצב של {{GENDER:$1|המשתמש הזה|המשתמשת הזאת}} אינו ידוע",
+	"apihelp-query+onlinestatus-description": "החזרת מצב המקוונות ומין המשתמש",
+	"apihelp-query+onlinestatus-summary": "החזרת מצב המקוונות ומין המשתמש",
+	"apihelp-query+onlinestatus-param-user": "שם המשתמש של המשתמש שברצונך לקבל עבורו את המצב",
+	"apihelp-query+onlinestatus-example": "הצגת מצב המקוונות עבור Petrb"
 }
