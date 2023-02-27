@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Volvox"
 		]
 	},
 	"prefs-onlinestatus": "Online-Status",
 	"onlinestatusbar-used": "Ären online-Status op Ärer Benotzer-Säit weisen",
 	"onlinestatusbar-away": "Automatesch als net-do weisen no enger definéierter Zäit",
 	"onlinestatusbar-purge": "De'Benotzersäit all kéier wann Dir Iech eran oder erausloggt eidel maachen",
-	"onlinestatusbar-status": "Wéi ass de Standard-Status deen Dir benotze wëllt?",
+	"onlinestatusbar-status": "Wat ass de Status, deen Dir standardméisseg benotze wëllt?",
 	"onlinestatusbar-away-time": "Minutte bis Dir als 'net do' markéiert gitt:",
 	"onlinestatusbar-title-online": "{{GENDER:$1|Online}}",
 	"onlinestatusbar-title-busy": "{{GENDER:$1|Beschäftegt}}",
