@@ -24,7 +24,6 @@
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|This user}} is idle and may be unavailable",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|This user}} is offline",
 	"onlinestatusbar-tooltip-unknown": "Status of {{GENDER:$1|this user}} is unknown",
-	"apihelp-query+onlinestatus-description": "Returns online status and gender of user",
 	"apihelp-query+onlinestatus-summary": "Returns online status and gender of user",
 	"apihelp-query+onlinestatus-param-user": "Username of user you want to get status for",
 	"apihelp-query+onlinestatus-example": "Show online status for Petrb"
