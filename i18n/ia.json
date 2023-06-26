@@ -23,7 +23,6 @@
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Iste usator}} es inactive e pote esser indisponbile",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Iste usator}} es foras de linea",
 	"onlinestatusbar-tooltip-unknown": "Le stato de {{GENDER:$1|iste usator}} non es cognoscite",
-	"apihelp-query+onlinestatus-description": "Retorna le stato in linea e le genere de un usator",
 	"apihelp-query+onlinestatus-summary": "Retorna le stato in linea e le genere de un usator",
 	"apihelp-query+onlinestatus-param-user": "Nomine de usator del persona pro qui obtener le stato",
 	"apihelp-query+onlinestatus-example": "Monstrar stato in linea pro Petrb"

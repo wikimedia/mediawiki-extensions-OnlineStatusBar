@@ -24,7 +24,6 @@
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Bu kullanıcı}} boşta ve aktif olmayabilir",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Bu kullanıcı}} çevrimdışı",
 	"onlinestatusbar-tooltip-unknown": "{{GENDER:$1|Bu kullanıcının}} durumu bilinmiyor",
-	"apihelp-query+onlinestatus-description": "Kullanıcının çevrimiçi durumunu ve cinsiyetini döndürür",
 	"apihelp-query+onlinestatus-summary": "Kullanıcının çevrimiçi durumunu ve cinsiyetini döndürür",
 	"apihelp-query+onlinestatus-param-user": "Durumunu almak istediğiniz kullanıcının kullanıcı adı",
 	"apihelp-query+onlinestatus-example": "Petrb için çevrimiçi durumunu göster"

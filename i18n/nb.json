@@ -23,7 +23,6 @@
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Denne brukeren}} er inaktiv og kan være utilgjengelig",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Denne brukeren}} er offline",
 	"onlinestatusbar-tooltip-unknown": "{{GENDER:$1|Denne brukerens}} status er ukjent",
-	"apihelp-query+onlinestatus-description": "Returnerer onlinestatus og kjønnet til brukeren",
 	"apihelp-query+onlinestatus-summary": "Returnerer onlinestatus og kjønnet til brukeren",
 	"apihelp-query+onlinestatus-param-user": "Brukernavnet til brukeren du vil hente status for",
 	"apihelp-query+onlinestatus-example": "Viser onlinestatus for Petrb"

@@ -25,7 +25,6 @@
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|O usuario|A usuaria}} está {{GENDER:$1|inactivo|inactiva}} e pode non estar dispoñible",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|O usuario|A usuaria}} está {{GENDER:$1|desconectado|desconectada}}",
 	"onlinestatusbar-tooltip-unknown": "Descoñécese o estado {{GENDER:$1|do usuario|da usuaria}}",
-	"apihelp-query+onlinestatus-description": "Devolve o estado en liña e o sexo do usuario",
 	"apihelp-query+onlinestatus-summary": "Devolve o estado de conexión e o xénero dun usuario",
 	"apihelp-query+onlinestatus-param-user": "Nome de usuario da persoa da que quere obter o estado",
 	"apihelp-query+onlinestatus-example": "Amosar o estado en liña de Petrb"

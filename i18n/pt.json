@@ -24,7 +24,6 @@
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Este utilizador|Esta utilizadora}} está ausente e pode estar indisponível.",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Este utilizador está desligado|Esta utilizadora está desligada}}",
 	"onlinestatusbar-tooltip-unknown": "O estado {{GENDER:$1|deste utilizador|desta utilizadora}} é desconhecido",
-	"apihelp-query+onlinestatus-description": "Devolve o estado de ligação e o sexo de um utilizador",
 	"apihelp-query+onlinestatus-summary": "Devolve o estado de ligação e o sexo de um utilizador",
 	"apihelp-query+onlinestatus-param-user": "Nome do utilizador de quem pretende saber o estado",
 	"apihelp-query+onlinestatus-example": "Mostrar o estado de ligação de Petrb"

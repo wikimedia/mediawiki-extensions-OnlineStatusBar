@@ -24,7 +24,6 @@
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Этот участник}} неактивен и может быть недоступен",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Этот участник}} не в сети",
 	"onlinestatusbar-tooltip-unknown": "Статус {{GENDER:$1|этого участника}} неизвестен",
-	"apihelp-query+onlinestatus-description": "Возвращает онлайн статус и пол участника",
 	"apihelp-query+onlinestatus-summary": "Возвращает онлайн статус и пол участника",
 	"apihelp-query+onlinestatus-param-user": "Имя участника, статус которого вы желаете получить",
 	"apihelp-query+onlinestatus-example": "Показать онлайн статус участника Petrb"

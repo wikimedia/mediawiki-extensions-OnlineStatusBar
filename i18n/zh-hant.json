@@ -26,7 +26,6 @@
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|此使用者}}目前為閒置狀態，可能無法回應",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|此使用者}}目前離線",
 	"onlinestatusbar-tooltip-unknown": "{{GENDER:$1|此使用者}}的狀態未知",
-	"apihelp-query+onlinestatus-description": "返回使用者的線上狀態與性別",
 	"apihelp-query+onlinestatus-summary": "返回使用者的線上狀態與性別",
 	"apihelp-query+onlinestatus-param-user": "您所想取得狀態的使用者名稱",
 	"apihelp-query+onlinestatus-example": "顯示 Petrb 的線上狀態"

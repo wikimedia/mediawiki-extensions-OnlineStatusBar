@@ -24,7 +24,6 @@
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Цей користувач|Ця користувачка}} зараз {{GENDER:$1|неактивний|неактивна}} і може бути {{GENDER:$1|недоступним|недоступною}}",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Цей користувач|Ця користувачка}} зараз офлайн",
 	"onlinestatusbar-tooltip-unknown": "Статус {{GENDER:$1|цього користувача|цієї користувачки}} невідомий",
-	"apihelp-query+onlinestatus-description": "Виводить онлайн-статус і стать користувача",
 	"apihelp-query+onlinestatus-summary": "Виводить онлайн-статус та стать користувача",
 	"apihelp-query+onlinestatus-param-user": "Ім'я користувача, інформацію про статус якого Ви хочете отримати",
 	"apihelp-query+onlinestatus-example": "Показати онлайн-статус для Petrb"

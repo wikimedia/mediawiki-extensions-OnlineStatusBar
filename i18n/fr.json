@@ -30,7 +30,6 @@
 	"onlinestatusbar-tooltip-away": "Cet{{GENDER:$1||te}} utilisat{{GENDER:$1|eur|rice}} est inacti{{GENDER:$1|f|ve}} et peut être indisponible",
 	"onlinestatusbar-tooltip-offline": "Cet{{GENDER:$1||te}} utilisat{{GENDER:$1|eur|rice}} est hors ligne",
 	"onlinestatusbar-tooltip-unknown": "L’état de cet{{GENDER:$1||te}} utilisat{{GENDER:$1|eur|rice}} est inconnu",
-	"apihelp-query+onlinestatus-description": "Retourne l’état en ligne et le genre de l’utilisateur ou l’utilisatrice",
 	"apihelp-query+onlinestatus-summary": "Retourne l’état en ligne et le genre de l’utilisateur ou l’utilisatrice",
 	"apihelp-query+onlinestatus-param-user": "Nom d’utilisateur de la personne dont vous souhaitez obtenir l’état",
 	"apihelp-query+onlinestatus-example": "Afficher l’état en ligne de Petrb"
