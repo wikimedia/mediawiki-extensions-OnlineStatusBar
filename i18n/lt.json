@@ -1,0 +1,20 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"onlinestatusbar-desc": "Būsenos juosta, rodanti ar naudotojas yra prisijungęs atitinkamo naudotojo puslapyje",
+	"prefs-onlinestatus": "Būsena",
+	"onlinestatusbar-used": "Rodykite naudotojų būseną naudotojų puslapiuose",
+	"onlinestatusbar-away": "Traktuoti kaip atsitraukusį po tam tikro apibrėžto laiko",
+	"onlinestatusbar-status": "Kokią numatytąją būseną norite naudoti?",
+	"onlinestatusbar-away-time": "Kiek minučių, kol būsite pažymėti kaip atsitraukę?",
+	"onlinestatusbar-title-online": "{{GENDER:$1|Prisijungęs|Prisijungusi}}",
+	"onlinestatusbar-title-busy": "{{GENDER:$1|Užimtas|Užimta}}",
+	"onlinestatusbar-title-away": "{{GENDER:$1|Atsitraukęs|Atsitraukusi}}",
+	"onlinestatusbar-title-hidden": "{{GENDER:$1|Pasislėpęs|Pasislėpusi}}",
+	"onlinestatusbar-title-offline": "{{GENDER:$1|Atsijungęs|Atsijungusi}}",
+	"onlinestatusbar-title-unknown": "{{GENDER:$1|Nežinoma}}",
+	"onlinestatusbar-tooltip-online": "{{GENDER:$1|Šis naudotojas šiuo metu prisijungęs|Ši naudotoja šiuo metu prisijungusi}}"
+}

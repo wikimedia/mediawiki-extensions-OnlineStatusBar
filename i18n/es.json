@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Armando-Martin",
-			"Macofe"
+			"Macofe",
+			"No se"
 		]
 	},
 	"onlinestatusbar-desc": "Barra de estado que muestra en la página de usuario si un usuario está conectado",
@@ -12,7 +13,7 @@
 	"onlinestatusbar-away": "Considerarle automáticamente como ausente después de un intervalo definido",
 	"onlinestatusbar-purge": "Vaciar la página de usuario cada vez que accedas o salgas del sistema",
 	"onlinestatusbar-status": "¿Cuál es el estado predeterminado que quieres usar?",
-	"onlinestatusbar-away-time": "Cuántos minutos deben pasar antes de considerarle \"ausente\":",
+	"onlinestatusbar-away-time": "¿Cuántos minutos faltan para que te marquen como ausente?",
 	"onlinestatusbar-title-online": "{{GENDER:$1|Conectado|Conectada}}",
 	"onlinestatusbar-title-busy": "{{GENDER:$1|Ocupado|Ocupada}}",
 	"onlinestatusbar-title-away": "{{GENDER:$1|Ausente}}",
