@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Kghbln",
-			"Metalhead64"
+			"Metalhead64",
+			"XenonX3"
 		]
 	},
 	"onlinestatusbar-desc": "Ermöglicht die Anzeige des Onlinestatus eines Benutzers auf dessen Benutzerseite",
@@ -19,10 +20,10 @@
 	"onlinestatusbar-title-hidden": "{{GENDER:$1|Versteckt}}",
 	"onlinestatusbar-title-offline": "{{GENDER:$1|Offline}}",
 	"onlinestatusbar-title-unknown": "{{GENDER:$1|Unbekannt}}",
-	"onlinestatusbar-tooltip-online": "{{GENDER:$1|Dieser Benutzer|Diese Benutzerin}} ist gerade online",
-	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Dieser Benutzer|Diese Benutzerin}} ist beschäftigt und möglicherweise nicht anwesend",
-	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Dieser Benutzer|Diese Benutzerin}} ist inaktiv und möglichweise nicht anwesend",
-	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Dieser Benutzer|Diese Benutzerin}} ist offline",
+	"onlinestatusbar-tooltip-online": "{{GENDER:$1|Dieser Benutzer|Diese Benutzerin}} ist gerade online.",
+	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Dieser Benutzer|Diese Benutzerin}} ist beschäftigt und möglicherweise nicht anwesend.",
+	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Dieser Benutzer|Diese Benutzerin}} ist inaktiv und möglichweise nicht anwesend.",
+	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Dieser Benutzer|Diese Benutzerin}} ist offline.",
 	"onlinestatusbar-tooltip-unknown": "Der Status {{GENDER:$1|dieses Benutzers|dieser Benutzerin}} ist unbekannt",
 	"apihelp-query+onlinestatus-description": "Gibt den Onlinestatus und das Geschlecht des Benutzers zurück",
 	"apihelp-query+onlinestatus-summary": "Gibt den Onlinestatus und das Geschlecht des Benutzers zurück",
