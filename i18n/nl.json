@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"McDutchie",
 			"Rcdeboer",
 			"SPQRobin",
 			"Siebrand",
@@ -25,5 +26,8 @@
 	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Deze gebruiker}} is druk en mogelijk niet beschikbaar",
 	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Deze gebruiker}} is inactief en mogelijk niet beschikbaar",
 	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Deze gebruiker}} is offline",
-	"onlinestatusbar-tooltip-unknown": "Status van {{GENDER:$1|deze gebruiker}} is onbekend"
+	"onlinestatusbar-tooltip-unknown": "Status van {{GENDER:$1|deze gebruiker}} is onbekend",
+	"apihelp-query+onlinestatus-summary": "Retourneert de online-status en het geslacht van de gebruiker",
+	"apihelp-query+onlinestatus-param-user": "Gebruikersnaam van de gebruiker waarvoor u de status wilt verkrijgen",
+	"apihelp-query+onlinestatus-example": "Online status voor Petrb tonen"
 }
