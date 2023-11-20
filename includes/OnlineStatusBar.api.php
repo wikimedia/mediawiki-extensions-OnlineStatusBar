@@ -50,6 +50,7 @@ class ApiOnlineStatus extends ApiQueryBase {
 		);
 	}
 
+	/** @inheritDoc */
 	public function getAllowedParams() {
 		// params
 		return array(
@@ -60,18 +61,7 @@ class ApiOnlineStatus extends ApiQueryBase {
 		);
 	}
 
-	/**
-	 * @deprecated since MediaWiki core 1.25
-	 */
-	public function getExamples() {
-		return array(
-			'api.php?action=query&prop=onlinestatus&onlinestatususer=Petrb',
-		);
-	}
-
-	/**
-	* @see ApiBase::getExamplesMessages()
-	*/
+	/** @inheritDoc */
 	protected function getExamplesMessages() {
 		return array(
 			'action=query&prop=onlinestatus'
