@@ -6,20 +6,22 @@
  * @ingroup Extensions
  * @author Petr Bena <benapetr@gmail.com>
  * @author of magic word Alexandre Emsenhuber
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ * @license GPL-2.0-or-later
  * @link https://www.mediawiki.org/wiki/Extension:OnlineStatusBar Documentation
  */
 
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\UserIdentity;
 
 class OnlineStatusBar {
 	/**
 	 * @param Title $title
+	 * @return bool|User
 	 */
 	public static function getAnonFromTitle( Title $title ) {
 		global $wgOnlineStatusBarTrackIpUsers;
 
-		if ( $wgOnlineStatusBarTrackIpUsers == false ) {
+		if ( !$wgOnlineStatusBarTrackIpUsers ) {
 			return false;
 		}
 
@@ -42,8 +44,8 @@ class OnlineStatusBar {
 	public static function getAnonFromString( $username ) {
 		global $wgOnlineStatusBarTrackIpUsers;
 
-		// if user is anon and we don't track them stop
-		if ( $wgOnlineStatusBarTrackIpUsers == false ) {
+		// if user is anon, and we don't track them stop
+		if ( !$wgOnlineStatusBarTrackIpUsers ) {
 			return false;
 		}
 
@@ -58,12 +60,12 @@ class OnlineStatusBar {
 
 		$status = OnlineStatusBar_StatusCheck::getStatus( $user );
 
-		return array( $status, $user );
+		return [ $status, $user ];
 	}
 
 	/**
-	 * @param $title Title
-	 * @return array
+	 * @param Title $title
+	 * @return bool|User
 	 */
 	public static function getUserInfoFromTitle( Title $title ) {
 		$user = User::newFromName( $title->getBaseText() );
@@ -87,7 +89,7 @@ class OnlineStatusBar {
 	 * @return array|bool Array containing the status and User object
 	 */
 	public static function getUserInfoFromString( $username ) {
-		// We create an user object using name of user parsed from title
+		// We create a user object using name of user parsed from title
 		$user = User::newFromName( $username );
 
 		// Invalid user
@@ -101,13 +103,13 @@ class OnlineStatusBar {
 
 		$status = OnlineStatusBar_StatusCheck::getStatus( $user );
 
-		return array( $status, $user );
+		return [ $status, $user ];
 	}
 
 	/**
 	 * Purge page
+	 * @param string $user_type
 	 * @return bool
-	 *
 	 */
 	public static function purge( $user_type ) {
 		// First of all we need to know if we already have user object or just a name
@@ -125,7 +127,7 @@ class OnlineStatusBar {
 			// purge both pages now
 			$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 			if ( $userOptionsManager->getOption( $user, 'OnlineStatusBar_active', false ) ) {
-				if ( $userOptionsManager->getOption( $user, 'OnlineStatusBar_autoupdate', false ) == true ) {
+				if ( $userOptionsManager->getOption( $user, 'OnlineStatusBar_autoupdate', false ) ) {
 					if ( method_exists( MediaWikiServices::class, 'getWikiPageFactory' ) ) {
 						// MW 1.36+
 						$wikiPageFactory = MediaWikiServices::getInstance()->getWikiPageFactory();
@@ -142,16 +144,15 @@ class OnlineStatusBar {
 	}
 
 	/**
-	 * @param $delayed
-	 * @param $away
-	 * @param $user
-	 * @return timestamp
+	 * @param bool $checkType
+	 * @param UserIdentity|bool $user
+	 * @return mixed
 	 */
 	public static function getTimeoutDate( $checkType = false, $user = false ) {
 		global $wgOnlineStatusBar_AwayTime, $wgOnlineStatusBar_WriteTime, $wgOnlineStatusBar_LogoutTime;
 
 		if ( $checkType != false ) {
-			switch( $checkType ) {
+			switch ( $checkType ) {
 				case ONLINESTATUSBAR_CK_DELAYED:
 					return wfTimestamp( TS_UNIX ) - $wgOnlineStatusBar_WriteTime;
 				case ONLINESTATUSBAR_CK_AWAY:

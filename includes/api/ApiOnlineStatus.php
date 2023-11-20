@@ -1,9 +1,4 @@
 <?php
-/**
- * Hooks for OnlineStatusBar api's
- *
- * @group Extensions
- */
 
 use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserNameUtils;
@@ -43,29 +38,29 @@ class ApiOnlineStatus extends ApiQueryBase {
 		}
 
 		$this->getResult()->addValue(
-			null, $this->getModuleName(), array(
+			null, $this->getModuleName(), [
 				'status' => $ret,
 				'gender' => $gender
-			)
+			]
 		);
 	}
 
 	/** @inheritDoc */
 	public function getAllowedParams() {
 		// params
-		return array(
-			'user' => array (
+		return [
+			'user' => [
 					ApiBase::PARAM_TYPE => 'string',
 					ApiBase::PARAM_REQUIRED => true
-				),
-		);
+				],
+		];
 	}
 
 	/** @inheritDoc */
 	protected function getExamplesMessages() {
-		return array(
+		return [
 			'action=query&prop=onlinestatus'
 				=> 'apihelp-query+onlinestatus-example',
-		);
+		];
 	}
 }

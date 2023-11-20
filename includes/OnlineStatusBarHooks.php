@@ -1,10 +1,5 @@
 <?php
 
-/**
- * Hooks for OnlineStatusBar
- *
- * @group Extensions
- */
 use MediaWiki\MediaWikiServices;
 
 class OnlineStatusBarHooks {
@@ -12,17 +7,17 @@ class OnlineStatusBarHooks {
 	 * @param DatabaseUpdater $updater
 	 */
 	public static function ckSchema( DatabaseUpdater $updater ) {
-		$updater->addExtensionUpdate( array(
+		$updater->addExtensionUpdate( [
 			'addtable',
 			'online_status',
-			dirname( __FILE__ ) . '/../sql/OnlineStatusBar.sql',
+			__DIR__ . '/../sql/OnlineStatusBar.sql',
 			true
-		) );
+		] );
 	}
 
 	/**
 	 * Called everytime when user logout
-	 * @param $user User
+	 * @param User &$user
 	 * @return true
 	 */
 	public static function logout( &$user ) {
@@ -56,18 +51,17 @@ class OnlineStatusBarHooks {
 
 	/**
 	 * Creates a bar
-	 * @param $article Article
-	 * @param $outputDone bool
-	 * @param $pcache string
+	 * @param Article &$article
+	 * @param bool &$outputDone
+	 * @param string &$pcache
 	 * @return bool
 	 */
 	public static function renderBar( &$article, &$outputDone, &$pcache ) {
-		global $wgOnlineStatusBarCacheTime;
 		$context = $article->getContext();
 		// Update status of all users who wants to be tracked
 		OnlineStatusBar_StatusCheck::updateStatus( $context->getUser() );
 
-		// Performace fix
+		// Performance fix
 		$title = $article->getTitle();
 		if ( $title->getNamespace() != NS_USER && $title->getNamespace() != NS_USER_TALK ) {
 			return true;
@@ -88,7 +82,7 @@ class OnlineStatusBarHooks {
 		}
 
 		// Don't display status of those who don't want to show bar but only use magic
-		if ( $result->getOption( 'OnlineStatusBar_hide', false ) == true ) {
+		if ( $result->getOption( 'OnlineStatusBar_hide', false ) ) {
 			return true;
 		}
 		$context->getOutput()->addModules( 'ext.OnlineStatusBar' );
@@ -98,57 +92,56 @@ class OnlineStatusBarHooks {
 
 	/**
 	 * Insert user options
-	 * @param $user User
-	 * @param $preferences array
+	 * @param User $user
+	 * @param array &$preferences
 	 * @return bool
 	 */
 	public static function preferencesHook( User $user, array &$preferences ) {
-		global $wgOnlineStatusBarDefaultOnline, $wgOnlineStatusBarDefaultEnabled, $wgOnlineStatusBar_AwayTime,
-			$wgOnlineStatusBar_LogoutTime, $wgOnlineStatusBarModes;
+		global $wgOnlineStatusBar_LogoutTime;
 
-		$preferences['OnlineStatusBar_active'] = array(
+		$preferences['OnlineStatusBar_active'] = [
 			'type' => 'toggle',
 			'label-message' => 'onlinestatusbar-used',
 			'section' => 'misc/onlinestatus'
-		);
-		$preferences['OnlineStatusBar_hide'] = array(
+		];
+		$preferences['OnlineStatusBar_hide'] = [
 			'type' => 'toggle',
 			'label-message' => 'onlinestatusbar-hide',
 			'section' => 'misc/onlinestatus'
-		);
-		$preferences['OnlineStatusBar_away'] = array(
+		];
+		$preferences['OnlineStatusBar_away'] = [
 			'type' => 'toggle',
 			'label-message' => 'onlinestatusbar-away',
 			'section' => 'misc/onlinestatus'
-		);
-		$preferences['OnlineStatusBar_autoupdate'] = array(
+		];
+		$preferences['OnlineStatusBar_autoupdate'] = [
 			'type' => 'toggle',
 			'label-message' => 'onlinestatusbar-purge',
 			'section' => 'misc/onlinestatus'
-		);
-		$preferences['OnlineStatusBar_status'] = array(
+		];
+		$preferences['OnlineStatusBar_status'] = [
 			'type' => 'radio',
 			'label-message' => 'onlinestatusbar-status',
 			'section' => 'misc/onlinestatus',
-			'options' => array(
+			'options' => [
 				wfMessage( 'onlinestatusbar-title-online', $user->getName() )->escaped() => 'online',
 				wfMessage( 'onlinestatusbar-title-busy', $user->getName() )->escaped() => 'busy',
 				wfMessage( 'onlinestatusbar-title-away', $user->getName() )->escaped() => 'away',
 				wfMessage( 'onlinestatusbar-title-hidden', $user->getName() )->escaped() => 'hidden'
-			),
-		);
-		$preferences['OnlineStatusBar_awaytime'] = array(
+			],
+		];
+		$preferences['OnlineStatusBar_awaytime'] = [
 			'min' => 2,
 			'max' => $wgOnlineStatusBar_LogoutTime,
 			'type' => 'int',
 			'label-message' => 'onlinestatusbar-away-time',
 			'section' => 'misc/onlinestatus'
-		);
+		];
 		return true;
 	}
 
 	/**
-	 * @param $defaultOptions array
+	 * @param array &$defaultOptions
 	 * @return bool
 	 */
 	public static function setDefaultOptions( &$defaultOptions ) {
@@ -165,7 +158,7 @@ class OnlineStatusBarHooks {
 	}
 
 	/**
-	 * @param $vars array
+	 * @param array &$vars
 	 * @return bool
 	 */
 	public static function magicWordSet( &$vars ) {
@@ -174,10 +167,10 @@ class OnlineStatusBarHooks {
 	}
 
 	/**
-	 * @param $parser Parser
-	 * @param $varCache ??
-	 * @param $index ??
-	 * @param $ret string?
+	 * @param Parser $parser
+	 * @param array &$varCache
+	 * @param string $index
+	 * @param array &$ret
 	 * @return bool
 	 */
 	public static function parserGetVariable( $parser, &$varCache, $index, &$ret ) {

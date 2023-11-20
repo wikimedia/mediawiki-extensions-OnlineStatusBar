@@ -5,17 +5,19 @@
  * @file
  * @ingroup Extensions
  * @author Petr Bena <benapetr@gmail.com>
- * @license http://www.gnu.org/copyleft/gpl.html GNU General Public License 2.0 or later
+ * @license GPL-2.0-or-later
  * @link https://www.mediawiki.org/wiki/Extension:OnlineStatusBar Documentation
  */
 
 use MediaWiki\MediaWikiServices;
 
+// phpcs:ignore Squiz.Classes.ValidClassName.NotCamelCaps
 class OnlineStatusBar_StatusCheck {
 	/**
 	 * Return cache key
-	 * @param $user String
-	 * @param $type String
+	 * @param string $user
+	 * @param string $type
+	 * @return string
 	 */
 	private static function getCacheKey( $user, $type ) {
 		// get a key for cache
@@ -24,11 +26,11 @@ class OnlineStatusBar_StatusCheck {
 
 	/**
 	 * Create a cache
-	 * @param $user String
-	 * @param $values String
-	 * @param $type String
-	 * @param $time Integer
-	 * @return true
+	 * @param string $user
+	 * @param string $values
+	 * @param string $type
+	 * @param int|null $time
+	 * @return bool true
 	 */
 	private static function setCache( $user, $values, $type, $time = null ) {
 		global $wgOnlineStatusBar_WriteTime;
@@ -46,8 +48,9 @@ class OnlineStatusBar_StatusCheck {
 
 	/**
 	 * Return cache value
-	 * @param $user string
-	 * @param $type string
+	 * @param string $user
+	 * @param string $type
+	 * @return mixed
 	 */
 	private static function getCache( $user, $type ) {
 		// get a key
@@ -59,9 +62,9 @@ class OnlineStatusBar_StatusCheck {
 
 	/**
 	 * Status check
-	 * @param $user User
-	 * @param $delayed_check Boolean
-	 * @return String
+	 * @param User $user
+	 * @param bool $delayed_check
+	 * @return string
 	 */
 	public static function getStatus( $user, $delayed_check = false ) {
 		global $wgOnlineStatusBarDefaultOffline, $wgOnlineStatusBarDefaultOnline;
@@ -77,10 +80,10 @@ class OnlineStatusBar_StatusCheck {
 				$result = $dbr->selectField(
 					'online_status',
 					'timestamp',
-					array( 'username' => $user->getName(),
+					[ 'username' => $user->getName(),
 					'timestamp > ' .
-					$dbr->addQuotes( $dbr->timestamp( $t_time ) ) ),
-					__METHOD__, array( 'LIMIT 1', 'ORDER BY timestamp DESC' )
+					$dbr->addQuotes( $dbr->timestamp( $t_time ) ) ],
+					__METHOD__, [ 'LIMIT 1', 'ORDER BY timestamp DESC' ]
 				);
 
 				// cache it
@@ -96,8 +99,8 @@ class OnlineStatusBar_StatusCheck {
 				$result = $dbr->selectField(
 					'online_status',
 					'timestamp',
-					array( 'username' => $user->getName() ),
-					__METHOD__, array( 'LIMIT 1', 'ORDER BY timestamp DESC' )
+					[ 'username' => $user->getName() ],
+					__METHOD__, [ 'LIMIT 1', 'ORDER BY timestamp DESC' ]
 				);
 
 				// cache it
@@ -113,15 +116,22 @@ class OnlineStatusBar_StatusCheck {
 			// let's check if it isn't anon
 			if ( $user->isRegistered() ) {
 				$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
-				$status = $userOptionsManager->getOption( $user, 'OnlineStatusBar_status', $wgOnlineStatusBarDefaultOnline );
+				$status = $userOptionsManager->getOption(
+					$user,
+					'OnlineStatusBar_status',
+					$wgOnlineStatusBarDefaultOnline
+				);
 
 				if ( $delayed_check ) {
 					// check if it's old or not
 					if ( $result < wfTimestamp( TS_MW, $w_time ) ) {
 						$status = 'write';
 					}
-				} else if ( $userOptionsManager->getOption( $user, 'OnlineStatusBar_away', true ) == true ) {
-					$timeoutDate = wfTimestamp(	TS_MW, OnlineStatusBar::getTimeoutDate( ONLINESTATUSBAR_CK_AWAY, $user ) );
+				} elseif ( $userOptionsManager->getOption( $user, 'OnlineStatusBar_away', true ) ) {
+					$timeoutDate = wfTimestamp(
+						TS_MW,
+						OnlineStatusBar::getTimeoutDate( ONLINESTATUSBAR_CK_AWAY, $user )
+					);
 					if ( $result < $timeoutDate ) {
 						$status = 'away';
 					}
@@ -150,17 +160,17 @@ class OnlineStatusBar_StatusCheck {
 	 */
 	public static function updateDB( $user ) {
 		// Skip users we don't track
-		if ( OnlineStatusBar::isValid ( $user ) != true ) {
+		if ( !OnlineStatusBar::isValid( $user ) ) {
 			return false;
 		}
 
 		// If we track them, let's insert it to the table
 		$dbw = wfGetDB( DB_PRIMARY );
 		$timestamp = $dbw->timestamp();
-		$row = array(
+		$row = [
 			'username' => $user->getName(),
 			'timestamp' => $timestamp,
-		);
+		];
 		self::setCache( $user->getName(), $timestamp, ONLINESTATUSBAR_NORMAL_CACHE );
 		$dbw->insert( 'online_status', $row, __METHOD__ );
 		return false;
@@ -168,12 +178,13 @@ class OnlineStatusBar_StatusCheck {
 
 	/**
 	 * Delete user who logged out
-	 * @param $userName string
+	 * @param string $userName
 	 * @return bool
 	 */
-	static function deleteStatus( $userName ) {
+	public static function deleteStatus( $userName ) {
 		$dbw = wfGetDB( DB_PRIMARY );
-		$dbw->delete( 'online_status', array( 'username' => $userName ), __METHOD__ ); // delete user
+		// delete user
+		$dbw->delete( 'online_status', [ 'username' => $userName ], __METHOD__ );
 
 		// remove from cache
 		self::setCache( $userName, '', ONLINESTATUSBAR_NORMAL_CACHE );
@@ -205,8 +216,8 @@ class OnlineStatusBar_StatusCheck {
 			$timestamp = $dbw->timestamp();
 			$dbw->update(
 				'online_status',
-				array( 'timestamp' => $timestamp ),
-				array( 'username' => $user->getName() ),
+				[ 'timestamp' => $timestamp ],
+				[ 'username' => $user->getName() ],
 				__METHOD__
 			);
 			self::setCache( $user->getName(), $timestamp, ONLINESTATUSBAR_NORMAL_CACHE );
@@ -237,9 +248,9 @@ class OnlineStatusBar_StatusCheck {
 		$result = $dbr->selectField(
 			'online_status',
 			'timestamp',
-			array( 'timestamp < ' .
-			$dbr->addQuotes( $dbr->timestamp( $time ) ) ),
-			__METHOD__, array( 'LIMIT 1' )
+			[ 'timestamp < ' .
+			$dbr->addQuotes( $dbr->timestamp( $time ) ) ],
+			__METHOD__, [ 'LIMIT 1' ]
 		);
 
 		if ( $result === false ) {
@@ -250,7 +261,7 @@ class OnlineStatusBar_StatusCheck {
 		// calculate time and convert it back to mediawiki format
 		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->delete( 'online_status',
-			array( 'timestamp < ' . $dbw->addQuotes( $dbw->timestamp( $time ) ) ),
+			[ 'timestamp < ' . $dbw->addQuotes( $dbw->timestamp( $time ) ) ],
 			__METHOD__
 		);
 		// remember we deleted it for 1 hour so that we avoid calling this too many times
