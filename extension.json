@@ -27,10 +27,10 @@
 		"OnlineStatusBarMagic": "OnlineStatusBar.i18n.magic.php"
 	},
 	"AutoloadClasses": {
-		"OnlineStatusBar": "includes/OnlineStatusBar.body.php",
-		"OnlineStatusBar_StatusCheck": "includes/OnlineStatusBar.status.php",
-		"OnlineStatusBarHooks": "includes/OnlineStatusBar.hooks.php",
-		"ApiOnlineStatus": "includes/OnlineStatusBar.api.php"
+		"OnlineStatusBar": "includes/OnlineStatusBar.php",
+		"OnlineStatusBar_StatusCheck": "includes/OnlineStatusBar_StatusCheck.php",
+		"OnlineStatusBarHooks": "includes/OnlineStatusBarHooks.php",
+		"ApiOnlineStatus": "includes/api/ApiOnlineStatus.php"
 	},
 	"ResourceModules": {
 		"ext.OnlineStatusBar": {
