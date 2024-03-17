@@ -145,7 +145,7 @@ class OnlineStatusBarHooks {
 	 * @return bool
 	 */
 	public static function setDefaultOptions( &$defaultOptions ) {
-		global $wgOnlineStatusBar_AwayTime, $wgOnlineStatusBarDefaultOnline , $wgOnlineStatusBarDefaultEnabled;
+		global $wgOnlineStatusBar_AwayTime, $wgOnlineStatusBarDefaultOnline, $wgOnlineStatusBarDefaultEnabled;
 		// set defaults
 		$defaultOptions['OnlineStatusBar_autoupdate'] = false;
 		$defaultOptions['OnlineStatusBar_status'] = $wgOnlineStatusBarDefaultOnline;
