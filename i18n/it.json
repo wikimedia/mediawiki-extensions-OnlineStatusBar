@@ -3,6 +3,7 @@
 		"authors": [
 			"Beta16",
 			"Darth Kule",
+			"Dream Indigo",
 			"Sakretsu"
 		]
 	},
@@ -20,9 +21,9 @@
 	"onlinestatusbar-title-hidden": "{{GENDER:$1|Nascosto|Nascosta|Nascosto/a}}",
 	"onlinestatusbar-title-offline": "Non {{GENDER:$1|connesso|connessa|connesso/a}}",
 	"onlinestatusbar-title-unknown": "{{GENDER:$1|Sconosciuto|Sconosciuta|Sconosciuto/a}}",
-	"onlinestatusbar-tooltip-online": "Questo utente è attualmente {{GENDER:$1|connesso|connessa|connesso/a}}",
+	"onlinestatusbar-tooltip-online": "{{GENDER:$1|Questo utente|Questa utente|Quest'utente}} è attualmente {{GENDER:$1|connesso|connessa|connesso/a}}",
 	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Questo|Questa|Questo/a}} utente è attualmente {{GENDER:$1|impegnato|impegnata|impegnato/a}} e potrebbe non essere disponibile",
 	"onlinestatusbar-tooltip-away": "Questo utente è attualmente {{GENDER:$1|lontano|lontana|lontano/a}} e potrebbe non essere disponibile",
-	"onlinestatusbar-tooltip-offline": "Questo utente è attualmente non {{GENDER:$1|connesso|connessa|connesso/a}}",
-	"onlinestatusbar-tooltip-unknown": "Lo stato di questo utente è {{GENDER:$1|sconosciuto}}"
+	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Questo utente|Questa utente|Quest'utente}} è attualmente non {{GENDER:$1|connesso|connessa|connesso/a}}",
+	"onlinestatusbar-tooltip-unknown": "Lo stato di {{GENDER:$1|questo utente|questa utente|quest'utente}} è sconosciuto"
 }
