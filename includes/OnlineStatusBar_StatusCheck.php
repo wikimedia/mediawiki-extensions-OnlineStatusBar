@@ -76,7 +76,7 @@ class OnlineStatusBar_StatusCheck {
 
 			if ( $result == '' ) {
 				$t_time = OnlineStatusBar::getTimeoutDate();
-				$dbr = wfGetDB( DB_REPLICA );
+				$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 				$result = $dbr->selectField(
 					'online_status',
 					'timestamp',
@@ -95,7 +95,7 @@ class OnlineStatusBar_StatusCheck {
 			$w_time = OnlineStatusBar::getTimeoutDate( ONLINESTATUSBAR_CK_DELAYED );
 
 			if ( $result == '' ) {
-				$dbr = wfGetDB( DB_REPLICA );
+				$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 				$result = $dbr->selectField(
 					'online_status',
 					'timestamp',
@@ -165,7 +165,7 @@ class OnlineStatusBar_StatusCheck {
 		}
 
 		// If we track them, let's insert it to the table
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$timestamp = $dbw->timestamp();
 		$row = [
 			'username' => $user->getName(),
@@ -182,7 +182,7 @@ class OnlineStatusBar_StatusCheck {
 	 * @return bool
 	 */
 	public static function deleteStatus( $userName ) {
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		// delete user
 		$dbw->delete( 'online_status', [ 'username' => $userName ], __METHOD__ );
 
@@ -212,7 +212,7 @@ class OnlineStatusBar_StatusCheck {
 		}
 
 		if ( $user_status == 'write' ) {
-			$dbw = wfGetDB( DB_PRIMARY );
+			$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 			$timestamp = $dbw->timestamp();
 			$dbw->update(
 				'online_status',
@@ -243,7 +243,7 @@ class OnlineStatusBar_StatusCheck {
 		}
 
 		// Check if we actually need to delete something before we write to master
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$time = OnlineStatusBar::getTimeoutDate();
 		$result = $dbr->selectField(
 			'online_status',
@@ -259,7 +259,7 @@ class OnlineStatusBar_StatusCheck {
 		}
 
 		// calculate time and convert it back to mediawiki format
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()->getDBLoadBalancer()->getConnection( DB_PRIMARY );
 		$dbw->delete( 'online_status',
 			[ 'timestamp < ' . $dbw->addQuotes( $dbw->timestamp( $time ) ) ],
 			__METHOD__
