@@ -1,9 +1,13 @@
 <?php
 
-use MediaWiki\MediaWikiServices;
 use MediaWiki\User\UserNameUtils;
 
 class ApiOnlineStatus extends ApiQueryBase {
+	/**
+	 * @var GenderCache
+	 */
+	private $genderCache;
+
 	/**
 	 * @var UserNameUtils
 	 */
@@ -12,10 +16,17 @@ class ApiOnlineStatus extends ApiQueryBase {
 	/**
 	 * @param ApiQuery $query
 	 * @param string $moduleName
+	 * @param GenderCache $genderCache
 	 * @param UserNameUtils $userNameUtils
 	 */
-	public function __construct( ApiQuery $query, $moduleName, UserNameUtils $userNameUtils ) {
+	public function __construct(
+		ApiQuery $query,
+		$moduleName,
+		GenderCache $genderCache,
+		UserNameUtils $userNameUtils
+	) {
 		parent::__construct( $query, $moduleName, 'onlinestatus' );
+		$this->genderCache = $genderCache;
 		$this->userNameUtils = $userNameUtils;
 	}
 
@@ -33,8 +44,7 @@ class ApiOnlineStatus extends ApiQueryBase {
 			$gender = 'unknown';
 		} else {
 			$ret = $result[0];
-			$genderCache = MediaWikiServices::getInstance()->getGenderCache();
-			$gender = $genderCache->getGenderOf( $result[1]->getName() );
+			$gender = $this->genderCache->getGenderOf( $result[1]->getName() );
 		}
 
 		$this->getResult()->addValue(
