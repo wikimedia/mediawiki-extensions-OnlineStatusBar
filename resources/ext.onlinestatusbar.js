@@ -17,8 +17,8 @@
 		return;
 	}
 
-	$.ready( document ).ready( function () {
-		var
+	$.ready( document ).ready( () => {
+		const
 			$statusbarFields = $( '<span>' ).addClass( 'onlinestatusbar-pagetop onlinestatusbar-field metadata' ),
 			knownStatuses = [
 				'online',
@@ -51,8 +51,8 @@
 					prop: 'onlinestatus',
 					onlinestatususer: username
 				}
-			} ).done( function ( data ) {
-				var gender, status;
+			} ).done( ( data ) => {
+				let gender, status;
 
 				if ( !data || !data.onlinestatus ) {
 					return;
@@ -87,7 +87,7 @@
 						.attr( 'title', mw.msg( 'onlinestatusbar-tooltip-' + status, gender ) );
 				}
 
-			} ).always( function () {
+			} ).always( () => {
 				// Whether ajax succeeded or failed, once done, schedule an update
 				// (for when the user leaves the page open) 2 minutes from now.
 				setTimeout( updateOnlineStatusBar, 2 * 60 * 1000 );
