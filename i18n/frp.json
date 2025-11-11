@@ -16,9 +16,9 @@
 	"onlinestatusbar-title-hidden": "Cachiê{{GENDER:$1||ye}}",
 	"onlinestatusbar-title-offline": "{{GENDER:$1|En defôr de legne}}",
 	"onlinestatusbar-title-unknown": "Encognu{{GENDER:$1||a}}",
-	"onlinestatusbar-tooltip-online": "{{GENDER:$1|Cet’utilisator|Cet’utilisatrice}} est ora en legne",
-	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Cet’utilisator est ocupo|Cet’utilisatrice est ocupa}} et pués pôt pas étre disponibl{{GENDER:$1|o|a}}",
-	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Cet’utilisator|Cet’utilisatrice}} fât ren du tot et pués pôt pas étre disponibl{{GENDER:$1|o|a}}",
-	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Cet’utilisator|Cet’utilisatrice}} est en defôr de legne",
-	"onlinestatusbar-tooltip-unknown": "Lo statut de {{GENDER:$1|cet’utilisator|cet’utilisatrice}} est encognu"
+	"onlinestatusbar-tooltip-online": "{{GENDER:$1|Cél utilisator|Cel’utilisatosa}} est ora en legne",
+	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Cél utilisator est ocupo|Cel’utilisatosa est ocupa}} et pués pôt pas étre disponibl{{GENDER:$1|o|a}}",
+	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Cél utilisator|Cel’utilisatosa}} fât ren du tot et pués pôt pas étre disponibl{{GENDER:$1|o|a}}",
+	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Cél utilisator|Cel’utilisatosa}} est en defôr de legne",
+	"onlinestatusbar-tooltip-unknown": "Lo statut de {{GENDER:$1|cél utilisator|cel’utilisatosa}} est encognu"
 }
