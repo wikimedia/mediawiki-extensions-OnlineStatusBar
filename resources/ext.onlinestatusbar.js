@@ -94,7 +94,7 @@
 			} );
 		}
 
-		// Only intialize the status bar if we are on the right page.
+		// Only initialize the status bar if we are on the right page.
 		// This is controlled on the server side.
 		// Initialize if there is one or more of these body placeholders.
 		if ( $statusbarFields.length > 0 ) {
