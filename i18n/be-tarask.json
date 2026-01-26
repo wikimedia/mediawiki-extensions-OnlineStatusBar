@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Red Winged Duck",
+			"Ucukor",
 			"Wizardist"
 		]
 	},
@@ -11,7 +12,7 @@
 	"onlinestatusbar-hide": "Хаваць панэль стану на старонках удзельнікаў для выкарыстаньня магічнага слова (для дасьведчаных удзельнікаў)",
 	"onlinestatusbar-away": "Аўтаматычна пераводзіць у стан «адыйшоў» пасьля вызначанага інтэрвалу",
 	"onlinestatusbar-purge": "Ачышчаць кэш старонкі ўдзельніка па кожным уваходзе або выхадзе",
-	"onlinestatusbar-status": "Перадвызначаны стан, які мусіць выкарыстоўвацца?",
+	"onlinestatusbar-status": "Перадвызначаны стан, які мусіць ужывацца?",
 	"onlinestatusbar-away-time": "Колькі хвілінаў чакаць да пераходу ў стан «адыйшоў»:",
 	"onlinestatusbar-title-online": "{{GENDER:$1|Он-лайн}}",
 	"onlinestatusbar-title-busy": "{{GENDER:$1|Заняты|Занятая}}",
