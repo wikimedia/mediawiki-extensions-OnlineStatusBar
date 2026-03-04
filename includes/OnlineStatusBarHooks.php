@@ -82,7 +82,8 @@ class OnlineStatusBarHooks {
 		}
 
 		// Don't display status of those who don't want to show bar but only use magic
-		if ( $result->getOption( 'OnlineStatusBar_hide', false ) ) {
+		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+		if ( $userOptionsManager->getOption( $result, 'OnlineStatusBar_hide', false ) ) {
 			return true;
 		}
 		$context->getOutput()->addModules( 'ext.OnlineStatusBar' );
