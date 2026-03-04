@@ -129,15 +129,9 @@ class OnlineStatusBar {
 			$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 			if ( $userOptionsManager->getOption( $user, 'OnlineStatusBar_active', false ) ) {
 				if ( $userOptionsManager->getOption( $user, 'OnlineStatusBar_autoupdate', false ) ) {
-					if ( method_exists( MediaWikiServices::class, 'getWikiPageFactory' ) ) {
-						// MW 1.36+
-						$wikiPageFactory = MediaWikiServices::getInstance()->getWikiPageFactory();
-						$wikiPageFactory->newFromTitle( $user->getUserPage() )->doPurge();
-						$wikiPageFactory->newFromTitle( $user->getTalkPage() )->doPurge();
-					} else {
-						WikiPage::factory( $user->getUserPage() )->doPurge();
-						WikiPage::factory( $user->getTalkPage() )->doPurge();
-					}
+					$wikiPageFactory = MediaWikiServices::getInstance()->getWikiPageFactory();
+					$wikiPageFactory->newFromTitle( $user->getUserPage() )->doPurge();
+					$wikiPageFactory->newFromTitle( $user->getTalkPage() )->doPurge();
 				}
 			}
 		}
