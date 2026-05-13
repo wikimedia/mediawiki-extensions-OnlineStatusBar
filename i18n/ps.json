@@ -1,10 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
+	"onlinestatusbar-desc": "دريځ پټه چې ښيي يو کارن په خپل کارن مخ کې پرليکه دی",
 	"prefs-onlinestatus": "پرليکه دريځ",
+	"onlinestatusbar-used": "په خپل کارن مخونو کې خپل پرليکه دريځ ښکاره‌کول",
+	"onlinestatusbar-hide": "کارن مخونو کې دريځ پټه پټه کړئ؛ ترڅو يوازې کوډگر ويي وکاروئ (د پرمختللو کارنانو لپاره)",
+	"onlinestatusbar-away": "د ټاکلې مودې وروسته په خپلکاري ډول د لرې په توگه چلند کول",
+	"onlinestatusbar-purge": "د ننوتلو او وتلو پرمهال هر وخت د کارن مخ سپينول",
+	"onlinestatusbar-status": "تلواله دريځ مو څه دی چې تاسو يې کارول غواړئ؟",
+	"onlinestatusbar-away-time": "څو دقيقې وخت لري چې تاسو د لرې په توگه په نښه شئ؟",
 	"onlinestatusbar-title-online": "{{GENDER:$1|پر ليکه}}",
 	"onlinestatusbar-title-busy": "{{GENDER:$1|بوخت}}",
 	"onlinestatusbar-title-away": "{{GENDER:$1|ليري}}",
@@ -12,5 +20,11 @@
 	"onlinestatusbar-title-offline": "{{GENDER:$1|پرې ليکه}}",
 	"onlinestatusbar-title-unknown": "{{GENDER:$1|ناجوت}}",
 	"onlinestatusbar-tooltip-online": "{{GENDER:$1|دا کارن}} اوس پر ليکه دی",
-	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|دا کارن}} پرې ليکه دی"
+	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|دا کارن}} بوخت دی او ښايي شتون ونه‌لري",
+	"onlinestatusbar-tooltip-away": "{{GENDER:$1|دا کارن}} بې‌کاره دی او ښايي شتون ونه‌لري",
+	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|دا کارن}} پرې ليکه دی",
+	"onlinestatusbar-tooltip-unknown": "د {{GENDER:$1|دې کارن}} دريځ ناڅرگند دی",
+	"apihelp-query+onlinestatus-summary": "د کارن پرليکه دريځ او هويت بېرته‌راگرځوي",
+	"apihelp-query+onlinestatus-param-user": "د هغه کارن کارن‌نوم چې تاسو يې دريځ ترلاسه کول غواړئ",
+	"apihelp-query+onlinestatus-example": "د پېټرب لپاره پر ليکه دريځ ښودل"
 }
