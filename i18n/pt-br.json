@@ -3,7 +3,8 @@
 		"authors": [
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"NenhumaFênix"
 		]
 	},
 	"onlinestatusbar-desc": "Barra de estado que indica se um usuário está ligado, localizada na sua página de usuário",
@@ -17,14 +18,14 @@
 	"onlinestatusbar-title-online": "{{GENDER:$1|Ligado|Ligada}}",
 	"onlinestatusbar-title-busy": "{{GENDER:$1|Ocupado|Ocupada}}",
 	"onlinestatusbar-title-away": "{{GENDER:$1|Ausente}}",
-	"onlinestatusbar-title-hidden": "{{GENDER:$1|Oculto|Oculta}}",
-	"onlinestatusbar-title-offline": "{{GENDER:$1|Desligado|Desligada}}",
+	"onlinestatusbar-title-hidden": "{{GENDER:$1|Oculto|Oculta|Oculto(a)}}",
+	"onlinestatusbar-title-offline": "{{GENDER:$1|Desligado|Desligada|Desligado(a)}}",
 	"onlinestatusbar-title-unknown": "{{GENDER:$1|Desconhecido|Desconhecida|Desconhecido(a)}}",
-	"onlinestatusbar-tooltip-online": "{{GENDER:$1|Este usuário está agora ligado|Esta usuária está agora ligada}}",
-	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Este usuário está ocupado|Esta usuária está ocupada}} e pode estar indisponível",
-	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Este usuário|Esta usuária}} está ausente e pode estar indisponível.",
-	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Este usuário está desligado|Esta usuária está desligada}}",
-	"onlinestatusbar-tooltip-unknown": "O estado {{GENDER:$1|deste usuário|desta usuária}} é desconhecido",
+	"onlinestatusbar-tooltip-online": "{{GENDER:$1|Este usuário está agora ligado|Esta usuária está agora ligada|Este(a) usuário(a) está agora ligado(a)}}",
+	"onlinestatusbar-tooltip-busy": "{{GENDER:$1|Este usuário está ocupado|Esta usuária está ocupada|Este(a) usuário(a) está ocupado(a)}} e pode estar indisponível",
+	"onlinestatusbar-tooltip-away": "{{GENDER:$1|Este usuário|Esta usuária|Este(a) usuário(a)}} está ausente e pode estar indisponível.",
+	"onlinestatusbar-tooltip-offline": "{{GENDER:$1|Este usuário está desligado|Esta usuária está desligada|Este(a) usuário(ah está desligado(a)}}",
+	"onlinestatusbar-tooltip-unknown": "O estado {{GENDER:$1|deste usuário|desta usuária|deste(a) usuário(a)}} é desconhecido",
 	"apihelp-query+onlinestatus-summary": "Devolve o estado de ligação e o sexo de um usuário",
 	"apihelp-query+onlinestatus-param-user": "Nome do usuário de quem pretende saber o status",
 	"apihelp-query+onlinestatus-example": "Mostrar o status de ligação de Petrb"
